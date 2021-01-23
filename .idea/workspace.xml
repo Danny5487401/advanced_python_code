@@ -5,28 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/01_sequence_cate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/02_sequence_discipline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/04_slice_obj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/05_bisect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/06_list_application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter04_sequence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/hash_discipline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/hash_search.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/01_duck_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/01_duck_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/02_abstract_base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/02_abstract_base_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/03_isinstance_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/03_isinstance_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/04_class_object_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/04_class_object_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/05_class_object_attr_search_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/05_class_object_attr_search_sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/06_class_quiet_object_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/06_class_quiet_object_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/07_private_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/07_private_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/08_self_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/08_self_ex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/09_super.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/09_super.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/10_DRF_mixin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/10_DRF_mixin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/11_with.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/11_with.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/12_contextlib.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/12_contextlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter03/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter03_Class/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,37 +22,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_advanced_code$03_isinstance_type.coverage" NAME="03_isinstance_type Coverage Results" MODIFIED="1611134814160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_sequence_cate.coverage" NAME="01_sequence_cate Coverage Results" MODIFIED="1611226659080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$02_abstract_base_class.coverage" NAME="02_abstract_base_class Coverage Results" MODIFIED="1611134129756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1611231413324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$11_with.coverage" NAME="11_with Coverage Results" MODIFIED="1611211439523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$04_set_frozenset.coverage" NAME="04_set_frozenset Coverage Results" MODIFIED="1611414621878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_class_object_attr_search_sequence.coverage" NAME="05_class_object_attr_search_sequence Coverage Results" MODIFIED="1611196112151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$02_type_object_class.coverage" NAME="02_type_object_class Coverage Results" MODIFIED="1611107112618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter01" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$06_list_application.coverage" NAME="06_list_application Coverage Results" MODIFIED="1611289725305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$02_dict_method.coverage" NAME="02_dict_method Coverage Results" MODIFIED="1611412103362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_list_gen.coverage" NAME="07_list_gen Coverage Results" MODIFIED="1611290647439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_magic_method.coverage" NAME="01_magic_method Coverage Results" MODIFIED="1611112453370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_class_object_params.coverage" NAME="04_class_object_params Coverage Results" MODIFIED="1611135461051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_magic_methods_list.coverage" NAME="03_magic_methods_list Coverage Results" MODIFIED="1611123013221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$08_self_ex.coverage" NAME="08_self_ex Coverage Results" MODIFIED="1611201000402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$09_super.coverage" NAME="09_super Coverage Results" MODIFIED="1611204472613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$04_slice_obj.coverage" NAME="04_slice_obj Coverage Results" MODIFIED="1611231669324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$02_data_model.coverage" NAME="02_data_model Coverage Results" MODIFIED="1611112537553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_isinstance_type.coverage" NAME="03_isinstance_type Coverage Results" MODIFIED="1611134814160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$02_abstract_base_class.coverage" NAME="02_abstract_base_class Coverage Results" MODIFIED="1611134129756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$11_with.coverage" NAME="11_with Coverage Results" MODIFIED="1611211439523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_dict_subclass.coverage" NAME="03_dict_subclass Coverage Results" MODIFIED="1611413156864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$06_list_application.coverage" NAME="06_list_application Coverage Results" MODIFIED="1611289725305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_append_extend.coverage" NAME="03_append_extend Coverage Results" MODIFIED="1611227566998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_bisect.coverage" NAME="05_bisect Coverage Results" MODIFIED="1611279757615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$12_contextlib.coverage" NAME="12_contextlib Coverage Results" MODIFIED="1611214065169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_all_is_object.coverage" NAME="01_all_is_object Coverage Results" MODIFIED="1611035938397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter01" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$03_magic_methods_list.coverage" NAME="03_magic_methods_list Coverage Results" MODIFIED="1611123013221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$01_dict_abc.coverage" NAME="01_dict_abc Coverage Results" MODIFIED="1611291044832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$06_class_quiet_object_method.coverage" NAME="06_class_quiet_object_method Coverage Results" MODIFIED="1611197789555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_private_method.coverage" NAME="07_private_method Coverage Results" MODIFIED="1611200178615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$08_self_ex.coverage" NAME="08_self_ex Coverage Results" MODIFIED="1611201000402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$09_super.coverage" NAME="09_super Coverage Results" MODIFIED="1611204472613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$04_slice_obj.coverage" NAME="04_slice_obj Coverage Results" MODIFIED="1611231669324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_duck_category.coverage" NAME="01_duck_category Coverage Results" MODIFIED="1611126734410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$02_data_model.coverage" NAME="02_data_model Coverage Results" MODIFIED="1611112537553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py">
+        <entry file="file://$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="133">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -118,14 +109,18 @@
         <option value="$PROJECT_DIR$/chapter04_sequence/05_bisect.py" />
         <option value="$PROJECT_DIR$/chapter04_sequence/06_list_application.py" />
         <option value="$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="245" />
-    <option name="y" value="35" />
-    <option name="width" value="1750" />
-    <option name="height" value="985" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,7 +138,7 @@
             <path>
               <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_advanced_code" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter04_sequence" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter05_set_dict" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +154,9 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python_advanced_code\chapter05_set_dict" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\python_advanced_code" />
     </key>
@@ -175,8 +173,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.07_list_gen">
-    <configuration name="04_slice_obj" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.04_set_frozenset">
+    <configuration name="01_dict_abc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,12 +182,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/04_slice_obj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,7 +196,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="05_bisect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="02_dict_method" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,12 +204,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/05_bisect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -220,7 +218,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06_list_application" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="03_dict_subclass" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,12 +226,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/06_list_application.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04_set_frozenset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_advanced_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,35 +284,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multithread" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_advanced_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/multithread.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.04_set_frozenset" />
+        <item itemvalue="Python.03_dict_subclass" />
+        <item itemvalue="Python.02_dict_method" />
+        <item itemvalue="Python.01_dict_abc" />
         <item itemvalue="Python.07_list_gen" />
-        <item itemvalue="Python.06_list_application" />
-        <item itemvalue="Python.05_bisect" />
-        <item itemvalue="Python.04_slice_obj" />
-        <item itemvalue="Python.multithread" />
       </list>
     </recent_temporary>
   </component>
@@ -312,23 +310,24 @@
       <workItem from="1611194935330" duration="3369000" />
       <workItem from="1611198777934" duration="8037000" />
       <workItem from="1611212861640" duration="6686000" />
-      <workItem from="1611278587230" duration="3316000" />
+      <workItem from="1611278587230" duration="6890000" />
+      <workItem from="1611402330263" duration="6518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42166000" />
+    <option name="totallyTimeSpent" value="52258000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61420345" visible="true" weight="0.18364611" />
-      <window_info id="Structure" order="1" sideWeight="0.38579655" side_tool="true" visible="true" weight="0.18364611" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.36015326" weight="0.384509" />
+      <window_info id="Structure" order="1" sideWeight="0.63984674" side_tool="true" weight="0.384509" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26203966" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.28080228" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47308782" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,8 +335,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.24929178" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.24929178" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.252149" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,13 +365,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter01/01_all_is_object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter02/03_magic_methods_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -580,38 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#26#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter04_sequence/02_sequence_discipline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4588">
-          <caret line="1229" selection-start-line="1229" selection-end-line="1229" />
-          <folding>
-            <element signature="e#1199#1209#0" expanded="true" />
-            <element signature="e#1590#2895#0" />
-            <element signature="e#3115#4375#0" />
-            <element signature="e#4403#5019#0" />
-            <element signature="e#5057#5512#0" />
-            <element signature="e#5553#6136#0" />
-            <element signature="e#6180#6643#0" />
-            <element signature="e#6688#7539#0" />
-            <element signature="e#7584#8065#0" />
-            <element signature="e#8110#8600#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-74485551/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="3621" column="6" selection-start-line="3621" selection-start-column="6" selection-end-line="3621" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-74485551/array.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -690,8 +647,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="211">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="1224" column="50" selection-start-line="1224" selection-start-column="50" selection-end-line="1224" selection-end-column="50" />
+          <folding>
+            <element signature="e#1199#1209#0" expanded="true" />
+            <element signature="e#3115#4375#0" />
+            <element signature="e#4403#5019#0" />
+            <element signature="e#5057#5512#0" />
+            <element signature="e#5553#6136#0" />
+            <element signature="e#6180#6643#0" />
+            <element signature="e#6688#7539#0" />
+            <element signature="e#7584#8065#0" />
+            <element signature="e#8110#8600#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="303" column="24" selection-start-line="303" selection-start-column="24" selection-end-line="303" selection-end-column="24" />
+          <folding>
+            <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-74485551/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="4472" column="8" selection-start-line="4472" selection-start-column="8" selection-end-line="4472" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
