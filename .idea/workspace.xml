@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/hash_discipline.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter05_set_dict/hash_search.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/01_what_is_var.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/02_difference_==_is.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/04_classic_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_relation_del_garbage_recycle.coverage" NAME="03_relation_del_garbage_recycle Coverage Results" MODIFIED="1611452437834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_sequence_cate.coverage" NAME="01_sequence_cate Coverage Results" MODIFIED="1611226659080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1611231413324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_set_frozenset.coverage" NAME="04_set_frozenset Coverage Results" MODIFIED="1611414621878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
@@ -31,6 +29,8 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$07_list_gen.coverage" NAME="07_list_gen Coverage Results" MODIFIED="1611290647439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_magic_method.coverage" NAME="01_magic_method Coverage Results" MODIFIED="1611112453370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_class_object_params.coverage" NAME="04_class_object_params Coverage Results" MODIFIED="1611135461051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$01_what_is_var.coverage" NAME="01_what_is_var Coverage Results" MODIFIED="1611451715603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$04_classic_error.coverage" NAME="04_classic_error Coverage Results" MODIFIED="1611453386694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_magic_methods_list.coverage" NAME="03_magic_methods_list Coverage Results" MODIFIED="1611123013221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
     <SUITE FILE_PATH="coverage/python_advanced_code$08_self_ex.coverage" NAME="08_self_ex Coverage Results" MODIFIED="1611201000402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_super.coverage" NAME="09_super Coverage Results" MODIFIED="1611204472613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
@@ -41,6 +41,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$11_with.coverage" NAME="11_with Coverage Results" MODIFIED="1611211439523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_dict_subclass.coverage" NAME="03_dict_subclass Coverage Results" MODIFIED="1611413156864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$06_list_application.coverage" NAME="06_list_application Coverage Results" MODIFIED="1611289725305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$02_difference____is.coverage" NAME="02_difference_==_is Coverage Results" MODIFIED="1611452234642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_append_extend.coverage" NAME="03_append_extend Coverage Results" MODIFIED="1611227566998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_bisect.coverage" NAME="05_bisect Coverage Results" MODIFIED="1611279757615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$12_contextlib.coverage" NAME="12_contextlib Coverage Results" MODIFIED="1611214065169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
@@ -53,10 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py">
+        <entry file="file://$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/04_classic_error.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -114,12 +115,16 @@
         <option value="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" />
         <option value="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" />
         <option value="$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py" />
+        <option value="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle/01_what_is_var.py" />
+        <option value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/02_difference_==_is.py" />
+        <option value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" />
+        <option value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/04_classic_error.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
+    <option name="x" value="1082" />
+    <option name="width" value="847" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -138,7 +143,7 @@
             <path>
               <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_advanced_code" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05_set_dict" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter06_object_use_n_garbage_recycle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,8 +178,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.04_set_frozenset">
-    <configuration name="01_dict_abc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.04_classic_error">
+    <configuration name="01_what_is_var" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,12 +187,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle/01_what_is_var.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_dict_method" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="02_difference_==_is" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,12 +209,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/02_difference_==_is.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,7 +223,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03_dict_subclass" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="03_relation_del_garbage_recycle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -226,12 +231,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter05_set_dict" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04_classic_error" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_advanced_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/04_classic_error.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,35 +289,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07_list_gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_advanced_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.04_classic_error" />
+        <item itemvalue="Python.03_relation_del_garbage_recycle" />
+        <item itemvalue="Python.02_difference_==_is" />
+        <item itemvalue="Python.01_what_is_var" />
         <item itemvalue="Python.04_set_frozenset" />
-        <item itemvalue="Python.03_dict_subclass" />
-        <item itemvalue="Python.02_dict_method" />
-        <item itemvalue="Python.01_dict_abc" />
-        <item itemvalue="Python.07_list_gen" />
       </list>
     </recent_temporary>
   </component>
@@ -311,23 +316,23 @@
       <workItem from="1611198777934" duration="8037000" />
       <workItem from="1611212861640" duration="6686000" />
       <workItem from="1611278587230" duration="6890000" />
-      <workItem from="1611402330263" duration="6518000" />
+      <workItem from="1611402330263" duration="9641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52258000" />
+    <option name="totallyTimeSpent" value="55381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <frame x="866" y="0" width="677" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.36015326" weight="0.384509" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.36015326" weight="0.38449112" />
       <window_info id="Structure" order="1" sideWeight="0.63984674" side_tool="true" weight="0.384509" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.28080228" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.27936962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47308782" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,7 +341,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.24929178" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.252149" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.25071633" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -365,34 +370,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter02/03_magic_methods_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter02/02_data_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter01/03_category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter01/02_type_object_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter02/01_magic_method.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -719,6 +696,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/01_what_is_var.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/02_difference_==_is.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/04_classic_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
