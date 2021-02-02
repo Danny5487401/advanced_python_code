@@ -30,3 +30,14 @@ my_dict3 = defaultdict(dict)
 # 调用__missing__方法
 my_value = my_dict3["danny5"]
 print(my_value)
+
+# 顺序orderdict
+from collections import OrderedDict
+order_dict = OrderedDict()
+order_dict["a"] = "haha"
+order_dict["b"] = 2
+order_dict["c"] = 3
+
+
+for k,v in order_dict.items():
+    print(k,v)

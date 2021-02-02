@@ -3,7 +3,7 @@ def myreadline(f,newline):
     buf = ""
     while True:
         while newline in buf:
-            pos =buf.index(newline)
+            pos = buf.index(newline)
             yield buf[:pos]
             buf = buf[pos + len(newline):]
         chunk = f.read(4096*10)
