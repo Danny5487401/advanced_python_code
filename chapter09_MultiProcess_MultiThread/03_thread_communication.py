@@ -56,7 +56,7 @@ import time
 #         print("get detail url end")
 
 # 外界变量
-from chapter09_multiprocess_multithread import variable
+from chapter09_MultiProcess_MultiThread import variable
 def get_detail_html():
     while True:
         if len(variable.detail_url_list):
