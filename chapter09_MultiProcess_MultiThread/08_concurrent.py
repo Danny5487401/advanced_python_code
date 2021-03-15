@@ -1,7 +1,7 @@
 # python3.2引入
 # 线程池，理解协程才容易
 from concurrent.futures import ThreadPoolExecutor,as_completed,wait
-# 理解futures:未来对象，task返回容器
+# 理解futures:未来对象，task是返回容器
 from concurrent.futures import Future
 
 
@@ -13,6 +13,7 @@ def get_html(sleep_time):
     time.sleep(sleep_time)
     print("get page{}success" .format(sleep_time))
     return sleep_time
+
 
 executor = ThreadPoolExecutor(max_workers=2)
 # 通过submit提交将要执行的函数到线程池中,submit是立即返回
@@ -38,7 +39,7 @@ all_tasks = [executor.submit(get_html, (url)) for url in urls]
 # wait 注意return_when
 # wait(all_tasks)
 # print("all finished")
-wait(all_tasks,return_when='FIRST_COMPLETED')
+wait(all_tasks, return_when='FIRST_COMPLETED')
 print("first finished")
 
 # for future in as_completed(all_tasks):

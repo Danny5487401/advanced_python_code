@@ -5,29 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/03_coroutine_desc_C10M.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/04_gen_close.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/05_gen_throw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/06_yield_from.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/07_yield_from_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/08_yield_from_how.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/09_gen_to_coroutine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/10_async_await.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/12_task_future.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/01_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/02_wait_gather_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/03_coroutine_task_cancel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/04_coroutine_nest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/05_call_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/06_thread_asyncio_together.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/07_asyncio_http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter11_asyncio/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/01_GIL.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/01_GIL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/02_threading.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/02_threading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/03_thread_communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/03_thread_communication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/04_thread_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/04_thread_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/05_thread_sync.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/05_thread_sync.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/06_thread_condition.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/06_thread_condition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/11_process_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/11_process_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter09_multiprocess_multithread/variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/variable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type_class_obj.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter01__all_is_obj/type_class_obj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/08_concureent.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/08_concurrent.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +25,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_advanced_code$03_relation_del_garbage_recycle.coverage" NAME="03_relation_del_garbage_recycle Coverage Results" MODIFIED="1611452437834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$12_task_future.coverage" NAME="12_task_future Coverage Results" MODIFIED="1612681621024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread" />
     <SUITE FILE_PATH="coverage/python_advanced_code$multithread.coverage" NAME="multithread Coverage Results" MODIFIED="1611231413324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_thread_queue.coverage" NAME="03_thread_queue Coverage Results" MODIFIED="1611842813548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09_multiprocess_multithread" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_class_object_attr_search_sequence.coverage" NAME="05_class_object_attr_search_sequence Coverage Results" MODIFIED="1611196112151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
@@ -43,6 +34,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$02_dict_method.coverage" NAME="02_dict_method Coverage Results" MODIFIED="1611412103362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_list_gen.coverage" NAME="07_list_gen Coverage Results" MODIFIED="1611290647439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_metaclass.coverage" NAME="05_metaclass Coverage Results" MODIFIED="1611477454448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/charper07_original_class" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$06_thread_asyncio_together.coverage" NAME="06_thread_asyncio_together Coverage Results" MODIFIED="1612511184524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_property.coverage" NAME="01_property Coverage Results" MODIFIED="1611454265856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/charper07_original_class" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_class_object_params.coverage" NAME="04_class_object_params Coverage Results" MODIFIED="1611135461051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_what_is_var.coverage" NAME="01_what_is_var Coverage Results" MODIFIED="1611451715603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle" />
@@ -53,20 +45,26 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$09_super.coverage" NAME="09_super Coverage Results" MODIFIED="1611204472613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_gen_read_file.coverage" NAME="05_gen_read_file Coverage Results" MODIFIED="1611543028669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08_iter_generator" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_gen_close.coverage" NAME="04_gen_close Coverage Results" MODIFIED="1612335728649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$01_loop.coverage" NAME="01_loop Coverage Results" MODIFIED="1612430510312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_process.coverage" NAME="09_process Coverage Results" MODIFIED="1612227584324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09_multiprocess_multithread" />
     <SUITE FILE_PATH="coverage/python_advanced_code$11_with.coverage" NAME="11_with Coverage Results" MODIFIED="1611211439523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$11_process_queue.coverage" NAME="11_process_queue Coverage Results" MODIFIED="1612235515852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09_multiprocess_multithread" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_generator.coverage" NAME="03_generator Coverage Results" MODIFIED="1611496418577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08_iter_generator" />
     <SUITE FILE_PATH="coverage/python_advanced_code$02_getattr_getattribute.coverage" NAME="02_getattr_getattribute Coverage Results" MODIFIED="1611454919820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/charper07_original_class" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$05_call_func.coverage" NAME="05_call_func Coverage Results" MODIFIED="1612501458527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$03_append_extend.coverage" NAME="03_append_extend Coverage Results" MODIFIED="1611227566998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_bisect.coverage" NAME="05_bisect Coverage Results" MODIFIED="1611279757615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$02_wait_gather_loop.coverage" NAME="02_wait_gather_loop Coverage Results" MODIFIED="1612431531845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$12_contextlib.coverage" NAME="12_contextlib Coverage Results" MODIFIED="1611214065169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_all_is_object.coverage" NAME="01_all_is_object Coverage Results" MODIFIED="1611035938397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter01" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_dict_abc.coverage" NAME="01_dict_abc Coverage Results" MODIFIED="1611291044832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_duck_category.coverage" NAME="01_duck_category Coverage Results" MODIFIED="1611126734410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_how_gen_works.coverage" NAME="04_how_gen_works Coverage Results" MODIFIED="1611497763665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08_iter_generator" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$04_coroutine_nest.coverage" NAME="04_coroutine_nest Coverage Results" MODIFIED="1612500451713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$02_threading.coverage" NAME="02_threading Coverage Results" MODIFIED="1611548643742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter09_multiprocess_multithread" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_coroutine_nest.coverage" NAME="03_coroutine_nest Coverage Results" MODIFIED="1612498981632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_sequence_cate.coverage" NAME="01_sequence_cate Coverage Results" MODIFIED="1611226659080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$07_asyncio_http.coverage" NAME="07_asyncio_http Coverage Results" MODIFIED="1612512023906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$06_yield_from.coverage" NAME="06_yield_from Coverage Results" MODIFIED="1612337600265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_set_frozenset.coverage" NAME="04_set_frozenset Coverage Results" MODIFIED="1611414621878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter05_set_dict" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_magic_method.coverage" NAME="01_magic_method Coverage Results" MODIFIED="1611112453370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter02" />
@@ -93,6 +91,19 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$06_class_quiet_object_method.coverage" NAME="06_class_quiet_object_method Coverage Results" MODIFIED="1611197789555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_private_method.coverage" NAME="07_private_method Coverage Results" MODIFIED="1611200178615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/12_task_future.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -103,6 +114,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>map</find>
+      <find>def create_task</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,15 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter04_sequence/multithread.py" />
-        <option value="$PROJECT_DIR$/chapter04_sequence/04_slice_obj.py" />
-        <option value="$PROJECT_DIR$/chapter04_sequence/05_bisect.py" />
-        <option value="$PROJECT_DIR$/chapter04_sequence/06_list_application.py" />
-        <option value="$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" />
-        <option value="$PROJECT_DIR$/chapter05_set_dict/01_dict_abc.py" />
-        <option value="$PROJECT_DIR$/chapter05_set_dict/02_dict_method.py" />
-        <option value="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" />
-        <option value="$PROJECT_DIR$/chapter05_set_dict/05_dict_performance.py" />
         <option value="$PROJECT_DIR$/chapter05_set_dict/chapter06_object_use_n_garbage_recycle/01_what_is_var.py" />
         <option value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/02_difference_==_is.py" />
         <option value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" />
@@ -170,14 +173,23 @@
         <option value="$PROJECT_DIR$/chapter10_concurent_IO/05_gen_throw.py" />
         <option value="$PROJECT_DIR$/chapter10_concurent_IO/06_yield_from.py" />
         <option value="$PROJECT_DIR$/chapter10_concurent_IO/07_yield_from_example.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/02_wait_gather_loop.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/01_loop.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/03_coroutine_nest.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/04_coroutine_nest.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/05_call_func.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/06_thread_asyncio_together.py" />
+        <option value="$PROJECT_DIR$/chapter11_asyncio/07_asyncio_http.py" />
+        <option value="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/08_concurrent.py" />
+        <option value="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/12_task_future.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="136" />
-    <option name="y" value="27" />
-    <option name="width" value="1750" />
-    <option name="height" value="985" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="15" />
+    <option name="width" value="1400" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectId" id="1nYHey6EHshy9VLutx0Sxee7umB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -186,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,12 +208,40 @@
             <path>
               <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_advanced_code" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter10_concurent_IO" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter09_MultiProcess_MultiThread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_advanced_code" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter11_asyncio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (python_advanced_code) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (python_advanced_code) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_advanced_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (python_advanced_code) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="asyncio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -225,8 +264,20 @@
       <recent name="E:\python_advanced_code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.09_gen_to_coroutine">
-    <configuration name="05_gen_throw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.12_task_future">
+    <configuration name="04_coroutine_nest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,12 +285,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter10_concurent_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter11_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter10_concurent_IO/05_gen_throw.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter11_asyncio/04_coroutine_nest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,7 +299,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06_yield_from" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="05_call_func" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,12 +307,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter10_concurent_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter11_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter10_concurent_IO/06_yield_from.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter11_asyncio/05_call_func.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,7 +321,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07_yield_from_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="06_thread_asyncio_together" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,12 +329,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter10_concurent_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter11_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter10_concurent_IO/07_yield_from_example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter11_asyncio/06_thread_asyncio_together.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,7 +343,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="09_gen_to_coroutine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="07_asyncio_http" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,12 +351,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter10_concurent_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter11_asyncio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter10_concurent_IO/09_gen_to_coroutine.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter11_asyncio/07_asyncio_http.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,7 +365,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="10_async_await" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="12_task_future" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,12 +373,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter10_concurent_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\python_advanced_code\chapter10_concurent_IO\10_async_await.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/12_task_future.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,15 +389,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.09_gen_to_coroutine" />
-        <item itemvalue="Python.10_async_await" />
-        <item itemvalue="Python.07_yield_from_example" />
-        <item itemvalue="Python.06_yield_from" />
-        <item itemvalue="Python.05_gen_throw" />
+        <item itemvalue="Python.12_task_future" />
+        <item itemvalue="Python.07_asyncio_http" />
+        <item itemvalue="Python.06_thread_asyncio_together" />
+        <item itemvalue="Python.05_call_func" />
+        <item itemvalue="Python.04_coroutine_nest" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -375,24 +426,27 @@
       <workItem from="1612230981308" duration="5868000" />
       <workItem from="1612264331185" duration="17155000" />
       <workItem from="1612341746055" duration="672000" />
-      <workItem from="1612403131334" duration="9589000" />
+      <workItem from="1612403131334" duration="11728000" />
+      <workItem from="1612421586725" duration="117000" />
+      <workItem from="1612428170902" duration="3973000" />
+      <workItem from="1612497852418" duration="11831000" />
+      <workItem from="1612661884205" duration="4567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133963000" />
+    <option name="totallyTimeSpent" value="154334000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="109" y="22" width="1400" height="788" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82012194" visible="true" weight="0.23323397" />
-      <window_info id="Structure" order="1" sideWeight="0.17987806" side_tool="true" visible="true" weight="0.23323397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73796034" visible="true" weight="0.21849866" />
+      <window_info id="Structure" order="1" sideWeight="0.26203966" side_tool="true" visible="true" weight="0.21849866" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.30945122" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36737806" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.33002833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27903682" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -400,7 +454,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.24929178" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.3125" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932975" weight="0.28005657" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -410,7 +464,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -495,133 +549,21 @@
           <line>114</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter11_asyncio/06_thread_asyncio_together.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_advanced_code$01_loop.coverage" NAME="01_loop Coverage Results" MODIFIED="1612415584887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_yield_from_example.coverage" NAME="07_yield_from_example Coverage Results" MODIFIED="1612408109272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_gen_to_coroutine.coverage" NAME="09_gen_to_coroutine Coverage Results" MODIFIED="1612412142669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_async_await.coverage" NAME="09_async_await Coverage Results" MODIFIED="1612411746244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter07_original_class/05_metaclass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter07_original_class/03_attribute_symbol_n_searchprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="18" selection-start-line="18" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter07_original_class/06_orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="105" column="36" lean-forward="true" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2918">
-          <caret line="1206" selection-start-line="1206" selection-end-line="1206" />
-          <folding>
-            <element signature="e#1199#1209#0" expanded="true" />
-            <element signature="e#3115#4375#0" />
-            <element signature="e#4403#5019#0" />
-            <element signature="e#5057#5512#0" />
-            <element signature="e#5553#6136#0" />
-            <element signature="e#6180#6643#0" />
-            <element signature="e#6688#7539#0" />
-            <element signature="e#7584#8065#0" />
-            <element signature="e#8110#8600#0" />
-            <element signature="e#48508#49885#0" />
-            <element signature="e#49936#52120#0" />
-            <element signature="e#52150#52826#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/01_iterable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter02__magic_method/01_magic_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/02_iterable_iterator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/03_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-          <folding>
-            <element signature="e#26#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/04_how_gen_works.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="87" selection-start-column="87" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/gen.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter08_iter_generator/05_gen_read_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -772,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/08_concureent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="43" selection-start-line="43" selection-end-line="45" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/09_process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -823,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter10_concurent_IO/IO_select.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -844,16 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1026">
           <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-          <folding>
-            <element signature="e#540#573#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,6 +821,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="209" column="16" lean-forward="true" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/02_wait_gather_loop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/asyncio/tasks.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/coroutine_nest.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/base_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/01_loop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/03_coroutine_task_cancel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/04_coroutine_nest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/05_call_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.text">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="37" selection-start-line="37" selection-end-line="79" selection-end-column="18" />
+          <folding>
+            <element signature="e#540#573#0" expanded="true" />
+            <element signature="e#836#1818#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/streams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/asyncio/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="554" column="14" selection-start-line="554" selection-start-column="14" selection-end-line="554" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/07_asyncio_http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="66" column="21" lean-forward="true" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+          <folding>
+            <element signature="e#42#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter11_asyncio/06_thread_asyncio_together.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="e#32#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/08_concurrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#28#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter09_MultiProcess_MultiThread/12_task_future.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
