@@ -401,7 +401,7 @@
       <workItem from="1615879104636" duration="77000" />
       <workItem from="1617263827644" duration="226000" />
       <workItem from="1617267082340" duration="56000" />
-      <workItem from="1618217627246" duration="401000" />
+      <workItem from="1618217627246" duration="916000" />
     </task>
     <servers />
   </component>
@@ -539,8 +539,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/chapter12_callback/01_callback_func.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter12_callback/01_callback_func.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter12_callback/01_callback_func.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter12_callback/01_callback_func.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
