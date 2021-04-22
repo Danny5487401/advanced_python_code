@@ -33,14 +33,16 @@ class Date:
 
 
 if __name__ == "__main__":
-    # date = Date(2020,11,22)
-    # tomorrow(day) 实际cpython解释器调用方式
-    # date.tomorrow()
-    # print(date)
+    date = Date(2020,11,22)
+    # 方法一：#实际cpython解释器调用方式
+    # Date.tomorrow(date)
+    # 方法二 ： 简化写法
+    date.tomorrow()
+    print(date)
 
     # 2018-12-31 直接传入字符串，而不是2020,11,22
     # 方法一 ：外部处理
-    day_str = "2018-12-31"
+    # day_str = "2018-12-31"
     # year,month,day = tuple(day_str.split("-"))
     # new_day = Date(int(year),int(month),int(day))
 
@@ -49,8 +51,8 @@ if __name__ == "__main__":
     # print(new_day)
     #
     # 方法三：使用类方法完成初始化
-    new_day = Date.from_string(day_str)
-    print(new_day)
-
-    # 另外一种场景用于staticmethod：判断字符串是否正确，不需要返回类
-    print(Date.valid_str(day_str))
+    # new_day = Date.from_string(day_str)
+    # print(new_day)
+    #
+    # # 另外一种场景用于staticmethod：判断字符串是否正确，不需要返回类
+    # print(Date.valid_str(day_str))

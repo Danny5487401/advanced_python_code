@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter12_callback/02_decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12_callback/03_decorator_@signal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12_callback/04_decorator_application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12_callback/05_decorator_with_params_n_returnValue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter12_callback/06_class_decorator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,6 +225,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/rpa/rpa_project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -405,7 +402,8 @@
       <workItem from="1617263827644" duration="226000" />
       <workItem from="1617267082340" duration="56000" />
       <workItem from="1618217627246" duration="2780000" />
-      <workItem from="1618220545277" duration="528000" />
+      <workItem from="1618220545277" duration="984000" />
+      <workItem from="1618556268840" duration="1198000" />
     </task>
     <servers />
   </component>
