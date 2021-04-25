@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter13_chain_call/01_chain_function_without_optimization .py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_chain_call/02_chain_call_with_optimization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_chain_call/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.text" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +407,8 @@
       <workItem from="1618220545277" duration="984000" />
       <workItem from="1618556268840" duration="1198000" />
       <workItem from="1619078352509" duration="437000" />
-      <workItem from="1619327239651" duration="784000" />
+      <workItem from="1619327239651" duration="880000" />
+      <workItem from="1619328207699" duration="946000" />
     </task>
     <servers />
   </component>
