@@ -121,7 +121,8 @@ table = re.sub(r'\n([0-9A-Z]+)', '', table)
 	2021-02-19	1.4220	1.4220
 """
 # 3. 合并一行
-table = re.sub(r'\n(\s+)', r'\1', table)
+table = re.sub(r'\n(\s+)'," ", table) # 与以下等价
+# table = re.sub(r'\n(\s+)', r'\1', table) # \1 分组的第一个
 """
 产品名称	净值日期	最新净值（元）	累计净值（元）
 合盈1号	2021-04-23	1.4216	1.4216
@@ -138,6 +139,7 @@ table = re.sub(r'\n(\s+)', r'\1', table)
 
 # 4. 转换成列表
 table = re.findall(r'(\S+)\s+(\S+)\s+(\S+)\s+(\S+)', table)
+print(table)
 pass
 
 
