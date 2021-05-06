@@ -7,13 +7,13 @@
 
 1. 函数和类都是对象
 2. type是一个类，同时type也是一个基类
-3. 对象三个特征，身份，类型，值
+3. 对象三个特征:身份，类型，值
 ---
 ## 第二章：魔法方法
-1. __getitem__支持切片
-2. len首先调用__len__函数，再调用__getitem__
+1. __getitem__实现支持切片
+2. len()调用：首先调用__len__函数，再调用__getitem__
 3. 魔法方法分类:非数学运算，数学运算
-4. 先__init__,再__enter__
+4. 类初始化：先__init__,再__enter__
 ---
 ## 第三章：面对对象编程
 1. 鸭子类型  
@@ -34,11 +34,11 @@
 3. append和extend
 4. 类实现slice
 5. bisect有序序列
-6. python实现c语言的array
+6. python重写c语言的array
 7. 列表,集合,字典推导式
 ---
 ## 第五章：数据结构集合和字典
-1. mapping 类型
+1. mapping类型
 2. dict.fromkeys()和dict.setdefault()
 3. UserDict继承, defaultdict和OrderedDict
 4. set与frozenset
@@ -46,7 +46,7 @@
 ---
 ## 第六章：变量，参数及垃圾回收机制
 1. Python变量实际是一个指针
-2. ==与is
+2. ==与is区别
 3. GC垃圾回收
 4. 传递list的经典错误
 5. 不定长参数args与kwargs
@@ -64,7 +64,7 @@
 2. 可迭代对象Iterator
 3. 生成器
 4. 底层函数工作原理
-5. 生成器读大文件
+5. 生成器读取大文件
 ---
 ## 第九章：多进程多线程
 1. GIL和多线程
