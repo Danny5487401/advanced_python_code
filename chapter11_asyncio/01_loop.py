@@ -1,4 +1,4 @@
-#事件循环 + 回调（在asyncio中是驱动生成器） + IO多路复用
+# 异步编程：事件循环 + 回调（在asyncio中是驱动生成器） + IO多路复用
 # asyncio是python用于解决IO编程的一整套解决方法 tornado ,gevent,twisted(scrapy,django channels用于http2.0开发)
 
 # tornado（实现了web服务器,可以直接部署，+nginx),django+Flask(web框架，不提供服务器，需要uwsgi,gunicorn,nginx)
@@ -40,6 +40,7 @@ from functools import partial
 def call_back_param(url, future):
     # 假设完成后发送邮件等需求
     print("from {} send email to danny" .format(url))
+
 
 if __name__ == "__main__":
     # 无返回值

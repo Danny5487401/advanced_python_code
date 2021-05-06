@@ -76,15 +76,15 @@
 ---
 ## 第十章：IO模型
 1. 异步编程概念
-2. c10K及Unix下五种I/O模型
+2. c10K及Unix下五种I/O模型,非阻塞式IO实现HTTP请求,使用select完成http请求
 3. c10M与协程产生
 4. 生成器关闭close
 5. 生成器传值throw
 6. yield_from在调用方main与子生成器之间建立一个双向通道
-7. yield_from使用
+7. yield from 与 yield对比
 8. yield_from原理
 9. 生成器转协程原因：有状态,可以暂停,挂起,创建
-10. async和await关键词及协程装饰器@types.coroutine
+10. async和await关键词,协程装饰器@types.coroutine
 ---
 ## 第十一章：协程库Asyncio
 1. 事件循环添加回调函数
