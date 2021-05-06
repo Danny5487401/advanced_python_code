@@ -4,13 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/CPU_opinion_about_time.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py" afterDir="false" />
-    </list>
+    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -415,7 +409,7 @@
       <workItem from="1619488930614" duration="8485000" />
       <workItem from="1619512290387" duration="2094000" />
       <workItem from="1619595099794" duration="34000" />
-      <workItem from="1620280564585" duration="7327000" />
+      <workItem from="1620280564585" duration="7654000" />
     </task>
     <servers />
   </component>
