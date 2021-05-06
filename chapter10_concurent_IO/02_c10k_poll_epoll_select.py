@@ -29,7 +29,7 @@ from urllib.parse import urlparse
 import socket
 import select
 
-# 不使用select.select()   select(rlist, wlist, xlist, timeout=None
+# 不使用select.select()   select(rlist, wlist, xlist, timeout=None)
 # 使用selctor,包装的更好用，会根据平台自动选择slect,poll,epoll
 from selectors import DefaultSelector, EVENT_READ, EVENT_WRITE
 

@@ -48,7 +48,7 @@
 1. Python变量实际是一个指针
 2. ==与is区别
 3. GC垃圾回收
-4. 传递list的经典错误
+4. 参数传递list时的经典错误
 5. 不定长参数args与kwargs
 ---
 ## 第七章：元类
@@ -75,14 +75,25 @@
 6. 进程间通信
 ---
 ## 第十章：IO模型
-1. IO多路复用-select、poll、epoll
-2. select+回调+事件循环模型
-3. 生成器进阶-send、close、throw和yield from
-4. async和await
+1. 异步编程概念
+2. c10K及Unix下五种I/O模型
+3. c10M与协程产生
+4. 生成器关闭close
+5. 生成器传值throw
+6. yield_from在调用方main与子生成器之间建立一个双向通道
+7. yield_from使用
+8. yield_from原理
+9. 生成器转协程原因：有状态,可以暂停,挂起,创建
+10. async和await关键词及协程装饰器@types.coroutine
 ---
 ## 第十一章：协程库Asyncio
-1. 事件循环
-2. 协程嵌套coroutine_nest
+1. 事件循环添加回调函数
+2. asyncio.wait()和gather()
+3. task.cancel()
+4. 协程嵌套coroutine_nest
+5. loop.call_later(),call_soon(),call_at()
+6. 线程中集成阻塞IO
+7. asyncio中tcp使用
 ---
 ## 第十二章：函数回调及装饰器
 1. 回调函数
