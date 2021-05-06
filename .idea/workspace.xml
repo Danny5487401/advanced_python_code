@@ -7,6 +7,8 @@
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter01__all_is_obj/01_all_is_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter01__all_is_obj/01_all_is_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter05_set_dict/04_set_frozenset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,8 +246,8 @@
       <recent name="E:\python_advanced_code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.re_sub_findall (1)">
-    <configuration name="02_chain_call_with_optimization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.01_all_is_object">
+    <configuration name="01_all_is_object" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,12 +255,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter13_chain_call" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter01__all_is_obj" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13_chain_call/02_chain_call_with_optimization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter01__all_is_obj/01_all_is_object.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01_all_is_object" />
         <item itemvalue="Python.re_sub_findall (1)" />
         <item itemvalue="Python.re_sub_findall" />
         <item itemvalue="Python.05_args_kwargs" />
         <item itemvalue="Python.args-kwargs" />
-        <item itemvalue="Python.02_chain_call_with_optimization" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +412,9 @@
       <workItem from="1619327239651" duration="880000" />
       <workItem from="1619328207699" duration="1871000" />
       <workItem from="1619488930614" duration="8485000" />
-      <workItem from="1619512290387" duration="625000" />
+      <workItem from="1619512290387" duration="2094000" />
+      <workItem from="1619595099794" duration="34000" />
+      <workItem from="1620280564585" duration="3867000" />
     </task>
     <servers />
   </component>
@@ -598,6 +602,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$09_gen_to_coroutine.coverage" NAME="09_gen_to_coroutine Coverage Results" MODIFIED="1612412142669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_decorator_with_params_n_returnValue__1_.coverage" NAME="05_decorator_with_params_n_returnValue (1) Coverage Results" MODIFIED="1618220980457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/python_advanced_code$02_chain_call_with_optimization.coverage" NAME="02_chain_call_with_optimization Coverage Results" MODIFIED="1619327745746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_chain_call" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$01_all_is_object.coverage" NAME="01_all_is_object Coverage Results" MODIFIED="1620284376015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter01__all_is_obj" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chapter05_set_dict/03_dict_subclass.py">

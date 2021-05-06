@@ -1,6 +1,6 @@
 # 类也是对象，type创建类的类
 from collections import abc
-# 什么是元类，就是创建类的类type
+# 什么是，就是创建类的类type
 # 必须继承type
 class MetaClass(type):
     # 控制生成过程

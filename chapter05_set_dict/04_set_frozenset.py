@@ -1,4 +1,4 @@
-# set 集合 frozenser不可变集合,无序不重复  性能高，用哈希
+# set 集合 frozenset不可变集合,无序不重复  性能高，用哈希
 # 方法一
 s = set("aberr")
 # print(type(s))

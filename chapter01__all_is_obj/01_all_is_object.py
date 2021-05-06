@@ -9,6 +9,9 @@ class Person:
     def __init__(self):
         print("danny2")
 
+    def __str__(self):
+        return "call str"
+
 
 def docorator_func():
     print("装饰器")
@@ -22,12 +25,19 @@ def docorator_func():
 # myclass()
 
 # 2. 放在集合当中
-# obj_list =[]
-# obj_list.append(ask)
-# obj_list.append(Person)
-# for item in obj_list:
-#     print(item())
+obj_list =[]
+obj_list.append(ask)
+obj_list.append(Person)
+for item in obj_list:
+    print(item())
+""" 结果
+danny1
+danny3 #return结果
+danny2
+call str # __str__结果
+"""
 
 # 返回一个函数
+print("-----------")
 my_ask = docorator_func()
 my_ask("tom")
