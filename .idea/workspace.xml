@@ -4,7 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="" />
+    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/introduction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter13_chain_call/01_chain_function_without_optimization .py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter13_defign_style/01_chain_function_without_optimization .py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter13_chain_call/02_chain_call_with_optimization.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter13_defign_style/02_chain_call_with_optimization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter13_chain_call/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter13_defign_style/01_object_construction/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -410,6 +419,8 @@
       <workItem from="1619512290387" duration="2094000" />
       <workItem from="1619595099794" duration="34000" />
       <workItem from="1620280564585" duration="12868000" />
+      <workItem from="1620381021749" duration="782000" />
+      <workItem from="1620628372102" duration="1507000" />
     </task>
     <servers />
   </component>
