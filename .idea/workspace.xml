@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/introduction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy/introduction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +244,7 @@
       <recent name="E:\python_advanced_code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,7 +267,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,12 +275,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter13_defign_style/01_object_construction/04_Prototype" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13_defign_style/01_object_construction/04_Prototype/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,11 +357,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (5)" />
         <item itemvalue="Python.main (4)" />
-        <item itemvalue="Python.main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +414,7 @@
       <workItem from="1619595099794" duration="34000" />
       <workItem from="1620280564585" duration="12868000" />
       <workItem from="1620381021749" duration="782000" />
-      <workItem from="1620628372102" duration="7326000" />
+      <workItem from="1620628372102" duration="7655000" />
     </task>
     <servers />
   </component>
@@ -636,6 +634,16 @@
           <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
           <line>128</line>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
