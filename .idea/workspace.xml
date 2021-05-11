@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/02_Observer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/02_Observer/introduction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/02_Observer/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,8 +245,8 @@
       <recent name="E:\python_advanced_code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.03_relation_del_garbage_recycle">
+    <configuration name="03_relation_del_garbage_recycle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,12 +254,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_relation_del_garbage_recycle" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (5)" />
         <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +416,8 @@
       <workItem from="1620280564585" duration="12868000" />
       <workItem from="1620381021749" duration="782000" />
       <workItem from="1620628372102" duration="10781000" />
-      <workItem from="1620696171851" duration="5232000" />
+      <workItem from="1620696171851" duration="6681000" />
+      <workItem from="1620712656719" duration="1531000" />
     </task>
     <servers />
   </component>
@@ -590,102 +589,102 @@
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/01_object_construction/05_Singleton/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/01_object_construction/05_Singleton/main.py</url>
           <line>12</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/01_object_construction/05_Singleton/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/01_object_construction/05_Singleton/main.py</url>
           <line>32</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/01_object_construction/05_Singleton/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/01_object_construction/05_Singleton/main.py</url>
           <line>22</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/01_object_construction/05_Singleton/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/01_object_construction/05_Singleton/main.py</url>
           <line>21</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>69</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>72</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>14</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>106</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>117</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>128</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>109</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/02_Adapter/main.py</url>
           <line>137</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>32</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>21</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>18</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>7</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>48</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/04_Decorator/main.py</url>
           <line>51</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/07_Flyweight/main.py</url>
           <line>82</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/main.py</url>
+          <url>file://$PROJECT_DIR$/chapter13_design_style/02_object_structure/07_Flyweight/main.py</url>
           <line>28</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
@@ -696,7 +695,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$04_classic_error.coverage" NAME="04_classic_error Coverage Results" MODIFIED="1620285595391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/python_advanced_code$args_kwargs.coverage" NAME="args-kwargs Coverage Results" MODIFIED="1619489917538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../BaiduNetdiskDownload/python18/05python和linux高级编程阶段/1-6代码和截图/11-python提高-2/代码" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_async_await.coverage" NAME="09_async_await Coverage Results" MODIFIED="1612411746244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$main.coverage" NAME="main Coverage Results" MODIFIED="1620704816874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/02_Observer" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$main.coverage" NAME="main Coverage Results" MODIFIED="1620705111089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/02_Observer" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1620696242498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight" />
     <SUITE FILE_PATH="coverage/python_advanced_code$re_test.coverage" NAME="re_test Coverage Results" MODIFIED="1619511254389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter14_re" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_decorator_application.coverage" NAME="04_decorator_application Coverage Results" MODIFIED="1618220873862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
@@ -717,6 +716,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$01_callback_func.coverage" NAME="01_callback_func Coverage Results" MODIFIED="1618219489839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1620637633603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/04_Decorator" />
     <SUITE FILE_PATH="coverage/python_advanced_code$06_class_quiet_object_method.coverage" NAME="06_class_quiet_object_method Coverage Results" MODIFIED="1619078597120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03_Class" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$03_relation_del_garbage_recycle.coverage" NAME="03_relation_del_garbage_recycle Coverage Results" MODIFIED="1620713902086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/python_advanced_code$re_sub_findall__1_.coverage" NAME="re_sub_findall (1) Coverage Results" MODIFIED="1619511976811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter14_re" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_chain_function_without_optimization_.coverage" NAME="01_chain_function_without_optimization  Coverage Results" MODIFIED="1619327526852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_chain_call" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1620636331422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/03_proxy" />
