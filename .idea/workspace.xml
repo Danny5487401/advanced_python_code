@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/05_Bridge/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/06_Composite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/introduction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/01_TemplateMethod/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter13_defign_style/03_object_motion/01_TemplateMethod/introduction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -419,7 +416,8 @@
       <workItem from="1619595099794" duration="34000" />
       <workItem from="1620280564585" duration="12868000" />
       <workItem from="1620381021749" duration="782000" />
-      <workItem from="1620628372102" duration="9708000" />
+      <workItem from="1620628372102" duration="10781000" />
+      <workItem from="1620696171851" duration="278000" />
     </task>
     <servers />
   </component>
@@ -680,6 +678,16 @@
           <line>51</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/main.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight/main.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -688,7 +696,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$args_kwargs.coverage" NAME="args-kwargs Coverage Results" MODIFIED="1619489917538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../BaiduNetdiskDownload/python18/05python和linux高级编程阶段/1-6代码和截图/11-python提高-2/代码" />
     <SUITE FILE_PATH="coverage/python_advanced_code$09_async_await.coverage" NAME="09_async_await Coverage Results" MODIFIED="1612411746244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main.coverage" NAME="main Coverage Results" MODIFIED="1620635036638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/02_Adapter" />
-    <SUITE FILE_PATH="coverage/python_advanced_code$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1620638058061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight" />
+    <SUITE FILE_PATH="coverage/python_advanced_code$main__4_.coverage" NAME="main (4) Coverage Results" MODIFIED="1620696242498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_defign_style/02_object_structure/07_Flyweight" />
     <SUITE FILE_PATH="coverage/python_advanced_code$re_test.coverage" NAME="re_test Coverage Results" MODIFIED="1619511254389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter14_re" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_decorator_application.coverage" NAME="04_decorator_application Coverage Results" MODIFIED="1618220873862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_args_kwargs.coverage" NAME="05_args_kwargs Coverage Results" MODIFIED="1619497208673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
