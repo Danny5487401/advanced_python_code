@@ -1,12 +1,3 @@
-# encoding: utf-8
-'''
-@contact: 1257309054@qq.com
-@wechat: 1257309054
-@Software: PyCharm
-@file: 19、访问者模式.py
-@time: 2020/3/15 19:26
-@author:LDC
-'''
 """
 访问者模式
 安排不同年份的财务报表给不同的角色分析，这就是访问者模式的魅力；
