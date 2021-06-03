@@ -28,6 +28,7 @@
 10. 多继承及mixin编程模式
 11. 上下文管理器with简化try_except_finaly
 12. @contextlib.contextmanager修饰生成器用处
+13. eval()动态调用函数和方法
 ---
 ## 第四章：数据结构sequence
 1. 序列类分类
