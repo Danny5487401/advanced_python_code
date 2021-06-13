@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter13_design_style/01_object_construction/00_simple_factory/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter13_design_style/01_object_construction/00_simple_factory/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter13_design_style/01_object_construction/00_simple_factory/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter13_design_style/01_object_construction/00_simple_factory/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +425,7 @@
       <workItem from="1621326955854" duration="63000" />
       <workItem from="1622685658651" duration="3569000" />
       <workItem from="1622697783154" duration="24000" />
-      <workItem from="1623570415760" duration="762000" />
+      <workItem from="1623570415760" duration="1119000" />
     </task>
     <servers />
   </component>

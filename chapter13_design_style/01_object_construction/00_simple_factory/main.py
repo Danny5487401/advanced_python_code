@@ -42,7 +42,9 @@ class ShapeFactory(object):
             return Rectangle()
         else:
             return None
+# 缺点： 扩展时违背了封闭原则
 
 fac = ShapeFactory()
 obj = fac.create('Circle')
 obj.draw()
+
