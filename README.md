@@ -1,28 +1,30 @@
-
 # ***Python高级编程***
-**python3.7**
+**python3.7：代码Env环境为mac**
+ 
 ---
 ![高级ython](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1443427057,959339510&fm=26&gp=0.jpg)
-## 第一章：一切皆对象
 
-1. 函数和类都是对象
-2. type是一个类，同时type也是一个基类
-3. 对象三个特征:身份，类型，值
+## 第一章：一切皆对象
+![](chapter01__all_is_obj/type_class_obj.png)
+1. [函数和类都是对象](chapter01__all_is_obj/01_all_is_object.py)
+2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01__all_is_obj/02_type_object_class.py)
+3. [对象三个特征:身份，类型，值](chapter01__all_is_obj/03_category.md)
 ---
+
 ## 第二章：魔法方法
-1. __getitem__实现支持切片
-2. len()调用：首先调用__len__函数，再调用__getitem__
-3. 魔法方法分类:非数学运算，数学运算
-4. 类实例化时__init__与__enter__调用顺序
+1. [通过__getitem__实现对象切片](chapter02__magic_method/01_magic_method.py)
+2. [数据模型-->查看len()调用顺序：首先调用__len__函数，再调用__getitem__](chapter02__magic_method/02_data_model.py)
+3. [魔法方法分类:**数学运算**和**非数学运算**-->熟悉len()的魔法方法__str__](chapter02__magic_method/03_magic_methods_list.py)
+4. [类实例化时__init__与__enter__，__exit__和__del__调用顺序,以及with的对应魔法方法糖](chapter02__magic_method/04__init__n__enter__sequence.py)
 ---
 ## 第三章：面向对象编程
-1. 鸭子类型  
+1. [鸭子类型](chapter03_Class/01_duck_category.py)
 2. 抽象基类
 3. 类型判断isinstance和type
 4. 类变量
-5. 对象变量的查找顺序     
-6. 静态方法、类方法、实例方法     
-7. 数据封装和私有属性     
+5. 对象变量的查找顺序
+6. 静态方法、类方法、实例方法
+7. 数据封装和私有属性
 8. 对象的自省机制
 9. 父类调用查找机制super
 10. 多继承及mixin编程模式
@@ -112,7 +114,7 @@
    1.2 抽象工厂模式  
    1.3 建造者模式   
    1.4 原型模式  
-   1.5 单例模式 
+   1.5 单例模式
 2. 设计模式二：结构型
 3. 设计模式二：行为型
 ---

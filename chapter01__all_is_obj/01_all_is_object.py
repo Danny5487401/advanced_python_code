@@ -1,9 +1,8 @@
 # 函数和类都是对象
-
-
 def ask(name="danny1"):
     print(name)
     return "danny3"
+
 
 class Person:
     def __init__(self):
@@ -16,16 +15,18 @@ class Person:
 def docorator_func():
     print("装饰器")
     return ask
-# 1. 函数赋值给一个变量
-# myfuc = ask
-# myfuc("JOY")
 
-# myclass = Person
-# # 实例化
-# myclass()
+
+# 1. 函数赋值给一个变量
+myfuc = ask
+myfuc("JOY")
+
+# 类赋值给一个变量
+myclass = Person
+myclass()
 
 # 2. 放在集合当中
-obj_list =[]
+obj_list = []
 obj_list.append(ask)
 obj_list.append(Person)
 for item in obj_list:
@@ -37,7 +38,6 @@ danny2
 call str # __str__结果
 """
 
-# 返回一个函数
-print("-----------")
+# 3. 返回一个函数给一个变量
 my_ask = docorator_func()
 my_ask("tom")

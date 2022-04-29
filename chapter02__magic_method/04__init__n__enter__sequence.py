@@ -1,4 +1,4 @@
-#先__init__ 再__enter__
+# 先__init__ 再__enter__
 
 class C:
     def __init__(self):
@@ -14,7 +14,6 @@ class C:
         print("del")
 
 
-
 # if __name__ == '__main__':
 #     a = C() #init
 #     print("st")
@@ -25,9 +24,9 @@ class C:
 #     print("ed")
 
 if __name__ == '__main__':
-    print("st")
+    print("---start---")
     with C():
         print("hi")
     with C():
         print("hi")
-    print("ed")
+    print("---end---")
