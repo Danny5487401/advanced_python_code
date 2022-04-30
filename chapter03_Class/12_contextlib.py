@@ -8,6 +8,7 @@ import contextlib
 
 """
 
+
 # 必须是一个生成器
 @contextlib.contextmanager
 def file_open(file_name):
@@ -21,4 +22,3 @@ def file_open(file_name):
 
 with file_open("danny") as f:
     print("file procesing")
-

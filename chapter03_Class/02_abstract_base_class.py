@@ -1,4 +1,4 @@
-# abc 对应java的接口  interface，go的interface
+# abc 对应java的接口interface，go的interface
 
 # 抽象基类不能实例化
 # 抽象基类用于判断类型和实现接口（建议用mixin）
@@ -19,7 +19,7 @@ class Company:
 company = Company(["danny", "tom", "joy"])
 
 # 1. 检查某个类是否有某种方法
-# print(hasattr(company,"__len__"))
+print(hasattr(company, "__len__"))
 # 判断类型
 from collections.abc import Sized
 
@@ -27,11 +27,12 @@ print(isinstance(company, Sized))
 print(len(company))
 
 
-# 2. 需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memerycache)
+# 2. 需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memcache)
 # 需要设计一个抽象基类，指定子类必须实现某些方法
-# 模拟一个抽象基类
 
-class CacheBase():
+## 方式一
+# 模拟一个抽象基类
+class CacheBase:
     def get(self, key):
         raise NotImplementedError
 
@@ -53,6 +54,7 @@ redis_cache.set("key", "value")
 import abc
 
 
+## 方式二：使用abc
 class CacheBase1(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def get(self, key):

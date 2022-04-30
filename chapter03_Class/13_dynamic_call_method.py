@@ -15,6 +15,7 @@ eval函数也可以被用来执行任意的代码对象（如那些由compile()�
 def function2(name, age):
     print("name: %s, age: %s" % (name, age))
 
+
 # 动态调用方法
 class Test(object):
     states = ["大于等于零", "大于等于二"]
@@ -48,4 +49,3 @@ if __name__ == '__main__':
     test.predict(x=-1)
     test.predict(x=1)
     test.predict(x=2)
-

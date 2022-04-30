@@ -18,19 +18,19 @@
 4. [类实例化时__init__与__enter__，__exit__和__del__调用顺序,以及with的对应魔法方法糖](chapter02__magic_method/04__init__n__enter__sequence.py)
 ---
 ## 第三章：面向对象编程
-1. [鸭子类型](chapter03_Class/01_duck_category.py)
-2. 抽象基类
-3. 类型判断isinstance和type
-4. 类变量
-5. 对象变量的查找顺序
-6. 静态方法、类方法、实例方法
-7. 数据封装和私有属性
-8. 对象的自省机制
-9. 父类调用查找机制super
-10. 多继承及mixin编程模式
-11. 上下文管理器with简化try_except_finaly
-12. @contextlib.contextmanager修饰生成器用处
-13. eval()动态调用函数和方法
+1.  [鸭子类型](chapter03_Class/01_duck_category.py)
+2.  [抽象基类abc.ABCMeta和抽象方法abc.abstractmethod](chapter03_Class/02_abstract_base_class.py)
+3.  [类型判断isinstance,*type配合is*与*==*使用](chapter03_Class/03_isinstance_type.py)
+4.  [类变量与实例属性](chapter03_Class/04_class_object_params.py)
+5.  [对象变量的查找顺序__mro__](chapter03_Class/05_class_object_attr_search_sequence.py)
+6.  [静态方法@staticmethod-->类方法@classmethod、实例方法](chapter03_Class/06_class_quiet_object_method.py)
+7.  [数据封装和私有属性变形](chapter03_Class/07_private_method.py)
+8.  [对象的自省机制:类和对象的__dict__属性](chapter03_Class/08_self_ex.py)
+9.  [父类调用查找机制super:涉及mro的算法](chapter03_Class/09_super.py)
+10. [多继承及mixin编程模式](chapter03_Class/10_DRF_mixin.md)
+11. [上下文管理器协议with:简化try_except_finaly和对象初始化和销毁](chapter03_Class/11_with.py)
+12. [@contextlib.contextmanager修饰生成器:省略了 __enter__() / __exit__() 的编写](chapter03_Class/12_contextlib.py)
+13. [eval()动态调用函数和方法](chapter03_Class/13_dynamic_call_method.py)
 ---
 ## 第四章：数据结构sequence
 1. 序列类分类

@@ -5,7 +5,7 @@ def exec_with():
         return 1
     except KeyError as e:
         print("keyerror")
-        return  2
+        return 2
     else:
         print("ok")
         return 3
@@ -13,9 +13,10 @@ def exec_with():
         print("finally")
         # return 4
 
+
 # with 简化try finally
 # 简化生成类，用contextlib，但必须是生成器
-class Sample():
+class Sample:
     # 上下文管理器协议
     def __enter__(self):
         print("enter")

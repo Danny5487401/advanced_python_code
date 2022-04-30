@@ -13,13 +13,16 @@
 
 # super的执行顺序：涉及mro的算法
 from threading import Thread
+
+
 class Mythread(Thread):
     # 父类有name
-    def __init__(self,name,user):
+    def __init__(self, name, user):
         self.user = user
         # self.name = name
         # 调用父类进行验证
         super().__init__(name=name)
+
 
 class A:
     def __init__(self):
@@ -37,12 +40,14 @@ class C(A):
         print("C")
         super().__init__()
 
-class D(B,C):
+
+class D(B, C):
     def __init__(self):
         print("D")
-        super(D,self).__init__()
+        super(D, self).__init__()
+
 
 if __name__ == "__main__":
     # b = B()
     # 不能理解就调用父类，涉及mro
-    d =D()
+    d = D()
