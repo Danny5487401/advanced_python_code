@@ -1,6 +1,6 @@
 # dict 性能远高于list
-#list 随着list数据增大，查找时间增大
-#dict 随着dict数据增大，查找时间几乎不变，因为数组偏移量，连续
+# list 随着list数据增大，查找时间增大
+# dict 随着dict数据增大，查找时间几乎不变，因为数组偏移量，连续
 # dict的key,和set，都必须是可hash的，不可变对象，str,frozenset,tuple,__hash__
 # dict实现原理：hash表，key必须是可hash的, 解决hash冲突是进行多位运算，有偏移量
 # 缺点：dict内存花销大，但查询速度快，自定义的对象或者python的内部对象都是用dict封装的
@@ -53,7 +53,7 @@ def load_dict_data(total_nums, target_nums):
                 break
     all_data_list = list(all_data)
     for x in range(target_nums):
-        random_index = randint(0, total_nums-1)
+        random_index = randint(0, total_nums - 1)
         if all_data_list[random_index] not in target_data:
             target_data.append(all_data_list[random_index])
             if len(target_data) == target_nums:
@@ -63,7 +63,7 @@ def load_dict_data(total_nums, target_nums):
 
 
 def find_test(all_data, target_data):
-    #测试运行时间
+    # 测试运行时间
     test_times = 100
     total_times = 0
     import time
@@ -75,7 +75,7 @@ def find_test(all_data, target_data):
                 find += 1
         last_time = time.time() - start_time
         total_times += last_time
-    return total_times/test_times
+    return total_times / test_times
 
 
 if __name__ == "__main__":
@@ -83,12 +83,8 @@ if __name__ == "__main__":
     # all_data, target_data = load_list_data(100000, 1000)
     # all_data, target_data = load_list_data(1000000, 1000)
 
-
     # all_data, target_data = load_dict_data(10000, 1000)
     # all_data, target_data = load_dict_data(100000, 1000)
     # all_data, target_data = load_dict_data(1000000, 1000)
     last_time = find_test(all_data, target_data)
     print(last_time)
-
-
-

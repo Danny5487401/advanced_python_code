@@ -1,12 +1,12 @@
-# set 集合 frozenset不可变集合,无序不重复  性能高，用哈希
-# 方法一
+# set 集合 ,frozenset不可变集合,无序不重复  性能高，用哈希
+# 方法一:set 集合初始化
 s = set("aberr")
 # print(type(s))
-# 方法二
+# 方法二：set 集合初始化
 s1 = {"r","g"}
-# 添加数据一
+# 方法一:添加数据
 s1.add("k")
-# 添加数据二
+# 方法二：添加数据
 anothser_et = set("opq")
 s1.update(anothser_et)
 # print(type(s1)) #<class 'set'>

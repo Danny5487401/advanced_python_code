@@ -2,7 +2,6 @@ import numbers
 
 
 class Group:
-
     # 支持切片操作
 
     def __init__(self,group_name,company_name,staffs):

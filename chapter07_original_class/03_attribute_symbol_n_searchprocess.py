@@ -13,7 +13,8 @@ user = User(),那么user.age顺序如下：
 4.最后如果User有__getattr__方法，调用__getattr__方法，否则调用AttributeError
 """
 import numbers
-from datetime import date,datetime
+from datetime import date, datetime
+
 
 # 类型检查,完成get,set_delete魔法方法
 class IntField:
@@ -22,10 +23,10 @@ class IntField:
         return self.value
 
     def __set__(self, instance, value):
-        if not isinstance(value,numbers.Integral):
+        if not isinstance(value, numbers.Integral):
             raise ValueError("int value need")
         # 保存值
-        if value <0:
+        if value < 0:
             raise ValueError("POSITIVE value needed")
         # 如果instance.age 会死循环
         self.value = value
@@ -33,11 +34,13 @@ class IntField:
     def __delete__(self, instance):
         pass
 
+
 # 属性描述符
 class NonDataIntFied:
     # 非数据属性描述符
     def __get__(self, instance, owner):
         pass
+
 
 class User:
     # 属性描述符对象

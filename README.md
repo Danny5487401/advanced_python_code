@@ -33,30 +33,30 @@
 13. [eval()动态调用函数和方法](chapter03_Class/13_dynamic_call_method.py)
 ---
 ## 第四章：数据结构sequence
-1. 序列类分类
-2. 可变与不可变序列类魔法方法
-3. append和extend
-4. 类实现slice
-5. bisect有序序列
-6. python重写c语言的array
-7. 列表,集合,字典推导式
+1. [序列类分类](chapter04_sequence/01_sequence_cate.md)
+2. [可变与不可变序列类魔法方法](chapter04_sequence/02_sequence_discipline.md)
+3. [append和extend本质](chapter04_sequence/03_append_extend.py)
+4. [类实现切片操作的条件](chapter04_sequence/04_slice_obj.py)
+5. [bisect有序序列](chapter04_sequence/05_bisect.py)
+6. [python官方重写c语言的array](chapter04_sequence/06_list_application.py)
+7. [列表,集合,字典推导式](chapter04_sequence/07_list_gen.py)
 ---
 ## 第五章：数据结构集合和字典
-1. mapping类型
-2. dict.fromkeys()和dict.setdefault()
-3. UserDict继承, defaultdict和OrderedDict
-4. set与frozenset
-5. dict性能远高于list
+1. [Mapping, MutableMapping与dict关系](chapter05_set_dict/01_dict_abc.py)
+2. [dict.fromkeys()可迭代对象变成keys 和 dict.setdefault()](chapter05_set_dict/02_dict_method.py)
+3. [不继承dict，应继承UserDict, defaultdict和OrderedDict](chapter05_set_dict/03_dict_subclass.py)
+4. [set与frozenset相关运算](chapter05_set_dict/04_set_frozenset.py)
+5. [dict性能远高于list](chapter05_set_dict/05_dict_performance.py)
 ---
 ## 第六章：变量，参数及垃圾回收机制
-1. Python变量实际是一个指针
-2. ==与is区别
-3. GC垃圾回收
-4. 参数传递list时的经典错误
-5. 不定长参数args与kwargs
+1. [Python变量实际是一个指针](chapter06_object_use_n_garbage_recycle/01_what_is_var.py)
+2. [==与is区别](chapter06_object_use_n_garbage_recycle/02_difference_==_is.py)
+3. [GC垃圾回收及sys.getrefcount获取引用数目](chapter06_object_use_n_garbage_recycle/03_relation_del_garbage_recycle.py)
+4. [参数传递list时的经典错误](chapter06_object_use_n_garbage_recycle/04_classic_error.py)
+5. [不定长参数args与kwargs](chapter06_object_use_n_garbage_recycle/05_args_kwargs.py)
 ---
 ## 第七章：元类
-1. property动态属性
+1. [property属性描述符](chapter07_original_class/01_property.py)
 2. __getattr__,__getattribute__区别
 3. 数据描述符及属性的查找顺序
 4. 类的生成过程__new__和__init__
