@@ -57,11 +57,11 @@
 ---
 ## 第七章：元类
 1. [property属性描述符](chapter07_original_class/01_property.py)
-2. __getattr__,__getattribute__区别
-3. 数据描述符及属性的查找顺序
-4. 类的生成过程__new__和__init__
-5. 元类metaclass控制实例化过程,动态创建类,type生成类
-6. 元类实现ORM
+2. [__getattr__与__getattribute__在获取属性时优先级](chapter07_original_class/02_getattr_getattribute.py)
+3. [数据描述符与非数据描述符如何影响属性的查找顺序](chapter07_original_class/03_attribute_symbol_n_searchprocess.py)
+4. [类的生成过程__new__和__init__关系](chapter07_original_class/04_new_init_.py)
+5. [元类metaclass控制实例化过程,动态创建类,type生成类](chapter07_original_class/05_metaclass.py)
+6. [元类实现ORM](chapter07_original_class/06_orm.py)
 ---
 ## 第八章：迭代器及生成器
 1. 迭代协议__iter__与迭代器

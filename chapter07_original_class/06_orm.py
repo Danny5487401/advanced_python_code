@@ -8,7 +8,7 @@ class Field:
 
 
 class IntField(Field):
-    def __init__(self,db_column, min_value=None, max_value=None):
+    def __init__(self, db_column, min_value=None, max_value=None):
         self._value = None
         self.min_value = min_value
         self.max_value = max_value
@@ -34,10 +34,10 @@ class IntField(Field):
         return self._value
 
     def __set__(self, instance, value):
-        if not isinstance(value,numbers.Integral):
+        if not isinstance(value, numbers.Integral):
             raise ValueError("int value need")
         # 保存值
-        if value <0:
+        if value < 0:
             raise ValueError("POSITIVE value needed")
         if value < self.min_value or value > self.max_value:
             raise ValueError("value must be between min_value and max_value")
@@ -49,7 +49,7 @@ class IntField(Field):
 
 
 class CharField(Field):
-    def __init__(self,db_column, max_length = None):
+    def __init__(self, db_column, max_length=None):
         self._value = None
         self.db_column = db_column
         self.max_length = max_length
@@ -72,15 +72,15 @@ class ModelMetaClass(type):
         if name == "BaseModel":
             return super().__new__(cls, name, bases, attrs, *args, **kwargs)
         fields = {}
-        for key,value in attrs.items():
+        for key, value in attrs.items():
             # 判断是不是表中的列
-            if isinstance(value,Field):
+            if isinstance(value, Field):
                 fields[key] = value
         attrs_meta = attrs.get("Meta", None)
         _meta = {}
         db_table = name.lower()
         if attrs_meta is not None:
-            table = getattr(attrs_meta,"db_table", None)
+            table = getattr(attrs_meta, "db_table", None)
         if db_table is not None:
             db_table = table
         _meta["db_table"] = db_table
@@ -91,7 +91,7 @@ class ModelMetaClass(type):
 
 
 class BaseModel(metaclass=ModelMetaClass):
-    def __init__(self,*args, **kwargs):
+    def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
         return super().__init__()
@@ -99,7 +99,7 @@ class BaseModel(metaclass=ModelMetaClass):
     def save(self):
         fields = []
         values = []
-        for key,value in self.fields.items():
+        for key, value in self.fields.items():
             db_column = value.db_column
             if db_column is None:
                 db_column = key.lower
@@ -109,8 +109,8 @@ class BaseModel(metaclass=ModelMetaClass):
 
         # sql = 'insert user(name,age) value("danny",30)'
         # .join 要同种类型
-        sql = 'insert {db_table}({fields}) values({values})' .format(db_table=self._meta["db_table"],
-                                                                     fields="," .join(fields), values="," .join(values))
+        sql = 'insert {db_table}({fields}) values({values})'.format(db_table=self._meta["db_table"],
+                                                                    fields=",".join(fields), values=",".join(values))
         pass
 
 
@@ -126,12 +126,11 @@ class User(BaseModel):
         db_table = "user"
 
 
-
 if __name__ == "__main__":
     # 方法一
     # user = User()
     # user.name ="danny"
     # user.age =26
     # 方法二
-    user = User(name = "danny2",age=11)
+    user = User(name="danny2", age=11)
     user.save()

@@ -8,11 +8,11 @@ class User:
         return super().__new__(cls)
 
     # 对象的生成对象
-    def __init__(self,name):
+    def __init__(self, name):
         print("in init")
         self.name = name
 
 
 if __name__ == "__main__":
     # user = User("danny")
-    user = User(name = "danny2")
+    user = User(name="danny2")

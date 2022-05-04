@@ -2,9 +2,11 @@
 
 # __getattr__ 在查找不到属性的时候调用
 
-from datetime import date,datetime
+from datetime import date, datetime
+
+
 class User:
-    def __init__(self,name,birthday,info):
+    def __init__(self, name, birthday, info):
         self.name = name
         self.birthday = birthday
         self.info = info
@@ -20,9 +22,8 @@ class User:
     #     return "danny1"
 
 
-
 if __name__ == "__main__":
-    user = User("danny", date(year=2000, month=1, day=11),info = {"company": "xiada"} )
+    user = User("danny", date(year=2000, month=1, day=11), info={"company": "xiada"})
     # 没写 __getattr__
     # user.age # AttributeError: 'User' object has no attribute 'age'
     # 写了 __getattr__

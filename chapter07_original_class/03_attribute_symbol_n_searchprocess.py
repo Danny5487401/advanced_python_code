@@ -1,4 +1,12 @@
 # 属性描述符
+"""
+描述符是什么:描述符本质就是一个新式类,在这个新式类中,至少实现了__get__(),__set__(),__delete__()中的一个,这也被称为描述符协议
+__get__():调用一个属性时,触发
+__set__():为一个属性赋值时,触发
+__delete__():采用del删除属性时,触发
+
+"""
+
 """查找过程：
 如果user 是某个类的实例，那么user.age(以及等价的getattr((user,"age"))
 首先调用__getattibute__,
@@ -18,7 +26,7 @@ from datetime import date, datetime
 
 # 类型检查,完成get,set_delete魔法方法
 class IntField:
-    # 数据描述符
+    # 数据描述符：__get__    __set__
     def __get__(self, instance, owner):
         return self.value
 
@@ -36,8 +44,8 @@ class IntField:
 
 
 # 属性描述符
-class NonDataIntFied:
-    # 非数据属性描述符
+class NonDataIntField:
+    # 非数据属性描述符：　　没有 __set__
     def __get__(self, instance, owner):
         pass
 
@@ -45,7 +53,7 @@ class NonDataIntFied:
 class User:
     # 属性描述符对象
     age = IntField()
-    # age = NonDataIntFied()
+    # age = NonDataIntField()
 
 
 # 数据库中的表对应类
