@@ -1,4 +1,4 @@
-#带参数和返回值的装饰器
+# 带参数和返回值的装饰器
 
 def decorator(func):
     def inner(num1, num2):

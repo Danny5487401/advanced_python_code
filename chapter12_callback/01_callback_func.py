@@ -19,22 +19,21 @@ class Person:
     # 方法中最终执行回调的逻辑
     def callback(self, data, param=None):
         print("开始执行类成员回调函数")
-        print("类方法是："+self.__class__.__name__ + " callback:")
+        print("类方法是：" + self.__class__.__name__ + " callback:")
         print("data: " + str(data))
         print("param: " + str(param))
         print("结束执行类成员回调函数")
         print("\n")
 
-    #类函数中传入普通函数
+    # 类函数中传入普通函数
     def do_call_func(self, func, data, param=None):
-        print("类方法是："+self.__class__.__name__ + " do_call_func:")
+        print("类方法是：" + self.__class__.__name__ + " do_call_func:")
         func(data, param)
 
     # 类函数中传入类成员函数
     def do_call_class_func(self, func, data, obj, param=None):
-        print("类方法是："+self.__class__.__name__ + " do_call_class_func:")
+        print("类方法是：" + self.__class__.__name__ + " do_call_class_func:")
         func(obj, data, param)
-
 
 
 # 普通函数中最终执行回调的逻辑

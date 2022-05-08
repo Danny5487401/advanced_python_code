@@ -15,26 +15,28 @@ def fib(index):
     if index <= 2:
         return 1
     else:
-        return fib(index-1) + fib(index-2)
+        return fib(index - 1) + fib(index - 2)
+
 
 # 打印过程
 def fib2(index):
     res_list = []
-    n,a,b =0,0,1
-    while n <index:
+    n, a, b = 0, 0, 1
+    while n < index:
         res_list.append(b)
-        a,b = b, a+b
+        a, b = b, a + b
         n += 1
     return res_list
 
 
 # 惰性求值,显示过程
 def fib3(index):
-    n,a,b = 0,0,1
-    while n <index:
+    n, a, b = 0, 0, 1
+    while n < index:
         yield b
-        a,b = b, a+b
+        a, b = b, a + b
         n += 1
+
 
 # 对比
 def func():
@@ -53,4 +55,3 @@ if __name__ == "__main__":
     for data in fib3(5):
         print(data)
     pass
-
