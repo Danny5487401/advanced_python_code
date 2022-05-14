@@ -1,0 +1,29 @@
+{
+  "name": "advanced_python_code",
+  "version": "1.0.0",
+  "description": "**python3.7：代码Env环境为mac**",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danny5487401/advanced_python_code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danny5487401/advanced_python_code/issues"
+  },
+  "homepage": "https://github.com/Danny5487401/advanced_python_code#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
