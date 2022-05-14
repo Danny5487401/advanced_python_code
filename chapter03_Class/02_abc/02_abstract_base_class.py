@@ -50,7 +50,7 @@ class RedisCache1(CacheBase1):
         pass
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     # 方法二：初始化就会报异常
     redis_cache1 = RedisCache1()
     redis_cache1.set("hello","world")
