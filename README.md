@@ -19,7 +19,7 @@
 ---
 ## 第三章：面向对象编程
 1.  [鸭子类型](chapter03_Class/01_duck_category.py)
-2.  [抽象基类abc.ABCMeta和抽象方法abc.abstractmethod](chapter03_Class/02_abstract_base_class.py)
+2.  [抽象基类abc.ABCMeta和抽象方法abc.abstractmethod](chapter03_Class/02_abc/01_ABCMeta.md)
 3.  [类型判断isinstance,*type配合is*与*==*使用](chapter03_Class/03_isinstance_type.py)
 4.  [类变量与实例属性](chapter03_Class/04_class_object_params.py)
 5.  [对象变量的查找顺序__mro__](chapter03_Class/05_class_object_attr_search_sequence.py)

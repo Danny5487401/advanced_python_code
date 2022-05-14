@@ -4,30 +4,7 @@
 # 抽象基类用于判断类型和实现接口（建议用mixin）
 
 
-class Company:
-    def __init__(self, employee_list):
-        self.employee = employee_list
-
-    def __getitem__(self, item):
-        # item是索引  变成可迭代对象
-        return self.employee[item]
-
-    def __len__(self):
-        return len(self.employee)
-
-
-company = Company(["danny", "tom", "joy"])
-
-# 1. 检查某个类是否有某种方法
-print(hasattr(company, "__len__"))
-# 判断类型
-from collections.abc import Sized
-
-print(isinstance(company, Sized))
-print(len(company))
-
-
-# 2. 需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memcache)
+#  需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memcache)
 # 需要设计一个抽象基类，指定子类必须实现某些方法
 
 ## 方式一
@@ -73,5 +50,8 @@ class RedisCache1(CacheBase1):
         pass
 
 
-# 方法二：初始化就会报异常
-redis_cache = RedisCache1()
+if __name__ == "__main__":
+    # 方法二：初始化就会报异常
+    redis_cache1 = RedisCache1()
+    redis_cache1.set("hello","world")
+
