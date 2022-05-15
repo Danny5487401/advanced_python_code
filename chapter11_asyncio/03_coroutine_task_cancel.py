@@ -2,6 +2,7 @@
 
 import asyncio
 
+
 # loop = asyncio.get_event_loop()
 # 永久运行
 # loop.run_forever()
@@ -14,18 +15,18 @@ import asyncio
 async def get_url(sleep_time):
     print("waiting")
     await asyncio.sleep(sleep_time)
-    print("done after {} s" .format(sleep_time))
+    print("done after {} s".format(sleep_time))
 
 
 if __name__ == "__main__":
     task1 = get_url(1)
     task2 = get_url(2)
     task3 = get_url(3)
-    tasks = [task1,task2,task3]
+    tasks = [task1, task2, task3]
     loop = asyncio.get_event_loop()
     try:
         loop.run_until_complete(asyncio.wait(tasks))
-    except KeyboardInterrupt as e: # ctrl +c
+    except KeyboardInterrupt as e:  # ctrl +c
         all_tasks = asyncio.Task.all_tasks()  # 源码tasks.py
         for task in all_tasks:
             print("cancel task")
