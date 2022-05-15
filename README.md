@@ -73,7 +73,7 @@
 ## 第九章：多进程多线程
 1. GIL和多线程
 2. 线程通信-共享变量、Queue
-3. 线程同步-Lock、RLock、Condition、Semaphor
+3. 线程同步-Lock、RLock、Condition、Semaphore
 4. 线程池和源码分析-ThreadPoolExecutor
 5. 多进程-multiprocessing
 6. 进程间通信
@@ -90,6 +90,7 @@
 9. 生成器转协程原因：有状态,可以暂停,挂起,创建
 10. async和await关键词,协程装饰器@types.coroutine
 ---
+
 ## [第十一章：协程库Asyncio](chapter11_asyncio/asyncio.md)
 1. [事件循环添加回调函数,并使用偏函数改造函数如参](chapter11_asyncio/01_loop.py)
 2. [asyncio.wait()对比asyncio.gather()](chapter11_asyncio/02_wait_gather_loop.py)
@@ -99,14 +100,20 @@
 6. [线程中集成阻塞IO](chapter11_asyncio/06_thread_asyncio_together.py)
 7. [asyncio中tcp使用](chapter11_asyncio/07_asyncio_http.py)
 ---
+
 ## 第十二章：函数回调及装饰器
-1. [回调函数](chapter12_callback/01_callback_func.py)
-2. [装饰器基本使用](chapter12_callback/02_decorator.py)
-3. [装饰器语法糖@](chapter12_callback/03_decorator_@signal.py)
-4. [装饰器应用](chapter12_callback/04_decorator_application.py)
-5. [装饰器高级：带参与不带参，返回值与无返回值](chapter12_callback/05_decorator_with_params_n_returnValue.py)
-6. [类装饰器](chapter12_callback/06_class_decorator.py)
+1.  [回调函数](chapter12_callback/01_callback_func.py)
+2.  [装饰器基本使用](chapter12_callback/02_decorator.py)
+3.  [装饰器语法糖@](chapter12_callback/03_decorator_@signal.py)
+4.  [装饰器应用](chapter12_callback/04_decorator_application.py)
+5.  [装饰器高级：带参与不带参，返回值与无返回值](chapter12_callback/05_decorator_with_params_n_returnValue.py)
+6.  [装饰器装饰同一个类里的函数:修改类里的self属性值](chapter12_callback/06_class_decorator.py)
+7.  [装饰带不定长参数的函数](chapter12_callback/07_decorate_func_with_args.py)
+8.  [装饰器带参数](chapter12_callback/08_args_decorator.py)
+9.  [定义一个类装饰器，装饰函数，默认调用__call__方法](chapter12_callback/09_class_decorator_in_class.py)
+10. [定义一个类装饰器，装饰类中的函数，默认调用__get__方法](chapter12_callback/10_class_decorator_in_func.py)
 ---
+
 ## 第十三章：设计模式
 1. 设计模式一：创建型   
    1.0 简单工厂模式  

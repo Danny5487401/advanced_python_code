@@ -1,21 +1,30 @@
-# 类装饰器
-# Note: 函数之所以能够调用，是因为函数内部实现了 __call__ 方法
+#     装饰器装饰同一个类里的函数
+#  背景： 想要通过装饰器修改类里的self属性值。
+class Buy(object):
+    def __init__(self):
+        self.reset = True  # 定义一个类属性，稍后在装饰器里更改
+        self.func = True
 
-class MyDecorator(object):
-    def __init__(self, func):
-        self.__func = func
+    # 在类里定义一个装饰器
+    def clothes(func):  # func接收body
+        def ware(self, *args, **kwargs):  # self,接收body里的self,也就是类实例
+            print('This is a decrator!')
+            if self.reset == True:  # 判断类属性
+                print('Reset is Ture, change Func..')
+                self.func = False  # 修改类属性
+            else:
+                print('reset is False.')
 
-    # 实现__call__方法，表示对象是一个可调用对象，可以像调用函数一样进行调用
-    def __call__(self, *args, **kwargs):
-        # 对已有函数进行封装
-        print('马上就有下班啦')
-        self.__func()
+            return func(self, *args, **kwargs)
+
+        return ware
+
+    @clothes
+    def body(self):
+        print('The body feels could!')
 
 
-@MyDecorator  # @MyDecorator => show = MyDecorator(show)
-def show():
-    print('快要下雪啦')
-
-
-# 执行show，就相当于执行MyDecorator类创建的实例对象，show() => 对象()
-show()
+if __name__ == "__main__":
+    b = Buy()  # 实例化类
+    b.body()  # 运行body
+    print(b.func)  # 查看更改后的self.func值，是False，说明修改完成
