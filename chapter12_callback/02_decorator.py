@@ -3,6 +3,8 @@
 """
 业务逻辑：登录之后才能评论
 """
+
+
 # 定义装饰器
 def decorator(func):
     def inner():
@@ -22,4 +24,3 @@ comment = decorator(comment)
 
 # 调用方式不变
 comment()
-

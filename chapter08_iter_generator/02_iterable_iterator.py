@@ -2,14 +2,13 @@ from collections.abc import Iterator
 
 
 class Company:
-    def __init__(self,employee_list):
+    def __init__(self, employee_list):
         self.employee = employee_list
 
     def __iter__(self):
         # next 让外部去处理
         return MyIterator(self.employee)
     #     return 1 # TypeError: iter() returned non-iterator of type 'int'
-
 
     #
     # def __getitem__(self, item):
@@ -35,12 +34,13 @@ class MyIterator(Iterator):
         self.index += 1
         return word
 
+
 if __name__ == "__main__":
-    company = Company(["danny","tom","joy"])
+    company = Company(["danny", "tom", "joy"])
     my_itor = iter(company)
     while True:
         try:
-            print( next(my_itor))
+            print(next(my_itor))
         except StopIteration:
             break
 
