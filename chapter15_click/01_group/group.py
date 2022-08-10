@@ -22,13 +22,16 @@ import click
 def cli():
     pass
 
+
 @cli.command()
 def initdb():
-    click.echo('Initialized the database')
+    click.echo("Initialized the database")
+
 
 @cli.command()
 def dropdb():
-    click.echo('Dropped the database')
+    click.echo("Dropped the database")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     cli()

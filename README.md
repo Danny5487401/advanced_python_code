@@ -4,6 +4,10 @@
 ---
 ![高级ython](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1443427057,959339510&fm=26&gp=0.jpg)
 
+## 前置配置
+- blackd 格式化配置
+![img.png](.assets/img/blackd_settings.png)
+
 ## 第一章：一切皆对象
 ![](chapter01__all_is_obj/type_class_obj.png)
 1. [函数和类都是对象](chapter01__all_is_obj/01_all_is_object.py)
