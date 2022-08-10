@@ -23,8 +23,7 @@ async def get_url(url):
     # except BlockingIOError as e:
     #     pass
 
-    reader, writer = await asyncio.open_connection(host,80)
-
+    reader, writer = await asyncio.open_connection(host, 80)
 
     # 不停的询问连接是否建立好，需要while不挺的去检查状态
     # 做计算任务或者再次发起其他的连接需求
@@ -42,7 +41,7 @@ async def get_url(url):
     async for raw_line in reader:
         data = raw_line.decode("utf8")
         all_lines.append(data)
-    html = "" .join(all_lines)
+    html = "".join(all_lines)
     html = html.split("\r\n\r\n")[1]
     # print(html)
     return html
@@ -63,6 +62,7 @@ async def get_url(url):
 
     # print(html_data)
     # client.close()
+
 
 async def main(loop):
     tasks = []

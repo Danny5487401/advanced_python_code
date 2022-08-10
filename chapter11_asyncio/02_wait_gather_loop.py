@@ -2,18 +2,19 @@
 import time
 import asyncio
 
+
 # 带返回值
 async def get_html(url):
     print("start get url")
     await asyncio.sleep(2)
     return "danny"
 
+
 # def call_back(): 等于call_back(future)
 # 默认无参数的情况
 def call_back(future):
     # 假设完成后发送邮件等需求
     print("send email to danny")
-
 
 
 if __name__ == "__main__":
@@ -47,4 +48,4 @@ if __name__ == "__main__":
     group2 = [get_html("www.jd.com") for i in range(2)]
     group1 = asyncio.gather(*group1)
     group2 = asyncio.gather(*group2)
-    loop.run_until_complete(asyncio.gather(group1,group2))
+    loop.run_until_complete(asyncio.gather(group1, group2))
