@@ -83,16 +83,18 @@
 6. 进程间通信
 ---
 ## 第十章：IO模型
-1. 异步编程概念
-2. c10K及Unix下五种I/O模型,非阻塞式IO实现HTTP请求,使用select完成http请求
-3. c10M与协程产生
-4. 生成器关闭close
-5. 生成器传值throw
-6. yield_from在调用方main与子生成器之间建立一个双向通道
-7. yield from 与 yield对比
-8. yield_from原理
-9. 生成器转协程原因：有状态,可以暂停,挂起,创建
-10. async和await关键词,协程装饰器@types.coroutine
+1. [异步编程概念](chapter10_concurent_IO/01_basic_definition.md)
+2. [c10K及Unix下五种I/O模型](chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md)
+   - 2.1 非阻塞式IO实现HTTP请求
+   - 2.2 使用select完成http请求
+3. [c10M与协程产生](chapter10_concurent_IO/03_coroutine_desc_C10M.md)
+4. [生成器关闭close](chapter10_concurent_IO/04_gen_close.py)
+5. [生成器传值throw](chapter10_concurent_IO/05_gen_throw.py)
+6. [yield_from在调用方main与子生成器之间建立一个双向通道](chapter10_concurent_IO/06_yield_from.py)
+7. [yield from 与 yield对比](chapter10_concurent_IO/07_yield_from_example.py)
+8. [yield_from原理](chapter10_concurent_IO/08_yield_from_how.py)
+9. [生成器转协程原因：有状态,可以暂停,挂起,创建](chapter10_concurent_IO/09_gen_to_coroutine.py)
+10. [async和await关键词,协程装饰器@types.coroutine](chapter10_concurent_IO/10_async_await.py)
 ---
 
 ## [第十一章：协程库Asyncio](chapter11_asyncio/asyncio.md)
@@ -130,7 +132,7 @@
 3. 设计模式二：行为型
 ---
 ## 第十四章：正则匹配
-1. re.sub()和re.findall()使用
+1. [re.sub()和re.findall()使用](chapter14_re/re_sub_findall.py)
 
 
 ## [第十五章：click命令行](chapter15_click/click.md)

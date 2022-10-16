@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BlackConnectSettings" triggerOnEachSave="true" />
+  <component name="BlackConnectSettings" port="45485" triggerOnEachSave="true" />
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/block.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/01_member/example_inspect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/01_member/get_member.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/02_signature/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/02_signature/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/03_stack/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/03_stack/stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter17_inspect/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/03_coroutine_desc_C10M.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/03_coroutine_desc_C10M.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/CPU_opinion_about_time.png" beforeDir="false" afterPath="$PROJECT_DIR$/.assets/img/CPU_opinion_about_time.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,15 +246,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/python/Downloads/advanced_python_code",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/python/Downloads/advanced_python_code&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;me.lensvol.blackconnect.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/chapter12_callback" />
@@ -246,14 +263,14 @@
       <recent name="E:\python_advanced_code\chapter05_set_dict" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll" />
       <recent name="$PROJECT_DIR$/.assets/img" />
+      <recent name="$PROJECT_DIR$/chapter17_inspect/02_signature" />
       <recent name="$PROJECT_DIR$" />
       <recent name="E:\python_advanced_code\chapter13_defign_style\02_object_structure" />
-      <recent name="E:\python_advanced_code\chapter13_chain_call" />
-      <recent name="E:\python_advanced_code\chapter01__all_is_obj" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.config">
+  <component name="RunManager" selected="Python.03_append_extend">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="python_advanced_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,7 +304,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06_class_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="03_append_extend" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="advanced_python_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,78 +312,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12_callback" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter04_sequence" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12_callback/06_class_decorator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="07_decorate_func_with_args" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="advanced_python_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12_callback" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12_callback/07_decorate_func_with_args.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="08_args_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="advanced_python_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12_callback" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12_callback/08_args_decorator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="09_class_decorator_in_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="advanced_python_code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12_callback" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12_callback/09_class_decorator_in_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -411,6 +362,72 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter16_config_parser/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_member" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="advanced_python_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter17_inspect/01_member" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter17_inspect/01_member/get_member.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="advanced_python_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter17_inspect" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter17_inspect/02_signature/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="advanced_python_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter17_inspect/03_stack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter17_inspect/03_stack/stack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -513,19 +530,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.06_class_decorator" />
-      <item itemvalue="Python.07_decorate_func_with_args" />
-      <item itemvalue="Python.08_args_decorator" />
-      <item itemvalue="Python.09_class_decorator_in_class" />
+      <item itemvalue="Python.03_append_extend" />
+      <item itemvalue="Python.get_member" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.stack" />
       <item itemvalue="Python.config" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_append_extend" />
+        <item itemvalue="Python.stack" />
+        <item itemvalue="Python.get_member" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.config" />
-        <item itemvalue="Python.09_class_decorator_in_class" />
-        <item itemvalue="Python.06_class_decorator" />
-        <item itemvalue="Python.08_args_decorator" />
-        <item itemvalue="Python.07_decorate_func_with_args" />
       </list>
     </recent_temporary>
   </component>
@@ -601,7 +618,13 @@
       <workItem from="1652623906424" duration="2557000" />
       <workItem from="1660111272541" duration="340000" />
       <workItem from="1660111618543" duration="64000" />
-      <workItem from="1660111685594" duration="376000" />
+      <workItem from="1660111685594" duration="548000" />
+      <workItem from="1660112440815" duration="1599000" />
+      <workItem from="1660217513596" duration="821000" />
+      <workItem from="1660878531373" duration="3476000" />
+      <workItem from="1661083157214" duration="2568000" />
+      <workItem from="1665845344430" duration="641000" />
+      <workItem from="1665884419051" duration="1018000" />
     </task>
     <servers />
   </component>
@@ -672,18 +695,18 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py</url>
-          <line>127</line>
+          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md</url>
+          <line>130</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py</url>
-          <line>132</line>
+          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md</url>
+          <line>135</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py</url>
-          <line>139</line>
+          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md</url>
+          <line>142</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -717,8 +740,8 @@
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py</url>
-          <line>181</line>
+          <url>file://$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md</url>
+          <line>184</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -869,6 +892,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$05_args_kwargs.coverage" NAME="05_args_kwargs Coverage Results" MODIFIED="1619497208673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/advanced_python_code$02_difference____is.coverage" NAME="02_difference_==_is Coverage Results" MODIFIED="1651632245620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/advanced_python_code$13_dynamic_call_method.coverage" NAME="13_dynamic_call_method Coverage Results" MODIFIED="1651284624887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03_Class" />
+    <SUITE FILE_PATH="coverage/advanced_python_code$stack.coverage" NAME="stack Coverage Results" MODIFIED="1660115426034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17_inspect/03_stack" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1620879425431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_design_style/02_object_structure/05_Bridge" />
     <SUITE FILE_PATH="coverage/advanced_python_code$06_class_decorator.coverage" NAME="06_class_decorator Coverage Results" MODIFIED="1652625895976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/advanced_python_code$01_all_is_object.coverage" NAME="01_all_is_object Coverage Results" MODIFIED="1652842372201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter01__all_is_obj" />
@@ -882,7 +906,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1620813579780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_advanced_code$07_yield_from_example.coverage" NAME="07_yield_from_example Coverage Results" MODIFIED="1612408109272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter10_concurent_IO" />
     <SUITE FILE_PATH="coverage/advanced_python_code$03_coroutine_task_cancel.coverage" NAME="03_coroutine_task_cancel Coverage Results" MODIFIED="1652575023033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
-    <SUITE FILE_PATH="coverage/advanced_python_code$03_append_extend.coverage" NAME="03_append_extend Coverage Results" MODIFIED="1651629908408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
+    <SUITE FILE_PATH="coverage/advanced_python_code$03_append_extend.coverage" NAME="03_append_extend Coverage Results" MODIFIED="1660893914589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter04_sequence" />
     <SUITE FILE_PATH="coverage/python_advanced_code$01_callback_func.coverage" NAME="01_callback_func Coverage Results" MODIFIED="1618219489839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/python_advanced_code$13_dynamic_call_method.coverage" NAME="13_dynamic_call_method Coverage Results" MODIFIED="1622686364408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03_Class" />
     <SUITE FILE_PATH="coverage/advanced_python_code$03_relation_del_garbage_recycle.coverage" NAME="03_relation_del_garbage_recycle Coverage Results" MODIFIED="1651632395400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
@@ -892,6 +916,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$02_decorator.coverage" NAME="02_decorator Coverage Results" MODIFIED="1618220657604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/advanced_python_code$01_property.coverage" NAME="01_property Coverage Results" MODIFIED="1651633173340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter07_original_class" />
     <SUITE FILE_PATH="coverage/advanced_python_code$04_coroutine_nest.coverage" NAME="04_coroutine_nest Coverage Results" MODIFIED="1652575197314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
+    <SUITE FILE_PATH="coverage/advanced_python_code$main.coverage" NAME="main Coverage Results" MODIFIED="1660112486003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17_inspect" />
     <SUITE FILE_PATH="coverage/python_advanced_code$main__5_.coverage" NAME="main (5) Coverage Results" MODIFIED="1620804320933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_design_style/03_object_motion/09_Iterator" />
     <SUITE FILE_PATH="coverage/python_advanced_code$05_decorator_with_params_n_returnValue__1_.coverage" NAME="05_decorator_with_params_n_returnValue (1) Coverage Results" MODIFIED="1618220980457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter12_callback" />
     <SUITE FILE_PATH="coverage/advanced_python_code$06_thread_asyncio_together.coverage" NAME="06_thread_asyncio_together Coverage Results" MODIFIED="1652575402694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter11_asyncio" />
@@ -903,6 +928,7 @@
     <SUITE FILE_PATH="coverage/python_advanced_code$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1620804742349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter13_design_style/03_object_motion/10_Interpreter" />
     <SUITE FILE_PATH="coverage/advanced_python_code$group.coverage" NAME="group Coverage Results" MODIFIED="1652535846687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter15_click/01_group" />
     <SUITE FILE_PATH="coverage/python_advanced_code$12_contextlib.coverage" NAME="12_contextlib Coverage Results" MODIFIED="1620714789891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03_Class" />
+    <SUITE FILE_PATH="coverage/advanced_python_code$get_member.coverage" NAME="get_member Coverage Results" MODIFIED="1660115140722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter17_inspect/01_member" />
     <SUITE FILE_PATH="coverage/python_advanced_code$06_class_quiet_object_method.coverage" NAME="06_class_quiet_object_method Coverage Results" MODIFIED="1619078597120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter03_Class" />
     <SUITE FILE_PATH="coverage/python_advanced_code$04_classic_error.coverage" NAME="04_classic_error Coverage Results" MODIFIED="1620285595391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter06_object_use_n_garbage_recycle" />
     <SUITE FILE_PATH="coverage/advanced_python_code$01_iterable.coverage" NAME="01_iterable Coverage Results" MODIFIED="1652000716901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chapter08_iter_generator" />

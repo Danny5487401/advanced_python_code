@@ -1,42 +1,12 @@
-# c10k 1GHz CPU 2G内存，1gbps，让单台服务器同时为1万个客户端提供FTP服务
-
-""" 看CPU_opinion_about_time.png得知：
-CPU告诉我们，它自己很快，而上下文切换慢、内存读数据慢、磁盘寻址与取数据慢、网络传输慢……总之，离开CPU 后的一切，除了一级高速缓存，都很慢。
-我们观察计算机的组成可以知道，主要由运算器、控制器、存储器、输入设备、输出设备五部分组成。运算器和控制器主要集成在CPU中，
-除此之外全是I/O，包括读写内存、读写磁盘、读写网卡全都是I/O。I/O成了最大的瓶颈.从CPU的时间观中可知，网络I/O是最大的I/O瓶颈，除了宕机没有比它更慢的
-"""
-""" Unix下五种I/O模型
-发展趋势
-1.阻塞式IO
-2.非阻塞式IO
-3.IO多路复用  ：比较成熟，稳定
-4.信号驱动IO  ：比较少
-5.异步IO（posix的aio_系列函数）
-"""
-
-# io多路复用：select 阻塞
-"""
-select,poll,epoll都是IO多路复用机制，IO多路复用就是通过一种机制，一个进程可以监听多个描述符，一旦某个描述符就绪，一般是
-读就绪或者写就绪，能够通知程序就行相应的读写操作。但select,poll,epoll本质上都是同步IO，因为他们都需要在读写事件就绪后自己
-负责进行读写，也就是说整个读写过程是阻塞的，而异步IO则无需自己进行读写，异步IO的实现会负责把数据从内核拷贝到用户空间。
-
-epoll:采用红黑树的数据结构
-"""
-
-# 结论
-"""
-epoll并不一定比select好
-
-1.在高并发的情况下，连接活跃度不高的情况，epoll比select好     比如网站，连接之后随时可能断开
-2.并发性不是很高，连接活跃度比较高，select比epoll好        比如游戏，很少断开
-"""
 from urllib.parse import urlparse
 import socket
+
 import select
 
 # 不使用select.select()   select(rlist, wlist, xlist, timeout=None)
 # 使用selector,包装的更好用，会根据平台自动选择select,poll,epoll/kqueue
 from selectors import DefaultSelector, EVENT_READ, EVENT_WRITE
+
 
 # 方法一
 # 通过非阻塞式IO实现HTTP请求：需要不断地while循环
@@ -49,11 +19,11 @@ def get_url(url):
         path = "/"
 
     # 建立socket连接
-    client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 设置非阻塞
     client.setblocking(False)
     try:
-        client.connect((host, 80))   # 在默认情况下是阻塞的
+        client.connect((host, 80))  # 在默认情况下是阻塞的
     except BlockingIOError as e:
         pass
 
@@ -64,15 +34,19 @@ def get_url(url):
         try:
             # 注：client.send()函数并不会阻塞太久，它只负责将请求数据拷贝到TCP/IP协议栈的系统缓冲区中就返回，并不等待服务端返回的应答确认
             # send不发生异常，则发送完成
-            client.send("GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(path, host).encode("utf8"))
+            client.send(
+                "GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(
+                    path, host
+                ).encode("utf8")
+            )
             break
         except OSError as e:
             pass
 
-    data = b''
+    data = b""
     while True:
         try:
-            d = client.recv(1024) # 在默认情况下是阻塞的
+            d = client.recv(1024)  # 在默认情况下是阻塞的
         except BlockingIOError as e:
             continue
         else:
@@ -87,26 +61,25 @@ def get_url(url):
     client.close()
 
 
-
-
-
-
 """
 分析：判断非阻塞调用是否就绪如果 OS 能做，是不是应用程序就可以不用自己去等待和判断了，就可以利用这个空闲去做其他事情以提高效率。
     所以OS将I/O状态的变化都封装成了事件，如可读事件、可写事件。并且提供了专门的系统模块让应用程序可以接收事件通知。这个模块就是select。
     让应用程序可以通过select注册文件描述符和回调函数。当文件描述符的状态发生变化时，select 就调用事先注册的回调函数。
     select因其算法效率比较低，后来改进成了poll，再后来又有进一步改进，BSD内核改进成了kqueue模块，
     而Linux内核改进成了epoll模块。这四个模块的作用都相同，暴露给程序员使用的API也几乎一致，区别在于kqueue 和 epoll 在处理大量文件描述符时效率更高
-"""
 
+"""
 # 方法二  改进
 # 使用select完成http请求
 # 把I/O事件的等待和监听任务交给了 OS，那 OS 在知道I/O状态发生改变后（例如socket连接已建立成功可发送数据），它又怎么知道接下来该干嘛呢？只能回调
 # 回调编写难
 # 全局变量
+
+
 selector = DefaultSelector()
 stop = False
 urls = ["http://www.baidu.com"]
+
 
 class Fetcher:
     def connected(self, key):
@@ -115,10 +88,14 @@ class Fetcher:
         # 取消注册事件
         selector.unregister(key.fd)
         # 已经是就绪状态了
-        self.client.send("GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(self.path, self.host).encode("utf8"))
+        self.client.send(
+            "GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(
+                self.path, self.host
+            ).encode("utf8")
+        )
 
         # 注册可读事件
-        selector.register(self.client.fileno(),EVENT_READ, self.readable)
+        selector.register(self.client.fileno(), EVENT_READ, self.readable)
 
     def readable(self, key):
         # 可读后做的事
@@ -160,7 +137,7 @@ class Fetcher:
             pass
 
         # 注册到selector中  注意是文件描述符，因为要接下来发送send，所以注册write事件,然后回调函数
-        selector.register(self.client.fileno(),EVENT_WRITE, self.connected)
+        selector.register(self.client.fileno(), EVENT_WRITE, self.connected)
 
 
 # 需要自己去调用回调，不是系统自动的
@@ -191,7 +168,7 @@ if __name__ == "__main__":
     结果：一是耗时与同步阻塞相当，二是代码更复杂
     分析： 虽然 connect() 和 recv() 不再阻塞主程序，空出来的时间段CPU没有空闲着，但并没有利用好这空闲去做其他有意义的事情，
         而是在循环尝试读写 socket （不停判断非阻塞调用的状态是否就绪）。还得处理来自底层的可忽略的异常。也不能同时处理多个 socket 。
-    
+
     """
 
     # 方法二
