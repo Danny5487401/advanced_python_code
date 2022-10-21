@@ -17,7 +17,7 @@ def func(a, b, c=10, *args, d=100, **kwargs):
 
 sig_func = signature(func)
 
-for name_, para_ in sig_func.parameters.items():
+for _, para_ in sig_func.parameters.items():
     print(para_.name, para_.kind, para_.default)
 
 """
