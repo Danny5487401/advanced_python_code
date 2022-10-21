@@ -5,25 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/chapter04_sequence/07_list_gen.py" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/block.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/01_member/example_inspect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/01_member/get_member.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/02_signature/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/02_signature/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/03_stack/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/03_stack/stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter17_inspect/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter04_sequence/03_append_extend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/01_basic_definition.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/02_c10k_poll_epoll_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/02_epoll/02_c10k_poll_epoll_select.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/03_coroutine_desc_C10M.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10_concurent_IO/03_coroutine_desc_C10M.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10_concurent_IO/CPU_opinion_about_time.png" beforeDir="false" afterPath="$PROJECT_DIR$/.assets/img/CPU_opinion_about_time.png" afterDir="false" />
-    </list>
+    <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -624,7 +606,7 @@
       <workItem from="1660878531373" duration="3476000" />
       <workItem from="1661083157214" duration="2568000" />
       <workItem from="1665845344430" duration="641000" />
-      <workItem from="1665884419051" duration="1560000" />
+      <workItem from="1665884419051" duration="2210000" />
     </task>
     <servers />
   </component>
