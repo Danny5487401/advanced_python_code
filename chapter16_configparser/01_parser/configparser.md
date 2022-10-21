@@ -1,6 +1,7 @@
 # configparser
 
-configparser解析的配置文件的格式为ini的配置文件格式 （xxx.ini），就是文件中由多个section构成，每个section下又有多个配置项
+configparser 解析的配置文件的格式为ini的配置文件格式 （xxx.ini），就是文件中由多个section构成，每个section下又有多个配置项
+
 ```ini
 ;配置文件
 #  定义section0

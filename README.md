@@ -139,9 +139,15 @@
 1. [命令的任意嵌套Group](chapter15_click/01_group/group.py)
 2. [参数argument和选项Option](chapter15_click/02_argument_n_option/argument.py)
 
-## 第十六章：configparser模块
+
+## 第十六章：parser解析
+1. [configparser 模块解析配置](chapter16_configparser/01_parser/configparser.md)
+1. [argparse 模块解析参数](chapter16_configparser/01_parser/configparser.md)
 
 ## [第十七章：inspect 模块](chapter17_inspect/inspect.md)
 1. [getmembers 对是否是模块、框架、函数进行类型检查](chapter17_inspect/01_member/get_member.py)
 2. [signature(fn).parameters 获取函数参数的参数名，参数的属性，参数的默认值](chapter17_inspect/02_signature/main.py)
 3. [inspect.stack 解析堆栈](chapter17_inspect/03_stack/stack.py)
+
+## 第十八章：configparser模块
+1. [使用具有两个 key（例如：type 和 help）的 dict来进行注释](chapter18_typing/01_annotation/annotate.py)
