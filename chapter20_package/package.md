@@ -98,9 +98,53 @@ $ python -m pip install 'chardet==3.*'
 
 - 直接从wheels安装避免了从源分发版构建包的中间步骤。
 
-## 离线安装包
+## 打包工具
+
+
+### 包分发的始祖：distutils
+
+distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utlis），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
+
+
+### 分发工具升级：setuptools
+
+
+setuptools是Python distutils增强版的集合，它可以帮助我们更简单的创建和分发Python包，尤其是拥有依赖关系的。
+用户在使用setuptools创建的包时，并不需要已安装setuptools，只要一个启动模块即可
+
+setuptools管理Python的第三方包，将包安装到site-package下，安装的包后缀一般为.egg，实际为ZIP格式。
+
+
+### 源码包与二进制包什么区别？
+
+Python 包的分发可以分为两种：
+
+1. 以源码包的方式发布
+
+源码包安装的过程，是先解压，再编译，最后才安装，所以它是跨平台的，由于每次安装都要进行编译，相对二进制安装方式来说安装速度较慢。
+
+源码包的本质是一个压缩包，其常见的格式
+![](.package_images/package_source_class.png)
+
+
+2. 以二进制包形式发布
+
+
+二进制包的安装过程省去了编译的过程，直接进行解压安装，所以安装速度较源码包来说更快。
+
+由于不同平台的编译出来的包无法通用，所以在发布时，需事先编译好多个平台的包。
+ 
+二进制包的常见格式有: 
+![](.package_images/package_source_class2.png)
+
 有时候需要离线安装包，可以直接从仓库下载二进制文件即可，也可以省去编译过程。从仓库下载对应的 XXX.whl 安装包，并通过 pip install XXX.whl 即可。
 另外，如果发现有 XXX.egg 文件，那么可以通过 easy_install XXX.egg 命令安装
+
+### eggs 与 wheels 有什么区别？
+
+Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 在 2012 年定义。Wheel 的出现是为了替代 Egg，它的本质是一个zip包，其现在被认为是 Python 的二进制包的标准格式。
+
+
 
 
 ## 虚拟环境管理工具
