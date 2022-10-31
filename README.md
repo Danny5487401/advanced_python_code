@@ -5,7 +5,7 @@
 ![高级ython](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1443427057,959339510&fm=26&gp=0.jpg)
 
 ## 前置配置
-- blackd 格式化配置
+- blackd 格式化代码配置
 ![img.png](.assets/img/blackd_settings.png)
 
 ## 第一章：一切皆对象
@@ -151,3 +151,5 @@
 
 ## 第十八章：configparser模块
 1. [使用具有两个 key（例如：type 和 help）的 dict来进行注释](chapter18_typing/01_annotation/annotate.py)
+
+## [第二十章: 包管理](chapter20_package/package.md)

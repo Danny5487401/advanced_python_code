@@ -12,32 +12,31 @@ class Person:
         return "call str"
 
 
-def docorator_func():
+def decorator_func():
     print("装饰器")
     return ask
 
 
-# 1. 函数赋值给一个变量
-myfuc = ask
-myfuc("JOY")
+if __name__ == "__main__":
+    # 1. 函数赋值给一个变量
+    myfuc = ask
+    myfuc("JOY")
 
-# 类赋值给一个变量
-myclass = Person
-myclass()
+    # 类赋值给一个变量
+    myclass = Person
+    myclass()
 
-# 2. 放在集合当中
-obj_list = []
-obj_list.append(ask)
-obj_list.append(Person)
-for item in obj_list:
-    print(item())
-""" 结果
-danny1
-danny3 #return结果
-danny2
-call str # __str__结果
-"""
+    # 2. 放在集合当中
+    obj_list = [ask, Person]
+    for item in obj_list:
+        print(item())
+    """ 结果
+    danny1
+    danny3 #return结果
+    danny2
+    call str # __str__结果
+    """
 
-# 3. 返回一个函数给一个变量
-my_ask = docorator_func()
-my_ask("tom")
+    # 3. 返回一个函数给一个变量
+    my_ask = decorator_func()
+    my_ask("tom")
