@@ -250,10 +250,19 @@ Commands:
   update     卸载当前所有的包，并安装它们的最新版本
 ```
 
-```shell
-pipenv install
-```
-会初始化在你的项目根目录下生成pipfile文件
+#### 从现有项目创建虚拟环境
+对于现有项目，可以区分为三种情况：
+
+1. 没有使用 pipenv
+使用 pipenv install -r path/to/requirements.txt --python 3.6 来安装依赖。
+
+2. 有使用意向，但需要兼容旧方式
+通过 pipenv lock -r > requirements.txt 生成与 pip 相同格式的依赖管理文件。
+
+3. 已经在使用
+根据需要可以使用 pipenv install 或 pipenv sync。两者都会根据 Pipfile 中的 Python 版本创建虚拟环境，使用指定的 PyPI 源，区别是 pipenv install 会根据 Pipfile 中的版本信息安装依赖包，并重新生成 Pipfile.lock；而 pipenv sync 会根据 Pipfile.lock 中的版本信息安装依赖包
+
+4. 会初始化在你的项目根目录下生成pipfile文件
 
 [pipfile](Pipfile)
 [Pipfile.lock](Pipfile.lock)
@@ -265,6 +274,12 @@ pipenv install
 pipenv run python chapter01__all_is_obj/01_all_is_object.py
 ```
 
+
+
+#### 缺点
+由于需要根据依赖关系以及文件 hash 来生成 Pipfile.lock，所以短时间内看这个问题应该是无法解决的。需要在 pipenv 带来的依赖管理功能与速度上做一个权衡取舍
+
+目前的办法是在安装依赖时使用 pipenv install --skip-lock 来跳过生成/更新 Pipfile.lock,然后在需要时执行 pipenv lock 来生成/更新 Pipfile.lock
 
 ## 4. poetry
 
@@ -282,3 +297,4 @@ poetry init
 
 1. [python wheels](https://realpython.com/python-wheels/)
 2. [pip cache](https://stackoverflow.com/questions/9510474/pip-uses-incorrect-cached-package-version-instead-of-the-user-specified-version)
+3. [pipenv issue](https://github.com/pypa/pipenv/issues/1914)

@@ -1,13 +1,21 @@
-import argparse
+import math
+import argparse  # 1、导入argpase包
 
-parser = argparse.ArgumentParser()
 
-parser.add_argument("a")  # 获取的是字符串
-parser.add_argument("b", type=int, help="display an integer")  # 获取的是数字
+def parse_args():
+    parse = argparse.ArgumentParser(description="Calculate cylinder volume")  # 2、创建参数对象
+    parse.add_argument("--radius", default=2, type=int, help="Radius of Cylinder")
+    # 3、往参数对象添加参数
+    parse.add_argument("--height", default=4, type=int, help="height of Cylinder")
+    args = parse.parse_args()  # 4、解析参数对象获得解析对象
+    return args
 
-args = parser.parse_args("100 200".split())
-print(args)
-print(args.a)  # 可以进行变量的引用
-print(args.b)
-parser.print_usage()
-parser.print_help()
+
+def cal_vol(radius, height):
+    vol = math.pi * pow(radius, 2) * height
+    return vol
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    print(cal_vol(args.radius, args.height))  # 5、使用解析对象.参数获取使用命令行参数
