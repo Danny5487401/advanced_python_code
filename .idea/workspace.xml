@@ -6,9 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42e1ac6f-db94-4356-8dfd-0217c3e9b297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile.cached" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile.nocached" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,16 +241,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/python/Downloads/advanced_python_code",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/python/Downloads/advanced_python_code&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -631,6 +628,8 @@
       <workItem from="1667461814928" duration="236000" />
       <workItem from="1667470733126" duration="1029000" />
       <workItem from="1667651570580" duration="2668000" />
+      <workItem from="1667654611400" duration="1091000" />
+      <workItem from="1668262068402" duration="28000" />
     </task>
     <servers />
   </component>
