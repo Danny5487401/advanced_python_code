@@ -7,11 +7,15 @@ license = "MIT"
 readme = "README.md"
 packages = [{include = "advanced_python_code"}]
 
+# main 环境
 [tool.poetry.dependencies]
 python = "^3.9"
 
 
 
+# 测试环境
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
 
 [build-system]
 requires = ["poetry-core"]
