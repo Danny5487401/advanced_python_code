@@ -148,10 +148,11 @@ Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 �
 
 
 ## 虚拟环境管理工具
-1. virtualenv ，此工具会在项目目录下创建一个文件夹，名字叫做virtualenv_name，此目录下会包含python拷贝，之后所有的依赖都会保存至此目录中，在虚拟环境激活状态下，可以安装所需的依赖包，安装的依赖包会保存至项目虚拟环境目录virtualenv_name 下，不会污染系统全局环境；
+1. virtualenv: virtualenv 是目前最流行的 Python 虚拟环境配置工具。它不仅同时支持 Python2 和 Python3，而且可以为每个虚拟环境指定 Python 解释器，并选择不继承基础版本的包
 
-2. virtualenvwrapper ，virtualenvwrapper是对virtualenv接口的封装。virtualenvwrapper会将虚拟环境的目录统一保存，不需手动管理，使用起来更加便利；
+2. virtualenvwrapper: virtualenvwrapper是对virtualenv接口的封装。virtualenvwrapper会将虚拟环境的目录统一保存，不需手动管理，使用起来更加便利；
 
+3. venv: Python 从3.3 版本开始，自带了一个虚拟环境 venv.
 
 
 
@@ -169,14 +170,13 @@ Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 �
 ## 1 pip
 
 ### pip 缓存
-macos 查看缓存
-```shell
-(advanced_python_code) ➜  advanced_python_code git:(feature/package) ✗ pip cache dir
-/Users/python/Library/Caches/pip
-```
 
 ```shell
-# linux
+# macos 查看缓存
+(advanced_python_code) ➜  advanced_python_code git:(feature/package) ✗ pip cache dir
+/Users/python/Library/Caches/pip
+
+# linux 查看缓存
 ~/.cache/pip # and it respects the XDG_CACHE_HOME directory.
 
 ```
@@ -269,8 +269,9 @@ Commands:
 
 在packages下填入的库和版本是可以用于生产环境和生成requirements文件的，在dev-packages下的则可以安装一下调试工具、性能测试工具、python语法工具等
 
-运行项目
+运行项目 
 ```shell
+# pipenv run python [pyfile]     运行py文件
 pipenv run python chapter01__all_is_obj/01_all_is_object.py
 ```
 
@@ -287,10 +288,32 @@ Poetry 是Python 中的依赖管理和打包工具，当然它也可以配置虚
 
 
 ### 使用
-初始化项目
+初始化已经存在的项目
 ```shell
 poetry init
 ```
+
+新增一个 pyproject.toml
+```toml
+[tool.poetry]
+name = "advanced-python-code"
+version = "0.1.0"
+description = "高级python"
+authors = ["danny <540021730@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "advanced_python_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+```
+
 
 
 ## 参考链接
@@ -298,3 +321,5 @@ poetry init
 1. [python wheels](https://realpython.com/python-wheels/)
 2. [pip cache](https://stackoverflow.com/questions/9510474/pip-uses-incorrect-cached-package-version-instead-of-the-user-specified-version)
 3. [pipenv issue](https://github.com/pypa/pipenv/issues/1914)
+4. [pipenv 官方](https://github.com/pypa/pipenv)
+5. [poetry 官方](https://github.com/python-poetry/poetry)

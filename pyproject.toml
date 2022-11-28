@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "advanced-python-code"
+name = "advanced_python_code"
 version = "0.1.0"
 description = "高级python"
 authors = ["danny <540021730@qq.com>"]
@@ -9,6 +9,8 @@ packages = [{include = "advanced_python_code"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+
+
 
 
 [build-system]
