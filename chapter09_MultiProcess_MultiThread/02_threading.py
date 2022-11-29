@@ -6,9 +6,10 @@ import time
 
 # 网址 http://www.jobbole.com/caijing/gsyw/ 列表页
 # 网址 http://www.jobbole.com/caijing/gsyw/168023.html  详情页
-# 适用于线程池
+
+
 class GetDetailHtml(Thread):
-    def __init__(self,name):
+    def __init__(self, name):
         super().__init__(name=name)
 
     def run(self):
@@ -16,32 +17,34 @@ class GetDetailHtml(Thread):
         time.sleep(2)
         print("get detail html end")
 
+
 class GetDetailUrl(Thread):
-    def __init__(self,name):
+    def __init__(self, name):
         super().__init__(name=name)
+
     def run(self):
         print("get detail url starts")
         time.sleep(2)
         print("get detail url end")
 
 
-
 def get_detail_html(url):
-    print("get detail html starts")
+    print("get detail html starts\n")
     time.sleep(2)
-    print("get detail html end")
+    print("get detail html end\n")
+
 
 def get_detail_url(url):
-    print("get detail url starts")
+    print("get detail url starts\n")
     time.sleep(2)
-    print("get detail url end")
+    print("get detail url end\n")
 
 
 if __name__ == "__main__":
     # 写法一：复杂
     # thread1 = Thread(target=get_detail_html,args=("",))
     # thread2 = Thread(target=get_detail_html,args=("",))
-    # # 需求一： 当主线程结束后，子线程结束
+    # # 需求一： 当主线程结束后，子线程一并和主线程结束
     # # thread1.setDaemon(True)
     # # thread2.setDaemon(True)
     #
@@ -54,13 +57,13 @@ if __name__ == "__main__":
     #
     # print("last time:{}" .format(time.time()-start_time))
 
-    #写法二：简单
+    # 写法二：简单
     thread1 = GetDetailHtml("get_detail_html")
     thread2 = GetDetailUrl("get_detail_url")
     start_time = time.time()
     thread1.start()
     thread2.start()
+    #  主线程会等待所有的子线程结束后才结束
     thread1.join()
     thread2.join()
     print("last time:{}".format(time.time() - start_time))
-
