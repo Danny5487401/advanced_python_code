@@ -1,5 +1,7 @@
 # 包管理
 
+平常我们习惯了使用 pip 来安装一些第三方模块，这个安装过程之所以简单，是因为模块开发者为我们默默地为我们做了所有繁杂的工作，而这个过程就是 打包
+打包，就是将你的源代码进一步封装，并且将所有的项目部署工作都事先安排好，这样使用者拿到后即装即用，不用再操心如何部署的问题（如果你不想对照着一堆部署文档手工操作的话）。
 
 ## 背景
 
@@ -16,6 +18,103 @@ $ pip download -d /opt/pip/tmp -r requirement.txt
 $ pip install --no-index --find-links="/opt/pip/tmp" ansible
 $ pip install --no-index --find-links="/opt/pip/tmp" -r requirements.txt
 ```
+
+
+相关工具 ：disutils、 distutils 、distutils2、setuptools
+
+## 包分发的始祖：标准库distutils
+distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utlis），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
+
+distutils 的精髓在于编写 setup.py，它是模块分发与安装的指导文件。
+
+```shell
+(advanced-python-code-py3.9) ➜  chapter20_package git:(feature/package) ✗ python setup.py --help-commands
+Standard commands:
+  build             build everything needed to install
+  build_py          "build" pure Python modules (copy to build directory)
+  build_ext         build C/C++ extensions (compile/link to build directory)
+  build_clib        build C/C++ libraries used by Python extensions
+  build_scripts     "build" scripts (copy and fixup #! line)
+  clean             clean up temporary files from 'build' command
+  install           install everything from build directory
+  install_lib       install all Python modules (extensions and pure Python)
+  install_headers   install C/C++ header files
+  install_scripts   install scripts (Python or otherwise)
+  install_data      install data files
+  sdist             create a source distribution (tarball, zip file, etc.)
+  register          register the distribution with the Python package index
+  bdist             create a built (binary) distribution
+  bdist_dumb        create a "dumb" built distribution
+  bdist_rpm         create an RPM distribution
+  bdist_wininst     create an executable installer for MS Windows
+  check             perform some checks on the package
+  upload            upload binary package to PyPI
+
+Extra commands:
+  bdist_wheel       create a wheel distribution
+  alias             define a shortcut to invoke one or more commands
+  bdist_egg         create an "egg" distribution
+  develop           install package in 'development mode'
+  dist_info         create a .dist-info directory
+  easy_install      Find/get/install Python packages
+  egg_info          create a distribution's .egg-info directory
+  install_egg_info  Install an .egg-info directory for the package
+  rotate            delete older distributions, keeping N newest files
+  saveopts          save supplied options to setup.cfg or other config file
+  setopt            set an option in setup.cfg or another config file
+  test              run unit tests after in-place build (deprecated)
+  upload_docs       Upload documentation to PyPI
+
+usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+   or: setup.py --help [cmd1 cmd2 ...]
+   or: setup.py --help-commands
+   or: setup.py cmd --help
+
+```
+
+
+## setuptools
+
+setuptools 是 distutils 增强版，不包括在标准库中。其扩展了很多功能
+
+setuptools 后，就拥有了一个叫做 easy_install 的第三方管理工具，
+```shell
+# 通过包名，从PyPI寻找最新版本，自动下载、编译、安装
+$ easy_install pkg_name
+
+# 通过包名从指定下载页寻找链接来安装或升级包
+$ easy_install -f http://pythonpaste.org/package_index.html 
+
+# 指定线上的包地址安装
+$ easy_install http://example.com/path/to/MyPackage-1.2.3.tgz
+
+# 从本地的 .egg 文件安装
+$ easy_install xxx.egg
+
+# 在安装时你可以添加额外的参数
+指定安装目录：--install-dir=DIR, -d DIR
+指定用户安装：--user
+```
+
+默认情况下，easy_install 只会从 pypi 上下载相关软件包，由于这个源在国外，下载包的速度并不理想，
+
+编辑配置文件 /root/.pydistutils.cfg,指定源进行安装
+```cfg
+[easy_install]
+index-url=http://mirrors.aliyun.com/pypi/simple/
+find-links=http://mirrors.aliyun.com/pypi/simple/
+```
+
+
+### setup.cfg简介
+setup.cfg是包含选项默认值的ini文件
+
+### MANIFEST.in
+当您需要打包未自动包含在源分发中的其他文件时，需要清单文件。有关编写清单文件的详细信息，包括默认情况下包含的内容的列表
+
+
+
+
 
 ## Python Wheels
 .whl文件(WHL file)也称为轮子(wheel)，这是用于python分发(distribution)的标准内置包格式(standard built-package format)。
@@ -98,21 +197,6 @@ $ python -m pip install 'chardet==3.*'
 
 - 直接从wheels安装避免了从源分发版构建包的中间步骤。
 
-## 打包工具
-
-
-### 包分发的始祖：distutils
-
-distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utlis），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
-
-
-### 分发工具升级：setuptools
-
-
-setuptools是Python distutils增强版的集合，它可以帮助我们更简单的创建和分发Python包，尤其是拥有依赖关系的。
-用户在使用setuptools创建的包时，并不需要已安装setuptools，只要一个启动模块即可
-
-setuptools管理Python的第三方包，将包安装到site-package下，安装的包后缀一般为.egg，实际为ZIP格式。
 
 
 ### 源码包与二进制包什么区别？
@@ -140,9 +224,10 @@ Python 包的分发可以分为两种：
 有时候需要离线安装包，可以直接从仓库下载二进制文件即可，也可以省去编译过程。从仓库下载对应的 XXX.whl 安装包，并通过 pip install XXX.whl 即可。
 另外，如果发现有 XXX.egg 文件，那么可以通过 easy_install XXX.egg 命令安装
 
-### eggs 与 wheels 有什么区别？
+eggs 与 wheels 区别:
 
-Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 在 2012 年定义。Wheel 的出现是为了替代 Egg，它的本质是一个zip包，其现在被认为是 Python 的二进制包的标准格式。
+Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 在 2012 年定义。
+Wheel 的出现是为了替代 Egg，它的本质是一个zip包，其现在被认为是 Python 的二进制包的标准格式。
 
 
 
@@ -323,3 +408,4 @@ build-backend = "poetry.core.masonry.api"
 3. [pipenv issue](https://github.com/pypa/pipenv/issues/1914)
 4. [pipenv 官方](https://github.com/pypa/pipenv)
 5. [poetry 官方](https://github.com/python-poetry/poetry)
+6. [setup.py 讲解]( setup.py )
