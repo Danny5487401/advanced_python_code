@@ -371,6 +371,9 @@ pipenv run python chapter01__all_is_obj/01_all_is_object.py
 
 Poetry 是Python 中的依赖管理和打包工具，当然它也可以配置虚拟环境。
 
+poetry通过配置文件pyproject.toml来完成依赖管理、环境配置、基本信息配置等功能。相当于把Python项目中的Pipfile、setup.py、setup.cfg、requirements.txt、MANIFEST.in融合到一起
+
+
 
 ### 使用
 初始化已经存在的项目
