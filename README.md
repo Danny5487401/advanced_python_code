@@ -79,12 +79,14 @@
 5. [生成器读取大文件](chapter08_iter_generator/05_gen_read_file.py)
 ---
 ## 第九章：多进程多线程
-1. [GIL和多线程](chapter09_MultiProcess_MultiThread/01_GIL.py)
-2. 线程通信-共享变量、Queue
-3. 线程同步-Lock、RLock、Condition、Semaphore
-4. 线程池和源码分析-ThreadPoolExecutor
-5. 多进程-multiprocessing
-6. 进程间通信
+
+1. [GIL](chapter09_MultiProcess_MultiThread/01_GIL.py)
+2. [多线程编程：主线程等待 或则 主线程设置为守护线程](chapter09_MultiProcess_MultiThread/02_threading.py)
+3. [线程通信-共享变量、Queue](chapter09_MultiProcess_MultiThread/03_thread_communication.py)
+4. 线程同步-Lock、RLock、Condition、Semaphore
+5. 线程池和源码分析-ThreadPoolExecutor
+6. 多进程-multiprocessing
+7. 进程间通信
 ---
 ## 第十章：IO模型
 1. [异步编程概念](chapter10_concurent_IO/01_basic_definition.md)

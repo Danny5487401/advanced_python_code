@@ -56,6 +56,7 @@ import time
 #             detail_url.append("http://projectedu.com/{id}" .format(id=i))
 #         print("get detail url end")
 
+
 # 外界变量
 from chapter09_MultiProcess_MultiThread import variable
 
