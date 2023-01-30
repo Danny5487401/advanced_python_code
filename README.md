@@ -159,3 +159,12 @@
 1. [使用具有两个 key（例如：type 和 help）的 dict来进行注释](chapter18_typing/01_annotation/annotate.py)
 
 ## [第二十章: 包管理](chapter20_package/package.md)
+
+## [第二十一章: bytecode 字节码](chapter21_bytecode/bytecode.md)
+
+## [第二十二章: importlib 模块导入](chapter22_importlib/importlib.md)
+1. [传递字符串实现动态导入](chapter22_importlib/01_dynamic_import/main.py)
+2. [模块导入检查](chapter22_importlib/02_check_module/main.py)
+3. [传递名称及路径实现从源代码导入](chapter22_importlib/03_import_source_code/main.py)
+
+
