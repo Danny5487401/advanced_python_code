@@ -2,7 +2,7 @@
 **Python3.9.2：代码Env环境为mac**
  
 ---
-![高级ython](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1443427057,959339510&fm=26&gp=0.jpg)
+![高级ython](.assets/img/advanced_python.png)
 
 ## 推荐IDE: mac Pycharm
 快捷键
