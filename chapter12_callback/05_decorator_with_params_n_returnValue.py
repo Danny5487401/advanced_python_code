@@ -15,5 +15,5 @@ def add_num(num1, num2):
     return result
 
 
-result = add_num(1, 2)
-print(f'结果为：{result}')
+res = add_num(1, 2)
+print(f'结果为：{res}')

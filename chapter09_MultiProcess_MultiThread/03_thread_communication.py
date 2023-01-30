@@ -1,5 +1,6 @@
 from threading import Thread
 import time
+
 # 推荐线程安全的 queue
 
 # 线程间的通讯方式，共享变量
@@ -57,13 +58,16 @@ import time
 
 # 外界变量
 from chapter09_MultiProcess_MultiThread import variable
+
+
 def get_detail_html():
     while True:
         if len(variable.detail_url_list):
             url = variable.detail_url_list.pop()
-            print("get detail html:{url} starts" .format(url=url))
+            print("get detail html:{url} starts".format(url=url))
             time.sleep(2)
             print("get detail html:{url}end".format(url=url))
+
 
 def get_detail_url():
     # 爬取文章列表页
@@ -71,10 +75,8 @@ def get_detail_url():
         print("get detail url starts")
         time.sleep(2)
         for i in range(20):
-            variable.detail_url_list.append("http://projectedu.com/{id}" .format(id=i))
+            variable.detail_url_list.append("http://projectedu.com/{id}".format(id=i))
         print("get detail url end")
-
-
 
 
 if __name__ == "__main__":
@@ -93,7 +95,6 @@ if __name__ == "__main__":
 
     thread_detail_url = Thread(target=get_detail_url)
     for i in range(10):
-        html_thread = Thread(target= get_detail_html)
+        html_thread = Thread(target=get_detail_html)
         html_thread.start()
     thread_detail_url.start()
-

@@ -9,24 +9,27 @@ import time
 
 
 def fib(n):
-    if n <=2:
+    if n <= 2:
         return 1
-    return fib(n-1)+fib(n-2)
+    return fib(n - 1) + fib(n - 2)
+
 
 def random_sleep(n):
     time.sleep(n)
     return n
+
+
 # 多线程
 # if __name__ == "__main__":
 # 对于cpu操作
-    # 多线程
-    # with ThreadPoolExecutor(max_workers=3) as executor:
-    #     all_tasks = [executor.submit(fib, (num)) for num in range(25,35) ]
-    #     start_time = time.time()
-    #     for future in as_completed(all_tasks):
-    #         data = future.result()
-    #         print("exe result {}" .format(data))
-    #     print("last time is :{}" .format(time.time()-start_time))
+# 多线程
+# with ThreadPoolExecutor(max_workers=3) as executor:
+#     all_tasks = [executor.submit(fib, (num)) for num in range(25,35) ]
+#     start_time = time.time()
+#     for future in as_completed(all_tasks):
+#         data = future.result()
+#         print("exe result {}" .format(data))
+#     print("last time is :{}" .format(time.time()-start_time))
 
 # 多进程
 #     with ProcessPoolExecutor(max_workers=3) as executor:

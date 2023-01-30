@@ -16,14 +16,17 @@
 
 # 更推荐
 from concurrent.futures import ProcessPoolExecutor
+
 # ProcessPoolExcutor 底层使用multiprocessing
 import multiprocessing
 import time
+
 
 def get_html(n):
     time.sleep(n)
     print("sub process success")
     return n
+
 
 if __name__ == "__main__":
     # process = multiprocessing.Process(target=get_html,args=(6,))
@@ -36,7 +39,7 @@ if __name__ == "__main__":
     # print("main process end")
 
     # 使用Multiprocess进程池
-    pool = multiprocessing.Pool() # 默认CPU数量
+    pool = multiprocessing.Pool()  # 默认CPU数量
 
     # result = pool.apply_async(get_html,args=(3,))
     #
@@ -52,8 +55,6 @@ if __name__ == "__main__":
     #     print("{} sleep success" .format(result))
 
     # imap_unordered
-    for result in pool.imap_unordered(get_html,[1,5,3]):
+    for result in pool.imap_unordered(get_html, [1, 5, 3]):
         # 按完成顺序打印
-        print("{} sleep success" .format(result))
-
-
+        print("{} sleep success".format(result))

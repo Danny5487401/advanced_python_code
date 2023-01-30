@@ -1,17 +1,19 @@
 # python3.2引入
 # 线程池，理解协程才容易
-from concurrent.futures import ThreadPoolExecutor,as_completed,wait
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait
+
 # 理解futures:未来对象，task是返回容器
 from concurrent.futures import Future
-
 
 # 主线程获取某一个线程的状态，以及返回值
 # 1.当一个线程完成后，主线程马上知道并获取返回值
 # 2.futures让多线程和多进程编码接口一致，与java的futures设计理念相近
 import time
+
+
 def get_html(sleep_time):
     time.sleep(sleep_time)
-    print("get page{}success" .format(sleep_time))
+    print("get page{}success".format(sleep_time))
     return sleep_time
 
 
@@ -31,7 +33,7 @@ executor = ThreadPoolExecutor(max_workers=2)
 
 # 获取已经成功的task的返回
 # as_completed是生成器
-urls = [8,3,5,6,7] # 睡眠好几种，模拟
+urls = [8, 3, 5, 6, 7]  # 睡眠好几种，模拟
 
 # 方法一
 all_tasks = [executor.submit(get_html, (url)) for url in urls]
@@ -39,7 +41,7 @@ all_tasks = [executor.submit(get_html, (url)) for url in urls]
 # wait 注意return_when
 # wait(all_tasks)
 # print("all finished")
-wait(all_tasks, return_when='FIRST_COMPLETED')
+wait(all_tasks, return_when="FIRST_COMPLETED")
 print("first finished")
 
 # for future in as_completed(all_tasks):
