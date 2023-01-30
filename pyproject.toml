@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "advanced_python_code"
+version = "0.1.0"
+description = "高级python"
+authors = ["danny <540021730@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "advanced_python_code"}]
+
+# main 环境
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+
+# 测试环境
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

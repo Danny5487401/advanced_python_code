@@ -1,6 +1,7 @@
 from threading import Thread
 import time
 
+
 # 操作系统的调度最小单位为线程
 # 对于io操作来说，多线程和多进程性能差别不大
 
@@ -8,7 +9,7 @@ import time
 # 网址 http://www.jobbole.com/caijing/gsyw/168023.html  详情页
 # 适用于线程池
 class GetDetailHtml(Thread):
-    def __init__(self,name):
+    def __init__(self, name):
         super().__init__(name=name)
 
     def run(self):
@@ -16,20 +17,22 @@ class GetDetailHtml(Thread):
         time.sleep(2)
         print("get detail html end")
 
+
 class GetDetailUrl(Thread):
-    def __init__(self,name):
+    def __init__(self, name):
         super().__init__(name=name)
+
     def run(self):
         print("get detail url starts")
         time.sleep(2)
         print("get detail url end")
 
 
-
 def get_detail_html(url):
     print("get detail html starts")
     time.sleep(2)
     print("get detail html end")
+
 
 def get_detail_url(url):
     print("get detail url starts")
@@ -54,7 +57,7 @@ if __name__ == "__main__":
     #
     # print("last time:{}" .format(time.time()-start_time))
 
-    #写法二：简单
+    # 写法二：简单
     thread1 = GetDetailHtml("get_detail_html")
     thread2 = GetDetailUrl("get_detail_url")
     start_time = time.time()
@@ -63,4 +66,3 @@ if __name__ == "__main__":
     thread1.join()
     thread2.join()
     print("last time:{}".format(time.time() - start_time))
-

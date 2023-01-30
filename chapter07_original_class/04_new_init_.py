@@ -14,5 +14,6 @@ class User:
 
 
 if __name__ == "__main__":
-    # user = User("danny")
-    user = User(name="danny2")
+    user = User("danny")
+    # user = User(name="danny2")
+    print(user.name)

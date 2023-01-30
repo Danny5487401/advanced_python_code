@@ -1,4 +1,5 @@
 import threading
+
 # condition的应用有  queue.Queue
 
 # 条件变量，用于复杂的线程间同步
@@ -42,34 +43,35 @@ xiaoai: i am a teacher
 #         print("{}:how r u?".format(self.name))
 #         self.lock.release()
 
+
 class XiaoAi(threading.Thread):
-    def __init__(self,condition):
+    def __init__(self, condition):
         super().__init__(name="小爱")
         self.cond = condition
 
     def run(self):
         with self.cond:
             self.cond.wait()
-            print("{}:hello, joy" .format(self.name))
+            print("{}:hello, joy".format(self.name))
             self.cond.notify()
 
             self.cond.wait()
-            print("{}:i am fine!" .format(self.name))
+            print("{}:i am fine!".format(self.name))
             self.cond.notify()
 
             self.cond.wait()
-            print("{}:i am a teacher" .format(self.name))
+            print("{}:i am a teacher".format(self.name))
             self.cond.notify()
 
 
 class XiaoMi(threading.Thread):
-    def __init__(self,condition):
+    def __init__(self, condition):
         super().__init__(name="小米")
         self.cond = condition
 
     def run(self):
         with self.cond:
-            print("{}:hello,danny" .format(self.name))
+            print("{}:hello,danny".format(self.name))
             self.cond.notify()
 
             self.cond.wait()
@@ -92,4 +94,3 @@ if __name__ == "__main__":
     # condition有两把锁，一把底层锁在wait()调用后释放，上面的锁会在每次调用wait时候分配一把并放入cond的等待队列deque中,等待Notify的唤醒
     xiaoai.start()
     xiaomi.start()
-

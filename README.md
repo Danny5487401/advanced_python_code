@@ -1,25 +1,29 @@
 # ***Python高级编程***
-**python3.7：代码Env环境为mac**
+**Python3.9.2：代码Env环境为mac**
  
 ---
 ![高级ython](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1443427057,959339510&fm=26&gp=0.jpg)
 
+## 推荐IDE: mac Pycharm
+快捷键
+- ctrl+h: 查看 Hierarchy 子类
+
 ## 前置配置
-- blackd 格式化配置
+- blackd 格式化代码配置
 ![img.png](.assets/img/blackd_settings.png)
 
 ## 第一章：一切皆对象
-![](chapter01__all_is_obj/type_class_obj.png)
-1. [函数和类都是对象](chapter01__all_is_obj/01_all_is_object.py)
-2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01__all_is_obj/02_type_object_class.py)
-3. [对象三个特征:身份，类型，值](chapter01__all_is_obj/03_category.md)
+![](chapter01_all_is_obj/type_class_obj.png)
+1. [函数和类都是对象](chapter01_all_is_obj/01_all_is_object.py)
+2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01_all_is_obj/02_type_object_class.py)
+3. [对象三个特征:身份，类型，值](chapter01_all_is_obj/03_category.md)
 ---
 
 ## 第二章：魔法方法
-1. [通过__getitem__实现对象切片](chapter02__magic_method/01_magic_method.py)
-2. [数据模型-->查看len()调用顺序：首先调用__len__函数，再调用__getitem__](chapter02__magic_method/02_data_model.py)
-3. [魔法方法分类:**数学运算**和**非数学运算**-->熟悉len()的魔法方法__str__](chapter02__magic_method/03_magic_methods_list.py)
-4. [类实例化时__init__与__enter__，__exit__和__del__调用顺序,以及with的对应魔法方法糖](chapter02__magic_method/04__init__n__enter__sequence.py)
+1. [通过__getitem__实现对象切片](chapter02_magic_method/01_magic_method.py)
+2. [数据模型-->查看len()调用顺序：首先调用__len__函数，再调用__getitem__](chapter02_magic_method/02_data_model.py)
+3. [魔法方法分类:**数学运算**和**非数学运算**-->熟悉len()的魔法方法__str__](chapter02_magic_method/03_magic_methods_list.py)
+4. [类实例化时__init__与__enter__，__exit__和__del__调用顺序,以及with的对应魔法方法糖](chapter02_magic_method/04__init__n__enter__sequence.py)
 ---
 ## 第三章：面向对象编程
 1.  [鸭子类型](chapter03_Class/01_duck_category.py)
@@ -75,7 +79,7 @@
 5. [生成器读取大文件](chapter08_iter_generator/05_gen_read_file.py)
 ---
 ## 第九章：多进程多线程
-1. GIL和多线程
+1. [GIL和多线程](chapter09_MultiProcess_MultiThread/01_GIL.py)
 2. 线程通信-共享变量、Queue
 3. 线程同步-Lock、RLock、Condition、Semaphore
 4. 线程池和源码分析-ThreadPoolExecutor
@@ -151,3 +155,5 @@
 
 ## 第十八章：configparser模块
 1. [使用具有两个 key（例如：type 和 help）的 dict来进行注释](chapter18_typing/01_annotation/annotate.py)
+
+## [第二十章: 包管理](chapter20_package/package.md)

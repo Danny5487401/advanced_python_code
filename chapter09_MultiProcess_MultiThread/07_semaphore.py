@@ -9,7 +9,7 @@ import time
 
 
 class HtmlSpider(threading.Thread):
-    def __init__(self,url,sem):
+    def __init__(self, url, sem):
         super().__init__()
         self.url = url
         self.sem = sem
@@ -20,17 +20,17 @@ class HtmlSpider(threading.Thread):
         # 注意释放的位置
         self.sem.release()
 
+
 class UrlProducer(threading.Thread):
-    def __init__(self,sem):
+    def __init__(self, sem):
         super().__init__()
         self.sem = sem
 
     def run(self):
         for i in range(20):
             self.sem.acquire()
-            html_thread = HtmlSpider("https://www.baidu.com/{}" .format(i),self.sem)
+            html_thread = HtmlSpider("https://www.baidu.com/{}".format(i), self.sem)
             html_thread.start()
-
 
 
 if __name__ == "__main__":
