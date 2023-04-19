@@ -1,4 +1,6 @@
 # 函数和类都是对象
+
+
 def ask(name="danny1"):
     print(name)
     return "danny3"

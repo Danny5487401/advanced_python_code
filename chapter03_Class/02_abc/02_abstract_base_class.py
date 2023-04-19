@@ -4,10 +4,10 @@
 # 抽象基类用于判断类型和实现接口（建议用mixin）
 
 
-#  需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memcache)
+# 需要强制子类必须实现某些方法， 实现一个web框架，集成cache(redis,cache,memcache)
 # 需要设计一个抽象基类，指定子类必须实现某些方法
 
-## 方式一
+# 方式一
 # 模拟一个抽象基类
 class CacheBase:
     def get(self, key):
@@ -23,15 +23,11 @@ class RedisCache(CacheBase):
         pass
 
 
-redis_cache = RedisCache()
-# 方法一：调用时候出现异常
-redis_cache.set("key", "value")
-
 # 全局的abc
 import abc
 
 
-## 方式二：使用abc
+# 方式二：使用abc
 class CacheBase1(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def get(self, key):
@@ -50,8 +46,11 @@ class RedisCache1(CacheBase1):
         pass
 
 
-if __name__ == '__main__':
-    # 方法二：初始化就会报异常
-    redis_cache1 = RedisCache1()
-    redis_cache1.set("hello","world")
+if __name__ == "__main__":
+    # 方法一：如果RedisCache没有实现基类，调用时候出现异常
+    redis_cache = RedisCache()
+    redis_cache.set("key", "value")
 
+    # 方法二：如果RedisCache1没有实现基类，初始化就会报异常
+    redis_cache1 = RedisCache1()
+    redis_cache1.set("hello", "world")

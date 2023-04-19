@@ -12,11 +12,13 @@
 - blackd 格式化代码配置
 ![img.png](.assets/img/blackd_settings.png)
 
-## 第一章：一切皆对象
-![](chapter01_all_is_obj/type_class_obj.png)
+## [第一章：一切皆对象,元类及对象三个特征:身份，类型，值](chapter01_all_is_obj/object.md)
+
 1. [函数和类都是对象](chapter01_all_is_obj/01_all_is_object.py)
-2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01_all_is_obj/02_type_object_class.py)
-3. [对象三个特征:身份，类型，值](chapter01_all_is_obj/03_category.md)
+2. [type()函数](chapter01_all_is_obj/02_type/type.md)
+   - [2.1 使用type()查看元类：object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01_all_is_obj/02_type/01_type_object_class.py)
+   - [2.1 使用type()创建类及对应方案](chapter01_all_is_obj/02_type/02_type_create_class.py)
+
 ---
 
 ## 第二章：魔法方法
@@ -27,7 +29,7 @@
 ---
 ## 第三章：面向对象编程
 1.  [鸭子类型](chapter03_Class/01_duck_category.py)
-2.  [抽象基类abc.ABCMeta和抽象方法abc.abstractmethod](chapter03_Class/02_abc/01_ABCMeta.md)
+2.  [抽象基类 Metaclass for defining Abstract Base Classes (abc.ABCMeta)和抽象方法abc.abstractmethod](chapter03_Class/02_abc/ABCMeta.md)
 3.  [类型判断isinstance,*type配合is*与*==*使用](chapter03_Class/03_isinstance_type.py)
 4.  [类变量与实例属性](chapter03_Class/04_class_object_params.py)
 5.  [对象变量的查找顺序__mro__](chapter03_Class/05_class_object_attr_search_sequence.py)
