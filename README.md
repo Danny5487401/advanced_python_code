@@ -148,7 +148,7 @@
 
 ## 第十六章：parser解析
 1. [configparser 模块解析配置](chapter16_configparser/01_parser/configparser.md)
-1. [argparse 模块解析参数](chapter16_configparser/01_parser/configparser.md)
+2. [argparse 模块解析参数](chapter16_configparser/02_argparse/argparse.md)
 
 ## [第十七章：inspect 模块](chapter17_inspect/inspect.md)
 1. [getmembers 对是否是模块、框架、函数进行类型检查](chapter17_inspect/01_member/get_member.py)

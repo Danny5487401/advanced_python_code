@@ -1,7 +1,7 @@
 
 # argparse
 
-argparse 是一个用来解析命令行参数的 Python 库
+argparse 是一个用来解析命令行参数的 Python 库.
 
 
 ## 使用
