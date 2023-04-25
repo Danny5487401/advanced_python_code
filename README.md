@@ -155,7 +155,7 @@
 2. [signature(fn).parameters 获取函数参数的参数名，参数的属性，参数的默认值](chapter17_inspect/02_signature/main.py)
 3. [inspect.stack 解析堆栈](chapter17_inspect/03_stack/stack.py)
 
-## 第十八章：configparser模块
+## [第十八章：typing 模块](chapter18_typing/typing.md)
 1. [使用具有两个 key（例如：type 和 help）的 dict来进行注释](chapter18_typing/01_annotation/annotate.py)
 
 ## [第二十章: 包管理](chapter20_package/package.md)
