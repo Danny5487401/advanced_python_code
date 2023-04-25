@@ -2,7 +2,6 @@
 name = "pypi"
 url = "https://mirrors.aliyun.com/pypi/simple/"
 verify_ssl = true
-
 # 默认的不需要
 #[[source]]
 #url = "https://pypi.org/simple"
@@ -21,6 +20,7 @@ markupsafe = "==2.1.1"
 sqlalchemy = "==1.4.36"
 werkzeug = "==2.1.2"
 zipp = "==3.8.0"
+injector = "*"
 
 [dev-packages]
 black = "*"

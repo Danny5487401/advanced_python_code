@@ -167,4 +167,6 @@
 2. [模块导入检查](chapter22_importlib/02_check_module/main.py)
 3. [传递名称及路径实现从源代码导入](chapter22_importlib/03_import_source_code/main.py)
 
+## [第二十三章: injector 依赖注入](chapter23_injector/dependency_injection.md)
+1. [injector](chapter23_injector/inject_example.py)
 
