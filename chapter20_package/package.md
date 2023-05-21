@@ -357,7 +357,7 @@ Commands:
 运行项目 
 ```shell
 # pipenv run python [pyfile]     运行py文件
-pipenv run python chapter01__all_is_obj/01_all_is_object.py
+pipenv run python chapter01__all_is_obj/03_class_and_func_obj.py
 ```
 
 

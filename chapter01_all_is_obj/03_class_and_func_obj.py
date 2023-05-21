@@ -13,7 +13,6 @@ class Person:
 
 
 def decorator_func():
-    print("装饰器")
     return ask
 
 

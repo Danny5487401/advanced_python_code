@@ -12,11 +12,15 @@
 - blackd 格式化代码配置
 ![img.png](.assets/img/blackd_settings.png)
 
-## 第一章：一切皆对象
+## 第一章：[一切皆对象](chapter01_all_is_obj/obj.md)
 ![](chapter01_all_is_obj/type_class_obj.png)
-1. [函数和类都是对象](chapter01_all_is_obj/01_all_is_object.py)
+1. [查看integer对象](chapter01_all_is_obj/01_integer_obj.py)
+
 2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01_all_is_obj/02_type_object_class.py)
-3. [对象三个特征:身份，类型，值](chapter01_all_is_obj/03_category.md)
+
+
+3. [函数和类都是对象](chapter01_all_is_obj/03_class_and_func_obj.py)
+
 ---
 
 ## 第二章：魔法方法
@@ -68,8 +72,8 @@
 2. [__getattr__与__getattribute__在获取属性时优先级](chapter07_original_class/02_getattr_getattribute.py)
 3. [数据描述符与非数据描述符如何影响属性的查找顺序](chapter07_original_class/03_attribute_symbol_n_searchprocess.py)
 4. [类的生成过程__new__和__init__关系](chapter07_original_class/04_new_init_.py)
-5. [元类metaclass控制实例化过程,动态创建类,type生成类](chapter07_original_class/05_metaclass.py)
-6. [元类实现ORM](chapter07_original_class/06_orm.py)
+5. [元类 metaclass 控制实例化过程,动态创建类,type生成类](chapter07_original_class/05_metaclass/metaclass.md)
+6. [元类实现 ORM:类映射数据库中的一张表](chapter07_original_class/06_orm.py)
 ---
 ## 第八章：迭代器及生成器
 1. [迭代协议__iter__与迭代器](chapter08_iter_generator/01_iterable.py)
