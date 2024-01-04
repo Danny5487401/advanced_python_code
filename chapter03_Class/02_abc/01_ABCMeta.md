@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [抽象类概念](#%E6%8A%BD%E8%B1%A1%E7%B1%BB%E6%A6%82%E5%BF%B5)
+  - [为什么要有抽象类](#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E6%8A%BD%E8%B1%A1%E7%B1%BB)
+  - [作用](#%E4%BD%9C%E7%94%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 抽象类概念
 
 抽象类是一个特殊的类，只能被继承，不能实例化

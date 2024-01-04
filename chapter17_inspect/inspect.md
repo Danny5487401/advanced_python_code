@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [inspect](#inspect)
+  - [作用](#%E4%BD%9C%E7%94%A8)
+  - [使用](#%E4%BD%BF%E7%94%A8)
+    - [1. inspect.getmembers](#1-inspectgetmembers)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # inspect 
 
 获取函数签名对象。

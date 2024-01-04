@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [字节码(ByteCode)](#%E5%AD%97%E8%8A%82%E7%A0%81bytecode)
+  - [CPython 虚拟机内幕](#cpython-%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%B9%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 字节码(ByteCode)
 
 

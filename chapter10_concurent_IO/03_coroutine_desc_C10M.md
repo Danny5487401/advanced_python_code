@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [c10M  如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接](#c10m--%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A88%E6%A0%B8%E5%BF%83cpu64gb-%E5%86%85%E5%AD%98%E5%9C%A810-gbps%E7%BD%91%E7%BB%9C%E4%B8%AD%E4%BF%9D%E6%8C%811000%E4%B8%87%E5%B9%B6%E5%8F%91%E8%BF%9E%E6%8E%A5)
+  - [代码编程问题](#%E4%BB%A3%E7%A0%81%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98)
+  - [解决](#%E8%A7%A3%E5%86%B3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # c10M  如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接
 
 首先计算 100 万个请求需要大量的系统资源
