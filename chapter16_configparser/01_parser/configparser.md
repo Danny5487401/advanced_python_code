@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [configparser](#configparser)
+  - [常见函数](#%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # configparser
 
 configparser 解析的配置文件的格式为ini的配置文件格式 （xxx.ini），就是文件中由多个section构成，每个section下又有多个配置项

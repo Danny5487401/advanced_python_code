@@ -1,11 +1,14 @@
 # 异步编程：事件循环 + 回调（在asyncio中是驱动生成器） + IO多路复用
-# asyncio是python用于解决IO编程的一整套解决方法 tornado ,gevent,twisted(scrapy,django channels用于http2.0开发)
+# asyncio是python用于解决IO编程的一整套解决方法 tornado,gevent,twisted(scrapy,django channels用于http2.0开发)
 
 # tornado（实现了web服务器,可以直接部署，+nginx),django+Flask(web框架，不提供服务器，需要uwsgi,gunicorn,nginx)
 # tornado的数据库驱动是不同的，需要一异步的
 
 import asyncio
 import time
+
+# 有参数  使用偏函数传递参数，重新生成函数
+from functools import partial
 
 
 async def get_html(url):
@@ -37,10 +40,6 @@ def call_back(future):
     print("send email to danny")
 
 
-# 有参数  使用偏函数传递参数，重新生成函数
-from functools import partial
-
-
 # 错误写法，参数必须写在前面
 # def call_back_param(future,url):
 def call_back_param(url, future):
@@ -48,12 +47,26 @@ def call_back_param(url, future):
     print("from {} send email to danny".format(url))
 
 
+# @asyncio.coroutine
+# def func1_in_python_3_4(i):
+#     print("协程函数{}马上开始执行。".format(i))
+#     yield from asyncio.sleep(2)
+#     print("协程函数{}执行完毕!".format(i))
+
+
+async def func1_in_python_3_5(i):
+    print("协程函数{}马上开始执行。".format(i))
+    await asyncio.sleep(2)
+    print("协程函数{}执行完毕!".format(i))
+
+
 if __name__ == "__main__":
+    # 1 获取事件循环
+    loop = asyncio.get_event_loop()
+
     # 无返回值
     # start_time = time.time()
     # # 完成select操作
-    # loop = asyncio.get_event_loop()
-
     # # 多个运行
     # tasks = [get_html("www.baidu.com") for i in range(10)]
     # loop.run_until_complete(asyncio.wait(tasks))
@@ -66,14 +79,15 @@ if __name__ == "__main__":
 
     # 带返回值操作
     start_time = time.time()
-    loop = asyncio.get_event_loop()
-    # 两种方式 1. loop.create_task()  2. asyncio.ensure_future()
+
+    # 创建协程任务两种方式 1. loop.create_task()  2. asyncio.ensure_future()
     # task是future类型的子类，以下用法是一样的
     # 方式一 ：
     tasks = loop.create_task(get_html1("www.baidu.com"))
     # 添加回调函数 传递无参数
     tasks.add_done_callback(
-        call_back)  # call_back() takes 0 positional arguments but 1 was given，因为call_back()默认传递了future
+        call_back
+    )  # call_back() takes 0 positional arguments but 1 was given，因为call_back()默认传递了future
     #  添加回调函数 传递参数
     tasks.add_done_callback(partial(call_back_param, "www.baidu.com"))
 
@@ -86,3 +100,6 @@ if __name__ == "__main__":
     # print(get_future.result())
 
     print("last time {}".format(time.time() - start_time))
+
+    # 3 关闭事件循环
+    loop.close()

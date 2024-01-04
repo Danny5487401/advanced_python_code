@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [异步编程](#%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B)
+  - [基本概念](#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)
+  - [消息通用机制](#%E6%B6%88%E6%81%AF%E9%80%9A%E7%94%A8%E6%9C%BA%E5%88%B6)
+  - [总结：](#%E6%80%BB%E7%BB%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 异步编程
 ## 基本概念
 - 并发：高并发  指一个时间段内，有几个程序在一个cpu中，但是任意时刻只有一个程序在运行，类似操作系统

@@ -18,15 +18,15 @@ def call_back(future):
 
 
 if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
     # 带返回值操作
     # start_time = time.time()
-    # loop = asyncio.get_event_loop()
     # tasks = [get_html("www.baidu.com") for i in range(10)]
     #
-    # # wait 方式
-    # # loop.run_until_complete(asyncio.wait(tasks))
+    # wait 方式
+    # loop.run_until_complete(asyncio.wait(tasks))
     #
-    # # gather 方式
+    # gather 方式
     # loop.run_until_complete(asyncio.gather(*tasks))
     #
     # print("last time {}" .format(time.time()-start_time))
@@ -37,7 +37,6 @@ if __name__ == "__main__":
     
     """
 
-    loop = asyncio.get_event_loop()
     # 方式一
     # group1 = [get_html("www.taobao.com") for i in range(2)]
     # group2 = [get_html("www.jd.com") for i in range(2)]

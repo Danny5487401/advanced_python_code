@@ -1,6 +1,37 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [包管理](#%E5%8C%85%E7%AE%A1%E7%90%86)
+  - [背景](#%E8%83%8C%E6%99%AF)
+  - [包分发的始祖：标准库distutils](#%E5%8C%85%E5%88%86%E5%8F%91%E7%9A%84%E5%A7%8B%E7%A5%96%E6%A0%87%E5%87%86%E5%BA%93distutils)
+  - [setuptools](#setuptools)
+    - [setup.cfg简介](#setupcfg%E7%AE%80%E4%BB%8B)
+    - [MANIFEST.in](#manifestin)
+  - [Python Wheels](#python-wheels)
+    - [. wheel的类型](#-wheel%E7%9A%84%E7%B1%BB%E5%9E%8B)
+    - [Wheel 包 命名格式](#wheel-%E5%8C%85-%E5%91%BD%E5%90%8D%E6%A0%BC%E5%BC%8F)
+    - [源码包与二进制包什么区别？](#%E6%BA%90%E7%A0%81%E5%8C%85%E4%B8%8E%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%85%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
+  - [虚拟环境管理工具](#%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7)
+  - [包管理器的种类](#%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E7%9A%84%E7%A7%8D%E7%B1%BB)
+  - [1 pip](#1-pip)
+    - [pip 缓存](#pip-%E7%BC%93%E5%AD%98)
+    - [指定全局安装源](#%E6%8C%87%E5%AE%9A%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E6%BA%90)
+  - [2 conda](#2-conda)
+  - [3 pipenv](#3-pipenv)
+    - [优势](#%E4%BC%98%E5%8A%BF)
+    - [使用](#%E4%BD%BF%E7%94%A8)
+      - [从现有项目创建虚拟环境](#%E4%BB%8E%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83)
+      - [缺点](#%E7%BC%BA%E7%82%B9)
+  - [4. poetry](#4-poetry)
+    - [使用](#%E4%BD%BF%E7%94%A8-1)
+  - [参考链接](#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 包管理
 
-平常我们习惯了使用 pip 来安装一些第三方模块，这个安装过程之所以简单，是因为模块开发者为我们默默地为我们做了所有繁杂的工作，而这个过程就是 打包
+平常我们习惯了使用 pip 来安装一些第三方模块，这个安装过程之所以简单，是因为模块开发者为我们默默地为我们做了所有繁杂的工作，而这个过程就是【打包】
 打包，就是将你的源代码进一步封装，并且将所有的项目部署工作都事先安排好，这样使用者拿到后即装即用，不用再操心如何部署的问题（如果你不想对照着一堆部署文档手工操作的话）。
 
 ## 背景
@@ -22,7 +53,11 @@ $ pip install --no-index --find-links="/opt/pip/tmp" -r requirements.txt
 
 相关工具 ：disutils、 distutils 、distutils2、setuptools
 
-## 包分发的始祖：标准库distutils
+```shell
+python -m pip install setuptools wheel twine
+```
+
+## 包分发的始祖：标准库 distutils
 distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utlis），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
 
 distutils 的精髓在于编写 setup.py，它是模块分发与安装的指导文件。
@@ -106,8 +141,8 @@ find-links=http://mirrors.aliyun.com/pypi/simple/
 ```
 
 
-### setup.cfg简介
-setup.cfg是包含选项默认值的ini文件
+### setup.cfg 简介
+setup.cfg 是包含选项默认值的ini文件
 
 ### MANIFEST.in
 当您需要打包未自动包含在源分发中的其他文件时，需要清单文件。有关编写清单文件的详细信息，包括默认情况下包含的内容的列表
@@ -371,7 +406,7 @@ pipenv run python chapter01__all_is_obj/03_class_and_func_obj.py
 
 Poetry 是Python 中的依赖管理和打包工具，当然它也可以配置虚拟环境。
 
-poetry通过配置文件pyproject.toml来完成依赖管理、环境配置、基本信息配置等功能。相当于把Python项目中的Pipfile、setup.py、setup.cfg、requirements.txt、MANIFEST.in融合到一起
+poetry 通过配置文件 pyproject.toml 来完成依赖管理、环境配置、基本信息配置等功能。相当于把Python项目中的Pipfile、setup.py、setup.cfg、requirements.txt、MANIFEST.in融合到一起
 
 
 
@@ -411,4 +446,7 @@ build-backend = "poetry.core.masonry.api"
 3. [pipenv issue](https://github.com/pypa/pipenv/issues/1914)
 4. [pipenv 官方](https://github.com/pypa/pipenv)
 5. [poetry 官方](https://github.com/python-poetry/poetry)
-6. [setup.py 讲解]( setup.py )
+6. [setuptools github 地址](https://github.com/pypa/setuptools)
+7. [modules 分发官方文档](https://docs.python.org/3.9/distributing/index.html)
+8. [Python package](https://docs.python.org/3/tutorial/modules.html#packages)
+9. [PYPA github : Python Packaging Authority ](https://github.com/pypa)

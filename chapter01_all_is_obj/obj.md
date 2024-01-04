@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [object](#object)
+  - [对象的特征: 主要身份，类型，值](#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%89%B9%E5%BE%81-%E4%B8%BB%E8%A6%81%E8%BA%AB%E4%BB%BD%E7%B1%BB%E5%9E%8B%E5%80%BC)
+  - [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # object
 

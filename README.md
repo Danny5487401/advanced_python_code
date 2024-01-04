@@ -1,3 +1,35 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [***Python高级编程***](#python%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B)
+  - [推荐IDE: mac Pycharm](#%E6%8E%A8%E8%8D%90ide-mac-pycharm)
+  - [前置配置](#%E5%89%8D%E7%BD%AE%E9%85%8D%E7%BD%AE)
+  - [第一章：一切皆对象](#%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B8%80%E5%88%87%E7%9A%86%E5%AF%B9%E8%B1%A1)
+  - [第二章：魔法方法](#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E9%AD%94%E6%B3%95%E6%96%B9%E6%B3%95)
+  - [第三章：面向对象编程](#%E7%AC%AC%E4%B8%89%E7%AB%A0%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B)
+  - [第四章：数据结构sequence](#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84sequence)
+  - [第五章：数据结构集合和字典](#%E7%AC%AC%E4%BA%94%E7%AB%A0%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%9B%86%E5%90%88%E5%92%8C%E5%AD%97%E5%85%B8)
+  - [第六章：变量，参数及垃圾回收机制](#%E7%AC%AC%E5%85%AD%E7%AB%A0%E5%8F%98%E9%87%8F%E5%8F%82%E6%95%B0%E5%8F%8A%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6)
+  - [第七章：元类](#%E7%AC%AC%E4%B8%83%E7%AB%A0%E5%85%83%E7%B1%BB)
+  - [第八章：迭代器及生成器](#%E7%AC%AC%E5%85%AB%E7%AB%A0%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%8F%8A%E7%94%9F%E6%88%90%E5%99%A8)
+  - [第九章：多进程多线程](#%E7%AC%AC%E4%B9%9D%E7%AB%A0%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B)
+  - [第十章：IO模型](#%E7%AC%AC%E5%8D%81%E7%AB%A0io%E6%A8%A1%E5%9E%8B)
+  - [第十一章：协程库Asyncio](#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%8D%8F%E7%A8%8B%E5%BA%93asyncio)
+  - [第十二章：函数回调及装饰器](#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83%E5%8F%8A%E8%A3%85%E9%A5%B0%E5%99%A8)
+  - [第十三章：设计模式](#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+  - [第十四章：正则匹配](#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D)
+  - [第十五章：click命令行](#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0click%E5%91%BD%E4%BB%A4%E8%A1%8C)
+  - [第十六章：parser解析](#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0parser%E8%A7%A3%E6%9E%90)
+  - [第十七章：inspect 模块](#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0inspect-%E6%A8%A1%E5%9D%97)
+  - [第十八章：typing 模块](#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0typing-%E6%A8%A1%E5%9D%97)
+  - [第二十章: 包管理](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E7%AB%A0-%E5%8C%85%E7%AE%A1%E7%90%86)
+  - [第二十一章: bytecode 字节码](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0-bytecode-%E5%AD%97%E8%8A%82%E7%A0%81)
+  - [第二十二章: importlib 模块导入](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0-importlib-%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5)
+  - [第二十三章: injector 依赖注入](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E7%AB%A0-injector-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ***Python高级编程***
 **Python3.9.2：代码Env环境为mac**
  
@@ -15,10 +47,7 @@
 ## 第一章：[一切皆对象](chapter01_all_is_obj/obj.md)
 ![](chapter01_all_is_obj/type_class_obj.png)
 1. [查看integer对象](chapter01_all_is_obj/01_integer_obj.py)
-
 2. [object 是所有类的基类,type是一个类，同时type也是一个基类](chapter01_all_is_obj/02_type_object_class.py)
-
-
 3. [函数和类都是对象](chapter01_all_is_obj/03_class_and_func_obj.py)
 
 ---
@@ -68,12 +97,12 @@
 5. [不定长参数args与kwargs](chapter06_object_use_n_garbage_recycle/05_args_kwargs.py)
 ---
 ## 第七章：元类
-1. [property属性描述符](chapter07_original_class/01_property.py)
-2. [__getattr__与__getattribute__在获取属性时优先级](chapter07_original_class/02_getattr_getattribute.py)
-3. [数据描述符与非数据描述符如何影响属性的查找顺序](chapter07_original_class/03_attribute_symbol_n_searchprocess.py)
-4. [类的生成过程__new__和__init__关系](chapter07_original_class/04_new_init_.py)
-5. [元类 metaclass 控制实例化过程,动态创建类,type生成类](chapter07_original_class/05_metaclass/metaclass.md)
-6. [元类实现 ORM:类映射数据库中的一张表](chapter07_original_class/06_orm.py)
+1. [property属性描述符](chapter07_metaclass/01_property.py)
+2. [__getattr__与__getattribute__在获取属性时优先级](chapter07_metaclass/02_getattr_getattribute.py)
+3. [数据描述符与非数据描述符如何影响属性的查找顺序](chapter07_metaclass/03_attribute_symbol_n_searchprocess.py)
+4. [类的生成过程__new__和__init__关系](chapter07_metaclass/04_new_init_.py)
+5. [元类 metaclass 控制实例化过程,动态创建类,type生成类](chapter07_metaclass/05_metaclass/metaclass.md)
+6. [元类实现 ORM:类映射数据库中的一张表](chapter07_metaclass/06_orm.py)
 ---
 ## 第八章：迭代器及生成器
 1. [迭代协议__iter__与迭代器](chapter08_iter_generator/01_iterable.py)
@@ -108,8 +137,8 @@
 ---
 
 ## [第十一章：协程库Asyncio](chapter11_asyncio/asyncio.md)
-1. [事件循环添加回调函数,并使用偏函数改造函数如参](chapter11_asyncio/01_loop.py)
-2. [asyncio.wait()对比asyncio.gather()](chapter11_asyncio/02_wait_gather_loop.py)
+1. [事件循环时给任务添加回调函数,并使用偏函数改造函数入参](chapter11_asyncio/01_loop.py)
+2. [asyncio.wait() 对比 asyncio.gather() 收集多个协程](chapter11_asyncio/02_wait_gather_loop.py)
 3. [task.cancel()](chapter11_asyncio/03_coroutine_task_cancel.py)
 4. [协程嵌套coroutine_nest](chapter11_asyncio/04_coroutine_nest.py)
 5. [loop.call_later(),call_soon(),call_at()](chapter11_asyncio/05_call_func.py)
@@ -174,3 +203,5 @@
 ## [第二十三章: injector 依赖注入](chapter23_injector/dependency_injection.md)
 1. [injector](chapter23_injector/inject_example.py)
 
+
+## [第二十四章: logging ](chapter24_logging/logging.md)

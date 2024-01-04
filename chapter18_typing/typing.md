@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [类型注解](#%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3)
+  - [函数注释语法](#%E5%87%BD%E6%95%B0%E6%B3%A8%E9%87%8A%E8%AF%AD%E6%B3%95)
+    - ["弱"声明](#%E5%BC%B1%E5%A3%B0%E6%98%8E)
+    - [“强 “的类型](#%E5%BC%BA-%E7%9A%84%E7%B1%BB%E5%9E%8B)
+  - [类型](#%E7%B1%BB%E5%9E%8B)
+    - [TypeVar](#typevar)
+    - [Union](#union)
+    - [NewType](#newtype)
+    - [Optional](#optional)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 类型注解
 
 在 Python 3.5 中，Python PEP 484 引入了类型注解（type hints），在 Python 3.6 中，PEP 526 又进一步引入了变量注解（Variable Annotations），
