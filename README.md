@@ -27,6 +27,9 @@
   - [第二十一章: bytecode 字节码](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E7%AB%A0-bytecode-%E5%AD%97%E8%8A%82%E7%A0%81)
   - [第二十二章: importlib 模块导入](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0-importlib-%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5)
   - [第二十三章: injector 依赖注入](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E7%AB%A0-injector-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5)
+  - [第二十四章: logging ](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E7%AB%A0-logging)
+  - [第二十五章: test 测试](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E7%AB%A0-test-%E6%B5%8B%E8%AF%95)
+  - [第二十六章: dataclass 数据类](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0-dataclass-%E6%95%B0%E6%8D%AE%E7%B1%BB)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -37,12 +40,13 @@
 ![高级ython](.assets/img/advanced_python.png)
 
 ## 推荐IDE: mac Pycharm
-快捷键
-- ctrl+h: 查看 Hierarchy 子类
+mac 快捷键
+- Ctrl + h: 查看 Hierarchy 子类
+- Command + l 跳到指定行
 
 ## 前置配置
-- blackd 格式化代码配置
-![img.png](.assets/img/blackd_settings.png)
+- ruff 格式化代码配置
+![](.README_images/ruff_format.png)
 
 ## 第一章：[一切皆对象](chapter01_all_is_obj/obj.md)
 ![](chapter01_all_is_obj/type_class_obj.png)
@@ -52,11 +56,12 @@
 
 ---
 
-## 第二章：魔法方法
-1. [通过__getitem__实现对象切片](chapter02_magic_method/01_magic_method.py)
-2. [数据模型-->查看len()调用顺序：首先调用__len__函数，再调用__getitem__](chapter02_magic_method/02_data_model.py)
-3. [魔法方法分类:**数学运算**和**非数学运算**-->熟悉len()的魔法方法__str__](chapter02_magic_method/03_magic_methods_list.py)
+## 第二章：[魔法方法](chapter02_magic_method/magic_method.md)
+1. [魔法方法实现容器类操作](chapter02_magic_method/01_container.py)
+2. [可调用对象__call__](chapter02_magic_method/02_callable.py)
+3. [类的表示__repr__](chapter02_magic_method/03_repr_.py)
 4. [类实例化时__init__与__enter__，__exit__和__del__调用顺序,以及with的对应魔法方法糖](chapter02_magic_method/04__init__n__enter__sequence.py)
+5. [序列化__getstate__and___setstate__](chapter02_magic_method/05_pickle.py)
 ---
 ## 第三章：面向对象编程
 1.  [鸭子类型](chapter03_Class/01_duck_category.py)
@@ -133,14 +138,14 @@
 7. [yield from 与 yield对比](chapter10_concurent_IO/07_yield_from_example.py)
 8. [yield_from原理](chapter10_concurent_IO/08_yield_from_how.py)
 9. [生成器转协程原因：有状态,可以暂停,挂起,创建](chapter10_concurent_IO/09_gen_to_coroutine.py)
-10. [async和await关键词,协程装饰器@types.coroutine](chapter10_concurent_IO/10_async_await.py)
+10. [async和await关键词,协程装饰器@types.coroutine](chapter10_concurent_IO/10_async_await_from_python3_5.py)
 ---
 
 ## [第十一章：协程库Asyncio](chapter11_asyncio/asyncio.md)
 1. [事件循环时给任务添加回调函数,并使用偏函数改造函数入参](chapter11_asyncio/01_loop.py)
 2. [asyncio.wait() 对比 asyncio.gather() 收集多个协程](chapter11_asyncio/02_wait_gather_loop.py)
 3. [task.cancel()](chapter11_asyncio/03_coroutine_task_cancel.py)
-4. [协程嵌套coroutine_nest](chapter11_asyncio/04_coroutine_nest.py)
+4. [协程嵌套 coroutine_nest](chapter11_asyncio/04_coroutine_nest.py)
 5. [loop.call_later(),call_soon(),call_at()](chapter11_asyncio/05_call_func.py)
 6. [线程中集成阻塞IO](chapter11_asyncio/06_thread_asyncio_together.py)
 7. [asyncio中tcp使用](chapter11_asyncio/07_asyncio_http.py)
@@ -205,3 +210,9 @@
 
 
 ## [第二十四章: logging ](chapter24_logging/logging.md)
+
+## 第二十五章: test 测试
+1. [unittest 内置包](chapter25_unitest/01_unitest/unitest.md)
+2. [pytest 第三方包](chapter25_unitest/02_pytest/pytest.md)
+
+## [第二十六章: dataclass 数据类](chapter26_dataclass/dataclass.md)

@@ -2,7 +2,7 @@
 name = "advanced_python_code"
 version = "0.1.0"
 description = "高级 Python"
-authors = ["danny <540021730@qq.com>"]
+authors = ["Danny <540021730@qq.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "advanced_python_code"}]
@@ -16,6 +16,7 @@ pyyaml = "6.0.1"
 # 测试环境
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.0"
+black ="21.12b0"
 
 
 

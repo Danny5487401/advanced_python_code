@@ -28,7 +28,6 @@
 
 3. 有值 - 对象可能包含一堆属性 (i.e. 比如可以通过 objectname.attributename获得其他对象)
 
-4. 
 
 
 ## 参考资料

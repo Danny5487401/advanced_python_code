@@ -17,6 +17,7 @@
 
 final_result = {}
 
+
 # 子生成器
 def sales_num(pro_name):
     total = 0
@@ -24,13 +25,14 @@ def sales_num(pro_name):
     while True:
         # 外部传进来值
         x = yield
-        print(pro_name + "销量：",x)
+        print(pro_name + "销量：", x)
         # 传进来如果是None
         if not x:
             break
         total += x
         nums.append(x)
     return total, nums
+
 
 # 委托生成器
 def middle(key):
@@ -39,12 +41,13 @@ def middle(key):
         final_result[key] = yield from sales_num(key)
         print(key + "销售统计完成！！")
 
+
 # 调用方
 def main():
     data_sets = {
         "danny牌面膜": [1000, 2000, 3000],
         "danny牌手机": [10, 20, 30],
-        "danny牌电脑": [100, 200, 300]
+        "danny牌电脑": [100, 200, 300],
     }
     for key, data_set in data_sets.items():
         print("start key: ", key)
@@ -56,7 +59,7 @@ def main():
             m.send(value)
         # 结束生成器
         m.send(None)
-    print("final result:",final_result)
+    print("final result:", final_result)
 
 
 if __name__ == "__main__":
@@ -76,5 +79,3 @@ if __name__ == "__main__":
     except StopIteration as e:
         result = e.value
         print(result)
-
-

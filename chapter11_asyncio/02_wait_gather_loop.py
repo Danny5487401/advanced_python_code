@@ -1,4 +1,4 @@
-# wait 和gather
+# wait 和 gather
 import time
 import asyncio
 

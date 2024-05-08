@@ -13,10 +13,10 @@ from functools import partial
 
 async def get_html(url):
     print("start get url")
-    # 异常的两种方式
-    # asyncio.sleep(2) #RuntimeWarning: coroutine 'sleep' was never awaited
-    # await time.sleep(2) # object NoneType can't be used in 'await' expression
-    # time.sleep(2) # 不会报错，但不能用 否则会20s，因为在loop中发现是同步操作，而asyncio.sleep(2)是立即返回对象
+    # 异常的 3 种方式
+    # - asyncio.sleep(2) #RuntimeWarning: coroutine 'sleep' was never awaited
+    # - await time.sleep(2) # object NoneType can't be used in 'await' expression
+    # - time.sleep(2) # 不会报错，但不能用 否则会20s，因为在loop中发现是同步操作，而asyncio.sleep(2)是立即返回对象
 
     # 正确方式
     await asyncio.sleep(2)
@@ -61,8 +61,14 @@ async def func1_in_python_3_5(i):
 
 
 if __name__ == "__main__":
+    c = get_html("http://www.python.org")
+    print(c)  # <coroutine object get_html at 0x1028f2e40>
+    print(type(c))  # <class 'coroutine'>
+
     # 1 获取事件循环
     loop = asyncio.get_event_loop()
+
+    # 2 扔到事件循环中
 
     # 无返回值
     # start_time = time.time()
@@ -91,7 +97,9 @@ if __name__ == "__main__":
     #  添加回调函数 传递参数
     tasks.add_done_callback(partial(call_back_param, "www.baidu.com"))
 
-    loop.run_until_complete(tasks)
+    loop.run_until_complete(
+        tasks
+    )  # run_until_complete 会启动协程，也可以同时启动多个协程，当所有的协程都运行关闭时，会停止循环
     print("返回结果是{}".format(tasks.result()))  # 最终结果先发送邮件再返回结果
 
     # 方式二

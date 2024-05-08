@@ -4,9 +4,9 @@
 
 - [包管理](#%E5%8C%85%E7%AE%A1%E7%90%86)
   - [背景](#%E8%83%8C%E6%99%AF)
-  - [包分发的始祖：标准库distutils](#%E5%8C%85%E5%88%86%E5%8F%91%E7%9A%84%E5%A7%8B%E7%A5%96%E6%A0%87%E5%87%86%E5%BA%93distutils)
+  - [包分发的始祖：标准库 distutils](#%E5%8C%85%E5%88%86%E5%8F%91%E7%9A%84%E5%A7%8B%E7%A5%96%E6%A0%87%E5%87%86%E5%BA%93-distutils)
   - [setuptools](#setuptools)
-    - [setup.cfg简介](#setupcfg%E7%AE%80%E4%BB%8B)
+    - [setup.cfg 简介](#setupcfg-%E7%AE%80%E4%BB%8B)
     - [MANIFEST.in](#manifestin)
   - [Python Wheels](#python-wheels)
     - [. wheel的类型](#-wheel%E7%9A%84%E7%B1%BB%E5%9E%8B)
@@ -63,7 +63,7 @@ distutils 是 Python 的一个标准库，从命名上很容易看出它是一�
 distutils 的精髓在于编写 setup.py，它是模块分发与安装的指导文件。
 
 ```shell
-(advanced-python-code-py3.9) ➜  chapter20_package git:(feature/package) ✗ python setup.py --help-commands
+(advanced-python-code-py3.9) ➜  python setup.py --help-commands
 Standard commands:
   build             build everything needed to install
   build_py          "build" pure Python modules (copy to build directory)

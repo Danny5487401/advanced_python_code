@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 import socket
 from concurrent.futures import ThreadPoolExecutor
 
+
 # 阻塞的函数
 def get_url(url):
     # 通过socket请求url
@@ -17,7 +18,7 @@ def get_url(url):
         path = "/"
 
     # 建立socket连接
-    client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 设置非阻塞
     client.setblocking(False)
     try:
@@ -30,12 +31,16 @@ def get_url(url):
     # 连接还没准备好OSerror,依赖上一步的连接状态
     while True:
         try:
-            client.send("GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(path, host).encode("utf8"))
+            client.send(
+                "GET {} HTTP/1.1\r\nHost:{}\r\nConnection:close\r\n\r\n".format(
+                    path, host
+                ).encode("utf8")
+            )
             break
         except OSError as e:
             pass
 
-    data = b''
+    data = b""
     while True:
         try:
             d = client.recv(1024)
@@ -58,5 +63,7 @@ if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     executor = ThreadPoolExecutor()
     # 马山返回
-    task = loop.run_in_executor(executor, get_url, "http://www.baidu.com")  # 源码在base_events.py
+    task = loop.run_in_executor(
+        executor, get_url, "http://www.baidu.com"
+    )  # 源码在base_events.py
     loop.run_until_complete(task)
