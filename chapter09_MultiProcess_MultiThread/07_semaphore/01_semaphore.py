@@ -33,6 +33,6 @@ class UrlProducer(threading.Thread):
 
 
 if __name__ == "__main__":
-    sem = threading.Semaphore(3)
+    sem = threading.Semaphore(3)  # 创建信号量对象，5个线程并发
     url_producer = UrlProducer(sem)
     url_producer.start()

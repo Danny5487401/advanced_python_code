@@ -8,8 +8,10 @@ import threading
 """
 xiaomi: hello,danny
 xiaoai: hello, joy
+
 xiaomi: how r u?
 xiaoai: i am fine!
+
 xiaomi: what is yr job?
 xiaoai: i am a teacher
 """

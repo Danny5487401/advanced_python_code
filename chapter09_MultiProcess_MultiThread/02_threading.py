@@ -35,7 +35,6 @@ def get_detail_html(url):
     print("get detail html end\n")
 
 
-
 def get_detail_url(url):
     print("get detail url starts\n")
     time.sleep(2)

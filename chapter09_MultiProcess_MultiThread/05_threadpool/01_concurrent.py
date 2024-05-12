@@ -1,5 +1,6 @@
 # python3.2 引入 线程池，理解协程才容易
 from concurrent.futures import ThreadPoolExecutor, wait
+import threading
 
 # 理解futures:未来对象，task是返回容器
 
@@ -12,13 +13,13 @@ import time
 # 2 定义一个普通函数作为线程任务。
 def get_html(sleep_time):
     time.sleep(sleep_time)
-    print("get page{} success".format(sleep_time))
+    print(f"{threading.current_thread().name} get page {sleep_time} success")
     return sleep_time
 
 
 if __name__ == "__main__":
     # 1 调用 ThreadPoolExecutor 类的构造器创建一个线程池。
-    executor = ThreadPoolExecutor(max_workers=2)
+    executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="test_")
     # 通过submit提交将要执行的函数到线程池中,submit是立即返回
     # task1 = executor.submit(get_html, (3))
     # task2 = executor.submit(get_html, (2))

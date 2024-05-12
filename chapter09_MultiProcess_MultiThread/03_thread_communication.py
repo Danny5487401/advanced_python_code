@@ -75,8 +75,8 @@ def get_detail_url():
     while True:
         print("get detail url starts")
         time.sleep(2)
-        for i in range(20):
-            variable.detail_url_list.append("http://projectedu.com/{id}".format(id=i))
+        for id in range(20):
+            variable.detail_url_list.append("http://projectedu.com/{id}".format(id=id))
         print("get detail url end")
 
 

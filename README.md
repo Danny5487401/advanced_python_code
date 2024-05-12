@@ -15,7 +15,7 @@
   - [第八章：迭代器及生成器](#%E7%AC%AC%E5%85%AB%E7%AB%A0%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%8F%8A%E7%94%9F%E6%88%90%E5%99%A8)
   - [第九章：多进程多线程](#%E7%AC%AC%E4%B9%9D%E7%AB%A0%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B)
   - [第十章：IO模型](#%E7%AC%AC%E5%8D%81%E7%AB%A0io%E6%A8%A1%E5%9E%8B)
-  - [第十一章：协程库Asyncio](#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%8D%8F%E7%A8%8B%E5%BA%93asyncio)
+  - [第十一章：协程库 Asyncio](#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%8D%8F%E7%A8%8B%E5%BA%93-asyncio)
   - [第十二章：函数回调及装饰器](#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%E5%87%BD%E6%95%B0%E5%9B%9E%E8%B0%83%E5%8F%8A%E8%A3%85%E9%A5%B0%E5%99%A8)
   - [第十三章：设计模式](#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
   - [第十四章：正则匹配](#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D)
@@ -118,13 +118,15 @@ mac 快捷键
 ---
 ## 第九章：多进程多线程
 
-1. [GIL](chapter09_MultiProcess_MultiThread/01_GIL.py)
+1. [GIL 全局解释器锁](chapter09_MultiProcess_MultiThread/01_GIL/gil.md)
 2. [多线程编程：主线程等待 或则 主线程设置为守护线程](chapter09_MultiProcess_MultiThread/02_threading.py)
-3. [线程通信-共享变量、Queue](chapter09_MultiProcess_MultiThread/03_thread_communication.py)
-4. 线程同步-Lock、RLock、Condition、Semaphore
-5. 线程池和源码分析-ThreadPoolExecutor
-6. 多进程-multiprocessing
-7. 进程间通信
+3. 线程同步-Lock、RLock
+4. [线程通信-共享变量、Queue](chapter09_MultiProcess_MultiThread/03_thread_communication.py)
+5. [线程池和源码分析-ThreadPoolExecutor](chapter09_MultiProcess_MultiThread/05_threadpool/threadpool.md)
+6. [Condition 条件变量](chapter09_MultiProcess_MultiThread/06_condition/condition.md)
+7. [信号量(Semaphore)](chapter09_MultiProcess_MultiThread/07_semaphore/semaphore.md)
+8. 进程间通信
+9. 多进程-multiprocessing
 ---
 ## 第十章：IO模型
 1. [异步编程概念](chapter10_concurent_IO/01_basic_definition.md)
@@ -141,7 +143,7 @@ mac 快捷键
 10. [async和await关键词,协程装饰器@types.coroutine](chapter10_concurent_IO/10_async_await_from_python3_5.py)
 ---
 
-## [第十一章：协程库Asyncio](chapter11_asyncio/asyncio.md)
+## [第十一章：协程库 Asyncio](chapter11_asyncio/asyncio.md)
 1. [事件循环时给任务添加回调函数,并使用偏函数改造函数入参](chapter11_asyncio/01_loop.py)
 2. [asyncio.wait() 对比 asyncio.gather() 收集多个协程](chapter11_asyncio/02_wait_gather_loop.py)
 3. [task.cancel()](chapter11_asyncio/03_coroutine_task_cancel.py)
