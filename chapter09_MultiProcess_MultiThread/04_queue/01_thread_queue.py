@@ -8,7 +8,6 @@ import time
 
 def get_detail_html(queue):
     while True:
-
         url = queue.get()
         print("get detail html:{url} starts".format(url=url))
         time.sleep(2)
@@ -16,7 +15,6 @@ def get_detail_html(queue):
 
 
 def get_detail_url(queue):
-
     # 爬取文章列表页
     while True:
         print("get detail url starts")
