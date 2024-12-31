@@ -40,7 +40,7 @@ Future 提供了如下方法：
 - cancel()：取消该 Future 代表的线程任务。如果该任务正在执行，不可取消，则该方法返回 False；否则，程序会取消该任务，并返回 True。
 - cancelled()：返回 Future 代表的线程任务是否被成功取消。
 - running()：如果该 Future 代表的线程任务正在执行、不可被取消，该方法返回 True。
-- done()：如果该 Funture 代表的线程任务被成功取消或执行完成，则该方法返回 True。
+- done()：如果该 Future 代表的线程任务被成功取消或执行完成，则该方法返回 True。
 - result(timeout=None)：获取该 Future 代表的线程任务最后返回的结果。如果 Future 代表的线程任务还未完成，该方法将会阻塞当前线程，其中 timeout 参数指定最多阻塞多少秒。
 - exception(timeout=None)：获取该 Future 代表的线程任务所引发的异常。如果该任务成功完成，没有异常，则该方法返回 None。
 - add_done_callback(fn)：为该 Future 代表的线程任务注册一个“回调函数”，当该任务成功完成时，程序会自动触发该 fn 函数。

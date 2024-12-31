@@ -2,13 +2,17 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [c10M  如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接](#c10m--%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A88%E6%A0%B8%E5%BF%83cpu64gb-%E5%86%85%E5%AD%98%E5%9C%A810-gbps%E7%BD%91%E7%BB%9C%E4%B8%AD%E4%BF%9D%E6%8C%811000%E4%B8%87%E5%B9%B6%E5%8F%91%E8%BF%9E%E6%8E%A5)
+- [c10M: 如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接](#c10m-%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A88%E6%A0%B8%E5%BF%83cpu64gb-%E5%86%85%E5%AD%98%E5%9C%A810-gbps%E7%BD%91%E7%BB%9C%E4%B8%AD%E4%BF%9D%E6%8C%811000%E4%B8%87%E5%B9%B6%E5%8F%91%E8%BF%9E%E6%8E%A5)
+  - [C10M 解决方式](#c10m-%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F)
+    - [DPDK(Data Plane Development Kit)](#dpdkdata-plane-development-kit)
+    - [XDP（eXpress Data Path）](#xdpexpress-data-path)
   - [代码编程问题](#%E4%BB%A3%E7%A0%81%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98)
   - [解决](#%E8%A7%A3%E5%86%B3)
+  - [参考](#%E5%8F%82%E8%80%83)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# c10M  如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接
+# c10M: 如何利用8核心CPU,64GB 内存，在10 gbps网络中保持1000万并发连接
 
 首先计算 100 万个请求需要大量的系统资源
 
@@ -23,32 +27,42 @@
 
 究其根本，还是 Linux 内核协议栈做了太多太繁重的工作。从网卡中断带来的硬中断处理程序开始，到软中断中的各层网络协议处理，最后再到应用程序，这个路径实在是太长了，就会导致网络包的处理优化，到了一定程度后，就无法更进一步了
 
-C10M 解决方式：
+## C10M 解决方式
 
 跳过内核协议栈的冗长路径，把网络包直接送到要处理的应用程序那里去。这里有两种常见的机制，DPDK 和 XDP
 
-1. DPDK，是用户态网络的标准。它跳过内核协议栈，直接由用户态进程通过轮询的方式，来处理网络接收
+### DPDK(Data Plane Development Kit)
+DPDK（Data Plane Develop Kit）数据平面开发工具包，是Intel开发的用于网络数据包加速的开发套件。
+它将传统的网卡收到数据包通过 内核态 处理的流程转移到了用户态处理，减少了CPU处理中断和上下文切换额开销，能够使CPU得到更高效的利用.
+
 
 ![](.03_coroutine_desc_C10M_images/dpdk_model.png)
 
+
+![img.png](.03_coroutine_desc_C10M_images/dpdk_uio.png)
+右边是DPDK的方式，基于UIO（Userspace I/O）旁路数据
+
+DPDK的UIO驱动屏蔽了硬件发出中断，然后在用户态采用主动轮询的方式，这种模式被称为PMD（Poll Mode Driver）.
+
 说起轮询，你肯定会下意识认为它是低效的象征，但是进一步反问下自己，它的低效主要体现在哪里呢？是查询时间明显多于实际工作时间的情况下吧！
-那么，换个角度来想，如果每时每刻都有新的网络包需要处理，轮询的优势就很明显了
+那么，换个角度来想，如果每时每刻都有新的网络包需要处理，轮询的优势就很明显了.
 
 - 在 PPS 非常高的场景中，查询时间比实际工作时间少了很多，绝大部分时间都在处理网络包；
 
 - 而跳过内核协议栈后，就省去了繁杂的硬中断、软中断再到 Linux 网络协议栈逐层处理的过程，应用程序可以针对应用的实际场景，有针对性地优化网络包的处理逻辑，而不需要关注所有的细节
 
 
-DPDK 还通过大页、CPU 绑定、内存对齐、流水线并发等多种机制，优化网络包的处理效率
 
-2. XDP（eXpress Data Path）
+DPDK 还通过大页、CPU 绑定、内存对齐、流水线并发等多种机制，优化网络包的处理效率.
+
+### XDP（eXpress Data Path）  
 ![](.03_coroutine_desc_C10M_images/xdp_model.png)
 
 是 Linux 内核提供的一种高性能网络数据路径。它允许网络包，在进入内核协议栈之前，就进行处理，也可以带来更高的性能。
 XDP 底层跟我们之前用到的 bcc-tools 一样，都是基于 Linux 内核的 eBPF 机制实现的。
 
 
-XDP 对内核的要求比较高，需要的是 Linux 4.8 以上版本，并且它也不提供缓存队列。基于 XDP 的应用程序通常是专用的网络应用，常见的有 IDS（入侵检测系统）、DDoS 防御、 cilium 容器网络插件
+XDP 对内核的要求比较高，需要的是 Linux 4.8 以上版本，并且它也不提供缓存队列。基于 XDP 的应用程序通常是专用的网络应用，常见的有 IDS（入侵检测系统）、DDoS 防御、 cilium 容器网络插件.
 
 
 ## [代码编程问题](chapter10_concurent_IO/02_epoll/block.py)
@@ -129,3 +143,9 @@ if __name__ == "__main__":
     # send方法传入值到生成器内部，同时还可以重启生成器到下一个yield位置
     print(gen.send(html))
 ```
+
+
+## 参考
+
+- [DPDK技术简介与学习路线](https://zhuanlan.zhihu.com/p/455943209)
+- [DPDK与SR-IOV应用场景及性能对比](https://cloud.tencent.com/developer/article/2076429)
