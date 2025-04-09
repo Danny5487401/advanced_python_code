@@ -8,10 +8,13 @@
   - [setuptools](#setuptools)
     - [setup.cfg 简介](#setupcfg-%E7%AE%80%E4%BB%8B)
     - [MANIFEST.in](#manifestin)
-  - [Python Wheels](#python-wheels)
-    - [. wheel的类型](#-wheel%E7%9A%84%E7%B1%BB%E5%9E%8B)
-    - [Wheel 包 命名格式](#wheel-%E5%8C%85-%E5%91%BD%E5%90%8D%E6%A0%BC%E5%BC%8F)
-    - [源码包与二进制包什么区别？](#%E6%BA%90%E7%A0%81%E5%8C%85%E4%B8%8E%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%85%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
+  - [软件包管理器的两种主要形式](#%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%B8%BB%E8%A6%81%E5%BD%A2%E5%BC%8F)
+    - [1. 以源码包的方式发布](#1-%E4%BB%A5%E6%BA%90%E7%A0%81%E5%8C%85%E7%9A%84%E6%96%B9%E5%BC%8F%E5%8F%91%E5%B8%83)
+    - [2. 以二进制包形式发布](#2-%E4%BB%A5%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%85%E5%BD%A2%E5%BC%8F%E5%8F%91%E5%B8%83)
+      - [二进制包  Egg 格式](#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%85--egg-%E6%A0%BC%E5%BC%8F)
+      - [二进制包 Wheels](#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%85-wheels)
+        - [. wheel的类型](#-wheel%E7%9A%84%E7%B1%BB%E5%9E%8B)
+        - [Wheel 包命名格式](#wheel-%E5%8C%85%E5%91%BD%E5%90%8D%E6%A0%BC%E5%BC%8F)
   - [虚拟环境管理工具](#%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7)
   - [包管理器的种类](#%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E7%9A%84%E7%A7%8D%E7%B1%BB)
   - [1 pip](#1-pip)
@@ -23,7 +26,7 @@
     - [使用](#%E4%BD%BF%E7%94%A8)
       - [从现有项目创建虚拟环境](#%E4%BB%8E%E7%8E%B0%E6%9C%89%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83)
       - [缺点](#%E7%BC%BA%E7%82%B9)
-  - [4. poetry](#4-poetry)
+  - [4 poetry](#4-poetry)
     - [使用](#%E4%BD%BF%E7%94%A8-1)
   - [参考链接](#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5)
 
@@ -31,7 +34,7 @@
 
 # 包管理
 
-平常我们习惯了使用 pip 来安装一些第三方模块，这个安装过程之所以简单，是因为模块开发者为我们默默地为我们做了所有繁杂的工作，而这个过程就是【打包】
+平常我们习惯了使用 pip 来安装一些第三方模块，这个安装过程之所以简单，是因为模块开发者为我们默默地为我们做了所有繁杂的工作，而这个过程就是【打包】.
 打包，就是将你的源代码进一步封装，并且将所有的项目部署工作都事先安排好，这样使用者拿到后即装即用，不用再操心如何部署的问题（如果你不想对照着一堆部署文档手工操作的话）。
 
 ## 背景
@@ -41,11 +44,11 @@
 会导致整体的开发环境相当混乱而不易管理，这时候我们就需要开辟一个独立干净的空间进行开发和部署，虚拟环境就孕育而生
 
 ```shell
------ 先离线下载包，可以指定包或者文件
+# 先离线下载包，可以指定包或者文件
 $ pip download -d /opt/pip/tmp ansible
 $ pip download -d /opt/pip/tmp -r requirement.txt
 
------ 安装
+# 安装
 $ pip install --no-index --find-links="/opt/pip/tmp" ansible
 $ pip install --no-index --find-links="/opt/pip/tmp" -r requirements.txt
 ```
@@ -58,7 +61,7 @@ python -m pip install setuptools wheel twine
 ```
 
 ## 包分发的始祖：标准库 distutils
-distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utlis），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
+distutils 是 Python 的一个标准库，从命名上很容易看出它是一个分发（distribute）工具（utils），它是 Python 官方开发的一个分发打包工具，所有后续的打包工具，全部都是基于它进行开发的。
 
 distutils 的精髓在于编写 setup.py，它是模块分发与安装的指导文件。
 
@@ -150,12 +153,53 @@ setup.cfg 是包含选项默认值的ini文件
 
 
 
+## 软件包管理器的两种主要形式
+源码包: 源码格式是一种用于分发源代码的方式，它需要用户在本地编译并安装。
 
-## Python Wheels
+二进制格式: 是一种提前编译好的软件包，用户只需要下载并直接安装即可
+
+
+
+### 1. 以源码包的方式发布
+
+源码包安装的过程，是先解压，再编译，最后才安装，所以它是跨平台的，由于每次安装都要进行编译，相对二进制安装方式来说安装速度较慢。
+
+源码包的本质是一个压缩包，其常见的格式
+
+![](.package_images/package_source_class.png)
+
+
+### 2. 以二进制包形式发布
+
+
+二进制包的安装过程省去了编译的过程，直接进行解压安装，所以安装速度较源码包来说更快。
+
+由于不同平台的编译出来的包无法通用，所以在发布时，需事先编译好多个平台的包。
+ 
+二进制包的常见格式
+![](.package_images/package_source_class2.png)
+
+
+有时候需要离线安装包，可以直接从仓库下载二进制文件即可，也可以省去编译过程。
+从仓库下载对应的 XXX.whl 安装包，并通过 pip install XXX.whl 即可。
+另外，如果发现有 XXX.egg 文件，那么可以通过 easy_install XXX.egg 命令安装
+
+
+.whl文件有一点与.egg文件相似：实际上它们都是“伪装的”.zip文件。如果你将.whl文件名扩展改为*.zip，你就可以使用你的zip应用程序打开它，并且可以查看它包含的文件和文件夹。
+
+
+#### 二进制包  Egg 格式
+
+由 setuptools 在 2004 年引入. 跨平台.
+
+
+#### 二进制包 Wheels
+ Wheel 格式是由 PEP427 在 2012 年定义。
+
 .whl文件(WHL file)也称为轮子(wheel)，这是用于python分发(distribution)的标准内置包格式(standard built-package format)。
 它包含安装所需的所有文件和元数据(metadata)。.whl文件使用zip进行压缩。.whl文件还包含有关此wheel文件支持的Python版本和平台的信息
 
-### . wheel的类型
+##### . wheel的类型
 
 (1).universal wheel：包含py2.py3-none-any.whl。它在任何操作系统和平台上都支持Python 2和Python 3。
 
@@ -163,7 +207,7 @@ setup.cfg 是包含选项默认值的ini文件
 
 (3).platform wheel：支持特定的Python版本和平台。
 
-### Wheel 包 命名格式
+##### Wheel 包命名格式
 
 ```shell
 {distribution}-{version}(-{build tag})?-{python tag}-{abi tag}-{platform tag}.whl
@@ -232,39 +276,7 @@ $ python -m pip install 'chardet==3.*'
 
 - 直接从wheels安装避免了从源分发版构建包的中间步骤。
 
-
-
-### 源码包与二进制包什么区别？
-
-Python 包的分发可以分为两种：
-
-1. 以源码包的方式发布
-
-源码包安装的过程，是先解压，再编译，最后才安装，所以它是跨平台的，由于每次安装都要进行编译，相对二进制安装方式来说安装速度较慢。
-
-源码包的本质是一个压缩包，其常见的格式
-![](.package_images/package_source_class.png)
-
-
-2. 以二进制包形式发布
-
-
-二进制包的安装过程省去了编译的过程，直接进行解压安装，所以安装速度较源码包来说更快。
-
-由于不同平台的编译出来的包无法通用，所以在发布时，需事先编译好多个平台的包。
  
-二进制包的常见格式有: 
-![](.package_images/package_source_class2.png)
-
-有时候需要离线安装包，可以直接从仓库下载二进制文件即可，也可以省去编译过程。从仓库下载对应的 XXX.whl 安装包，并通过 pip install XXX.whl 即可。
-另外，如果发现有 XXX.egg 文件，那么可以通过 easy_install XXX.egg 命令安装
-
-eggs 与 wheels 区别:
-
-Egg 格式是由 setuptools 在 2004 年引入，而 Wheel 格式是由 PEP427 在 2012 年定义。
-Wheel 的出现是为了替代 Egg，它的本质是一个zip包，其现在被认为是 Python 的二进制包的标准格式。
-
-
 
 
 ## 虚拟环境管理工具
@@ -402,7 +414,7 @@ pipenv run python chapter01__all_is_obj/03_class_and_func_obj.py
 
 目前的办法是在安装依赖时使用 pipenv install --skip-lock 来跳过生成/更新 Pipfile.lock,然后在需要时执行 pipenv lock 来生成/更新 Pipfile.lock
 
-## 4. poetry
+## 4 poetry
 
 Poetry 是Python 中的依赖管理和打包工具，当然它也可以配置虚拟环境。
 
@@ -441,12 +453,13 @@ build-backend = "poetry.core.masonry.api"
 
 ## 参考链接
 
-1. [python wheels](https://realpython.com/python-wheels/)
-2. [pip cache](https://stackoverflow.com/questions/9510474/pip-uses-incorrect-cached-package-version-instead-of-the-user-specified-version)
-3. [pipenv issue](https://github.com/pypa/pipenv/issues/1914)
-4. [pipenv 官方](https://github.com/pypa/pipenv)
-5. [poetry 官方](https://github.com/python-poetry/poetry)
-6. [setuptools github 地址](https://github.com/pypa/setuptools)
-7. [modules 分发官方文档](https://docs.python.org/3.9/distributing/index.html)
-8. [Python package](https://docs.python.org/3/tutorial/modules.html#packages)
-9. [PYPA github : Python Packaging Authority ](https://github.com/pypa)
+- https://docs.python.org/3/tutorial/modules.html#packages
+- https://docs.python.org/3.9/distributing/index.html
+- [python wheels](https://realpython.com/python-wheels/)
+- [pip cache](https://stackoverflow.com/questions/9510474/pip-uses-incorrect-cached-package-version-instead-of-the-user-specified-version)
+- [pipenv issue](https://github.com/pypa/pipenv/issues/1914)
+- [pipenv 官方](https://github.com/pypa/pipenv)
+- [poetry 官方](https://github.com/python-poetry/poetry)
+- [setuptools github 地址](https://github.com/pypa/setuptools)
+- [PYPA github : Python Packaging Authority ](https://github.com/pypa)
+- [python egg](https://python101.pythonlibrary.org/chapter38_eggs.html)
