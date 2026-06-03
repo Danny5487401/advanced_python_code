@@ -30,6 +30,7 @@
   - [第二十四章: logging ](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E7%AB%A0-logging)
   - [第二十五章: test 测试](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E7%AB%A0-test-%E6%B5%8B%E8%AF%95)
   - [第二十六章: dataclass 数据类](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E7%AB%A0-dataclass-%E6%95%B0%E6%8D%AE%E7%B1%BB)
+  - [第二十七章: contextvars ](#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0-contextvars)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
